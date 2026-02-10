@@ -1419,74 +1419,67 @@ a[href*="/services/"]::before,
 
 /* ================== Smarter Approach Section ================== */
 /* Part 4: Smarter Approach Styling */
-.smarter-approach {
-  padding: 100px 0;
-  background-color: #ffffff; /* White to contrast with the grey Dilemma section */
+
+/* Part 5: 4-Step Path Styling */
+.four-step-path {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Light grey background for contrast */
 }
 
-.approach-content {
-  display: flex;
-  align-items: center;
-  gap: 60px;
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.text-block {
-  flex: 1;
-  text-align: left;
-}
-
-.text-block h2 {
-  color: #001540; /* Lakeside Navy */
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.lead-text {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.dna-badges {
-  margin-top: 30px;
+.step-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.badge {
-  background-color: #f1f3f5;
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #9C7C4C; /* Lakeside Gold */
+  margin-bottom: 5px;
+}
+
+.step-content h3 {
   color: #001540; /* Lakeside Navy */
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  border: 1px solid #9C7C4C; /* Lakeside Gold border */
+  font-size: 1.25rem;
+  margin-bottom: 15px;
 }
 
-.image-block {
-  flex: 1;
+.step-content p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
 }
 
-.styled-img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 20px 20px 0px #f8f9fa; /* Artistic offset shadow */
-}
-
-/* Responsive for Mobile */
-@media (max-width: 992px) {
-  .approach-content {
-    flex-direction: column-reverse; /* Puts text above image on mobile */
-    text-align: center;
-  }
-  .text-block { text-align: center; }
-  .dna-badges { justify-content: center; }
+/* Responsive */
+@media (max-width: 768px) {
+  .step-card { padding: 20px; }
 }
 
 
