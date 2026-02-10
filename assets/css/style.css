@@ -1347,76 +1347,65 @@ a[href*="/services/"]::before,
 
 
 /* ================== Growth Dilemma Section (Final Fixed) ================== */
+
+/* Part 3: Growth Dilemma Styling */
 .growth-dilemma {
-  padding: 80px 20px;
-  background: #f9fafb;
-  text-align: center; /* keep heading + paragraph centered */
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Light grey for visual contrast */
+  text-align: center;
 }
 
-.growth-dilemma h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #0a2540;
-  margin-bottom: 1rem;
-}
-
-.growth-dilemma p {
-  color: #555;
-  max-width: 780px;
+.section-subtitle {
+  max-width: 800px;
   margin: 0 auto 50px;
+  font-size: 1.15rem;
+  color: #555;
   line-height: 1.6;
-  font-size: 1.1rem; /* ✅ slightly larger text */
 }
 
-/* Wider and evenly spaced 3-box grid */
 .growth-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1600px;  /* wider total area */
-  width: 97%;         /* use more horizontal space */
-  margin: 0 auto;     /* center the grid */
-  padding: 0 10px;
-  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Responsive layout */
-@media (max-width: 992px) {
-  .growth-cards {
-    grid-template-columns: repeat(2, 1fr);
-    width: 95%;
-  }
-}
-
-@media (max-width: 600px) {
-  .growth-cards {
-    grid-template-columns: 1fr;
-    width: 95%;
-  }
-}
-
-/* Individual card styling */
 .growth-cards .card {
   background: #fff;
-  padding: 30px 25px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;   /* ✅ add this */
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
 .growth-cards .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
 }
 
-.card-img {
-  width: 70px;            /* uniform size */
-  height: auto;
-  margin-bottom: 15px;    /* spacing below image */
-  display: block;
-  margin-left: 0;  /* ✅ align left */
-  margin-right: 0;    
+.highlight-card {
+  border-bottom: 5px solid #9C7C4C; /* Lakeside Gold accent */
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.bridge-text {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  color: #001540; /* Lakeside Navy */
+  font-size: 0.95rem;
+}
+
+.growth-cards h3 {
+  color: #001540;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
 }
 
 /* ================== Smarter Approach Section ================== */
