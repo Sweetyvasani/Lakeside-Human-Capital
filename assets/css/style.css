@@ -228,175 +228,55 @@ body {
 
 
 /* ================== SERVICES ================== */
-/* ================== END-TO-END HR GROWTH ENGINE ================== */
-/* ===== SERVICES: center + 6-up grid (replace existing .service-grid/.service-card/.sub-services) ===== */
-
-.services, .hr-engine {
-  text-align: center;
-  padding: 60px 20px;
+/* Part 4: Specialized Services Styling */
+.specialized-services {
+  padding: 80px 0;
+  background-color: #ffffff;
 }
 
-.services h2, .hr-engine h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #0a2540;
-}
-
-.services p {
-  max-width: 780px;
-  margin: 0 auto 35px;  /* ✅ balanced space between paragraph & service cards */
-  text-align: center;
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.hr-engine p.subtitle {
-  max-width: 780px;
-  margin: 0 auto 28px;
-  text-align: center;
-}
-
-/* ----- Fix: center pills + ensure 4 cards on one line ----- */
-
-.service-grid {
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(220px, 1fr)); /* ✅ widen cards slightly */
-  gap: 24px;                  /* a bit more spacing for cleaner look */
-  max-width: 1400px;          /* widen container so grid has space */
- margin: 0 auto;                /* ✅ keep equal space on both sides */
-  padding: 0 32px;               /* ✅ soft inner gutter */
-  align-items: stretch;
-  box-sizing: border-box;
-  justify-content: center;       /* ✅ ensure cards stay balanced */
-  }
-
-.service-grid {
-  /* existing properties... */
-  align-items: stretch;   /* ✅ ensures all cards in a row have equal height */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-
-/* ---- Service Card Consistency & Typography ---- */
-.service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;      /* center everything inside */
+.service-pill {
+  border: 1px solid #eee;
+  padding: 30px 20px;
+  border-radius: 15px;
   text-align: center;
-  padding: 28px 26px;            /* increased from 20px */
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  min-height: 340px;        /* ensures all cards same height */
-  width: 100%;                   /* ensures cards expand with grid column */
-  box-sizing: border-box;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;   /* ✅ makes each card fill equal height of its grid cell */
+  transition: all 0.3s ease;
 }
 
-.service-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;  /* ✅ evenly distribute top/middle/bottom content */
-  align-items: center;
-  text-align: center;
+.service-pill:hover {
+  border-color: #9C7C4C; /* Lakeside Gold */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* ---- Service Card Hover Effects ---- */
-
-/* card hover: lift & stronger shadow */
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+.service-pill img {
+  width: 50px;
+  margin-bottom: 15px;
 }
 
-/* icon hover: color tint (teal filter) */
-.service-card img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-.service-card:hover img {
-  transform: scale(1.1);            /* slightly enlarge */
-  filter: drop-shadow(0 0 6px rgba(20, 184, 166, 0.4)); /* glowing teal shadow */
+.service-pill h3 {
+  font-size: 1.1rem;
+  color: #001540; /* Lakeside Navy */
+  margin-bottom: 10px;
 }
 
-/* heading hover: change color */
-.service-card h3 {
-  transition: color 0.3s ease;
-}
-.service-card:hover h3 {
-  color: #14b8a6; /* teal */
+.service-pill p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
 }
 
-/* pill hover: subtle lift */
-.sub-services span {
-  transition: background 0.25s ease, transform 0.25s ease;
-}
-.sub-services span:hover {
-  background: #d0f2f2;
-  transform: translateY(-2px);
-}
-
-/* icons: slightly larger */
-.service-card img {
-  width: 56px;              /* increased from 40–46px */
-  height: auto;
-  margin-bottom: 12px;
-  display: block;
-}
-
-/* headings: +2px */
-.service-card h3 {
-  font-size: 1.25rem;       /* was ~1.05rem → +2 points */
-  font-weight: 600;
-  margin: 8px 0 12px;
-  color: #0d1b2a;
-  text-align: center;
-}
-
-/* description: -1 point */
-.service-card p {
-  font-size: 0.9rem;        /* reduced from 1rem to 0.9rem */
-  color: #555;
-  line-height: 1.5;
-  margin: 0 0 12px;
-  text-align: center;
-  max-width: 95%;
-}
-
-/* pills: keep centered & consistent */
-.sub-services {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: auto;         /* pushes pills to bottom for alignment */
-}
-.sub-services span {
-  background: #e6f6f6;
-  color: #007777;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 13px;
-}
-
-/* responsive fallbacks */
-@media (max-width: 1100px) {
-  .service-grid { grid-template-columns: repeat(2, 1fr); max-width: 920px; gap: 12px; }
-}
-@media (max-width: 620px) {
-  .service-grid { grid-template-columns: 1fr; gap: 12px; padding: 0 12px; }
-  .service-card img { width: 48px; } /* slightly larger on small screens */
-}
-
-@media (min-width: 1600px) {
-  .service-grid {
-    max-width: 1440px;
-  }
+/* Highlight specifically for Psychometrics/Well-being */
+.highlight-pill {
+  background-color: #fdfaf5;
+  border: 1px solid #9C7C4C;
 }
 
 
