@@ -225,6 +225,64 @@ body {
   }
 }
 
+/* ================== Impact ================== */
+/* Institutional Impact Styling */
+
+.institutional-impact {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.impact-table-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.impact-table th {
+  background-color: #001540; /* Lakeside Navy */
+  color: #fff;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.impact-table td {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  line-height: 1.6;
+}
+
+.impact-table tr:last-child td {
+  border-bottom: none;
+}
+
+.impact-table td:first-child {
+  background-color: #fdfaf5; /* Subtle highlight for the sector column */
+  color: #001540;
+  width: 35%;
+}
+
+.impact-cta {
+  margin-top: 40px;
+}
+
+.impact-cta p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
 
 /* ================== SERVICES ================== */
