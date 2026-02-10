@@ -340,93 +340,113 @@ body {
 
 /* ================== NEW SECTION  ================== */
 
-/* Integrated Infrastructure Styling */
+/* Step 2: Integrated Infrastructure Row Styling */
 .hr-infrastructure {
   padding: 80px 0;
   background-color: #ffffff;
   text-align: center;
 }
 
-.infrastructure-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two main columns */
-  grid-template-rows: auto auto;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 40px auto;
+.infrastructure-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1300px;
+  margin: 50px auto 0;
   padding: 0 20px;
 }
 
 .infra-card {
+  flex: 1;
   background: #fdfaf5;
-  padding: 40px;
-  border-radius: 15px;
+  padding: 30px 20px;
+  border-radius: 12px;
   text-align: left;
   border: 1px solid #eee;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
-.main-pillar {
-  grid-row: span 2; /* Makes the Human Capital card tall */
+.infra-card:hover {
+  transform: translateY(-5px);
+  border-color: #9C7C4C;
+}
+
+.highlight-navy {
   background: #001540; /* Lakeside Navy */
-  color: #ffffff;
+  color: #fff;
   border: none;
 }
 
-.main-pillar h3, .main-pillar .tagline { color: #ffffff; }
-.main-pillar p { color: #e0e0e0; }
-
-.pillar-label {
-  font-size: 0.75rem;
+.v-tag {
   font-weight: 800;
-  text-transform: uppercase;
   color: #9C7C4C; /* Lakeside Gold */
+  font-size: 0.85rem;
   margin-bottom: 10px;
   display: block;
 }
 
 .infra-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #001540;
 }
 
-.infra-list {
-  margin-top: 20px;
+.highlight-navy h3 { color: #fff; }
+
+.punchline {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #9C7C4C; /* Lakeside Gold */
+  margin-bottom: 15px;
+  min-height: 40px; /* Keeps titles aligned */
+}
+
+.description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.highlight-navy .description { color: #ccc; }
+
+.mini-list {
   list-style: none;
   padding: 0;
+  font-size: 0.8rem;
+  margin-top: auto;
 }
 
-.infra-list li {
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
-  font-size: 0.95rem;
-}
-
-.infra-list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
+.mini-list li::before {
+  content: "✓ ";
   color: #9C7C4C;
 }
 
 .infra-link {
   margin-top: auto;
-  padding-top: 20px;
-  color: #9C7C4C;
   font-weight: 700;
+  color: #9C7C4C;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 992px) {
-  .infrastructure-grid { grid-template-columns: 1fr; }
-  .main-pillar { grid-row: span 1; }
+/* Responsive: Stacks on small screens */
+@media (max-width: 1024px) {
+  .infrastructure-row {
+    flex-wrap: wrap;
+  }
+  .infra-card {
+    flex: 1 1 45%; /* Two cards per row on tablets */
+  }
 }
 
-
+@media (max-width: 600px) {
+  .infra-card {
+    flex: 1 1 100%; /* One card per row on mobile */
+  }
+}
 
 
 
