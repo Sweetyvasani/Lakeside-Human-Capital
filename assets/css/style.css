@@ -1420,66 +1420,75 @@ a[href*="/services/"]::before,
 /* ================== Smarter Approach Section ================== */
 /* Part 4: Smarter Approach Styling */
 
-/* Part 5: 4-Step Path Styling */
-.four-step-path {
-  padding: 80px 0;
-  background-color: #f8f9fa; /* Light grey background for contrast */
+/* Part 4: Smarter Approach Styling */
+.smarter-approach {
+  padding: 100px 0;
+  background-color: #ffffff; /* Contrast against the grey section above */
 }
 
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+.approach-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.step-card {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease;
+.approach-text {
+  flex: 1;
+  text-align: left;
 }
 
-.step-card:hover {
-  transform: translateY(-5px);
+.approach-text h2 {
+  color: #001540; /* Lakeside Navy */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
-.step-icon img {
-  width: 60px;
-  height: auto;
+.approach-lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
   margin-bottom: 20px;
 }
 
-.step-number {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 800;
-  color: #9C7C4C; /* Lakeside Gold */
-  margin-bottom: 5px;
+.dna-badges {
+  margin-top: 35px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.step-content h3 {
-  color: #001540; /* Lakeside Navy */
-  font-size: 1.25rem;
-  margin-bottom: 15px;
+.dna-badge {
+  background: #f8f9fa;
+  color: #001540;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid #9C7C4C; /* Lakeside Gold */
 }
 
-.step-content p {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.5;
+.approach-image {
+  flex: 1;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .step-card { padding: 20px; }
+.feature-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 15px 15px 0px #f0f2f5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .approach-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .approach-text { text-align: center; }
+  .dna-badges { justify-content: center; }
 }
 
 
