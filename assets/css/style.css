@@ -1,0 +1,2145 @@
+/* ================== GLOBAL ================== */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* ================== HEADER ================== */
+header {
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;   /* keeps logo + text aligned vertically */
+  justify-content: space-between;   /* ✅ logo left, nav right */
+  background: #fff;        /* White background */
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+  box-sizing: border-box;   /* ✅ include padding inside width */
+}
+
+/* Brand block (logo + text) */
+header .brand {
+  display: flex;
+  align-items: center;   /* ✅ keeps text vertically centered with logo */
+  text-decoration: none;
+  flex-shrink: 0;   /* ✅ logo never shrinks */
+}
+
+header img {
+  height: 64px;   /* mobile / default */
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  header img {
+    height: 56px; /* desktop */
+  }
+}
+
+header .brand-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #001F54;   /* Navy text */
+  margin-left: 10px;
+  white-space: nowrap;   /* ✅ keeps text on one line */
+}
+
+/* navigation menu */
+
+header nav {
+  flex: 1;               /* ✅ nav takes remaining space */
+  display: flex;
+  justify-content: flex-end; /* ✅ push items to the right */
+  min-width: 0;          /* ✅ allow shrinking */
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;       /* ✅ prevent overflow by wrapping */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+  white-space: nowrap;   /* ✅ keep items on one line each */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 15px;  /* ✅ slightly smaller text */
+  font-weight: 500;
+  color: #001F54;   /* Navy text */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #14b8a6; /* ✅ Teal hover */
+  border-bottom: 2px solid #14b8a6; /* ✅ Teal underline */
+  padding-bottom: 2px;
+}
+
+/* Push page content down so it doesn’t hide under sticky nav */
+body {
+  padding-top: 70px; /* adjust depending on navbar height */
+}
+
+/* ================== HERO ================== */
+.hero {
+  display: flex;
+  justify-content: center; /* ✅ aligns text to the center */
+  align-items: center;  
+  text-align: center;          
+  padding: 3rem 1.5rem;
+  background-image: 
+  linear-gradient(rgba(0, 21, 64, 0.7), rgba(0, 21, 64, 0.8)),
+  url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 450px;
+  color: #fff;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1500px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading */
+.hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 1rem;  /* ✅ increase spacing below heading */
+  font-weight: 800;
+  color: #fff;
+  white-space: normal; /* ✅ allow wrapping */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  animation: fadeInUp 1.2s ease-in-out;
+  line-height: 1;
+  leading:tight; 
+ }
+
+/* Subtext */
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem; /* ✅ Add this to control spacing from heading */
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #fff;
+  white-space: normal;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  animation: fadeInUp 1.5s ease-in-out;
+  max-width: 900px;
+  margin-left: auto;  /* ✅ Add this */
+  margin-right: auto; /* ✅ Add this */
+}
+
+/* CTA Buttons */
+.btn-primary,
+.btn-secondary {
+  background: #9C7C4C;        /* Teal brand color */
+  color: #fff !important;     /* White text */
+  min-width: 270px;           /* ✅ wider for longer text (was 250px) */
+  height: 58px;               /* ✅ slightly taller for better proportion */
+  display: inline-flex;       /* centers content horizontally & vertically */
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  border: none;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1.8s ease-in-out;
+  text-align: center;         /* ✅ ensures multi-line text stays centered */
+  padding: 0 1.2rem;          /* ✅ adds a bit of breathing room inside */
+  box-sizing: border-box;     /* ✅ keeps size consistent */
+}
+
+/* Hover effect */
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: #7d633d;        /* Darker teal on hover */
+  transform: translateY(-3px);
+}
+
+/* ✅ Responsive: allow flexible width on smaller screens */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary {
+    width: 90%;               /* full width for mobile */
+    min-width: unset;
+    font-size: 1rem;
+    height: 52px;
+  }
+}
+
+
+/* ================== ANIMATIONS ================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* On small screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* ================== SERVICES ================== */
+/* ================== END-TO-END HR GROWTH ENGINE ================== */
+/* ===== SERVICES: center + 6-up grid (replace existing .service-grid/.service-card/.sub-services) ===== */
+
+.services, .hr-engine {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services h2, .hr-engine h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0a2540;
+}
+
+.services p {
+  max-width: 780px;
+  margin: 0 auto 35px;  /* ✅ balanced space between paragraph & service cards */
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hr-engine p.subtitle {
+  max-width: 780px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+/* ----- Fix: center pills + ensure 4 cards on one line ----- */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(220px, 1fr)); /* ✅ widen cards slightly */
+  gap: 24px;                  /* a bit more spacing for cleaner look */
+  max-width: 1400px;          /* widen container so grid has space */
+ margin: 0 auto;                /* ✅ keep equal space on both sides */
+  padding: 0 32px;               /* ✅ soft inner gutter */
+  align-items: stretch;
+  box-sizing: border-box;
+  justify-content: center;       /* ✅ ensure cards stay balanced */
+  }
+
+.service-grid {
+  /* existing properties... */
+  align-items: stretch;   /* ✅ ensures all cards in a row have equal height */
+}
+
+
+/* ---- Service Card Consistency & Typography ---- */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center everything inside */
+  text-align: center;
+  padding: 28px 26px;            /* increased from 20px */
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  min-height: 340px;        /* ensures all cards same height */
+  width: 100%;                   /* ensures cards expand with grid column */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;   /* ✅ makes each card fill equal height of its grid cell */
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* ✅ evenly distribute top/middle/bottom content */
+  align-items: center;
+  text-align: center;
+}
+
+/* ---- Service Card Hover Effects ---- */
+
+/* card hover: lift & stronger shadow */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* icon hover: color tint (teal filter) */
+.service-card img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.service-card:hover img {
+  transform: scale(1.1);            /* slightly enlarge */
+  filter: drop-shadow(0 0 6px rgba(20, 184, 166, 0.4)); /* glowing teal shadow */
+}
+
+/* heading hover: change color */
+.service-card h3 {
+  transition: color 0.3s ease;
+}
+.service-card:hover h3 {
+  color: #14b8a6; /* teal */
+}
+
+/* pill hover: subtle lift */
+.sub-services span {
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.sub-services span:hover {
+  background: #d0f2f2;
+  transform: translateY(-2px);
+}
+
+/* icons: slightly larger */
+.service-card img {
+  width: 56px;              /* increased from 40–46px */
+  height: auto;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* headings: +2px */
+.service-card h3 {
+  font-size: 1.25rem;       /* was ~1.05rem → +2 points */
+  font-weight: 600;
+  margin: 8px 0 12px;
+  color: #0d1b2a;
+  text-align: center;
+}
+
+/* description: -1 point */
+.service-card p {
+  font-size: 0.9rem;        /* reduced from 1rem to 0.9rem */
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 12px;
+  text-align: center;
+  max-width: 95%;
+}
+
+/* pills: keep centered & consistent */
+.sub-services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;         /* pushes pills to bottom for alignment */
+}
+.sub-services span {
+  background: #e6f6f6;
+  color: #007777;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* responsive fallbacks */
+@media (max-width: 1100px) {
+  .service-grid { grid-template-columns: repeat(2, 1fr); max-width: 920px; gap: 12px; }
+}
+@media (max-width: 620px) {
+  .service-grid { grid-template-columns: 1fr; gap: 12px; padding: 0 12px; }
+  .service-card img { width: 48px; } /* slightly larger on small screens */
+}
+
+@media (min-width: 1600px) {
+  .service-grid {
+    max-width: 1440px;
+  }
+}
+
+
+/* ================== NEW SECTION  ================== */
+
+/* Lakeside Ecosystem Styles */
+.lakeside-ecosystem {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light grey background */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #001540; /* Lakeside Navy Blue */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.pillar-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-top: 5px solid #001540;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+}
+
+.pillar-card.highlight {
+    border-top-color: #9C7C4C; /* Lakeside Gold */
+    background-color: #fff;
+}
+
+.pillar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pillar-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9C7C4C;
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+.pillar-header h3 {
+    font-size: 1.3rem;
+    color: #001540;
+    margin: 0;
+}
+
+.pillar-focus {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.pillar-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pillar-list li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.pillar-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #9C7C4C;
+}
+
+.pillar-impact {
+    background: #f1f3f5;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #001540;
+}
+
+.ecosystem-footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #001540;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #9C7C4C;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title { font-size: 2rem; }
+    .ecosystem-grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+/* ================== HR LIFECYCLE - Circular Lifecycle Wheel - Lotus Petals  ================== */
+/* --- Lotus Wheel Layout --- */
+
+.lifecycle-wheel {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.lifecycle-wheel h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 15px;
+}
+
+.lifecycle-wheel p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Enhanced Lotus Wheel Container */
+/* Lotus Wheel Container */
+.lotus-container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lotus Petal Base Styles */
+.lotus-petal {
+  position: absolute;
+  width: 180px;              
+  height: 120px;           
+  background: linear-gradient(135deg, #0a192f 0%, #1e3a5f 100%);
+  border-radius: 50% 50% 50% 0;
+  transform-origin: center center;   /* ✅ pivot from lotus center */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(10, 25, 47, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Individual Petal Positioning with Lotus Arrangement */
+.lotus-petal:nth-child(1) { /* Recruitment */
+  --rotation: 0deg; transform: rotate(0deg) translateY(-180px);
+  background: linear-gradient(135deg, #0a192f 0%, #1e3a5f 100%);
+}
+
+.lotus-petal:nth-child(2) { /* Onboarding */
+ --rotation: 51.43deg; transform: rotate(51.43deg) translateY(-180px);
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a7c 100%);
+}
+
+.lotus-petal:nth-child(3) { /* Development */
+  --rotation: 102.86deg; transform: rotate(102.86deg) translateY(-180px);
+  background: linear-gradient(135deg, #2d5a7c 0%, #3b7a9e 100%);
+}
+
+.lotus-petal:nth-child(4) { /* Performance */
+  --rotation: 154.29deg; transform: rotate(154.29deg) translateY(-180px);
+  background: linear-gradient(135deg, #3b7a9e 0%, #14b8a6 100%);
+}
+
+.lotus-petal:nth-child(5) { /* Retention */
+  --rotation: 205.72deg; transform: rotate(205.72deg) translateY(-180px);
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+}
+
+.lotus-petal:nth-child(6) { /* Transition */
+ --rotation: 257.15deg; transform: rotate(257.15deg) translateY(-180px);
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+}
+
+.lotus-petal:nth-child(7) { /* Separation */
+ --rotation: 308.58deg; transform: rotate(308.58deg) translateY(-180px);
+  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+}
+
+/* Hover Effects - Stable and Smooth */
+.lotus-petal:hover {
+  transform: rotate(var(--rotation)) translateY(-200px) scale(1.15) !important;
+  z-index: 10;
+  filter: brightness(1.2);
+  box-shadow: 0 8px 25px rgba(20, 184, 166, 0.5); /* teal glow */
+    0 0 15px rgba(255, 215, 0, 0.25);    /* faint golden glow */  
+}
+
+/* Set rotation variables for each petal */
+.lotus-petal:nth-child(1) { --rotation: 0deg; }
+.lotus-petal:nth-child(2) { --rotation: 51.43deg; }
+.lotus-petal:nth-child(3) { --rotation: 102.86deg; }
+.lotus-petal:nth-child(4) { --rotation: 154.29deg; }
+.lotus-petal:nth-child(5) { --rotation: 205.72deg; }
+.lotus-petal:nth-child(6) { --rotation: 257.15deg; }
+.lotus-petal:nth-child(7) { --rotation: 308.58deg; }
+
+/* Subtle Shine Effect */
+.lotus-petal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.7s ease;
+  transform: skewX(-20deg);
+}
+
+.lotus-petal:hover::before {
+  left: 150%;
+}
+
+/* Petal Content */
+.petal-content {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  transform: rotate(calc(-1 * var(--rotation)));
+  transition: all 0.3s ease;
+  padding: 0 10px;
+  line-height: 1.3;
+}
+
+.lotus-petal:hover .petal-content {
+  transform: rotate(calc(-1 * var(--rotation))) scale(1.1);
+  color: #fff;
+}
+
+/* Center Circle - Lotus Heart */
+.lotus-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #0a192f 0%, #14b8a6 100%);
+  border-radius: 50%;
+  border: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.3;
+  z-index: 20;
+  overflow: visible;
+
+  /* ✅ constant subtle glow */
+  box-shadow: 
+    0 0 15px rgba(20, 184, 166, 0.6),
+    0 0 10px rgba(255, 215, 0, 0.25); /* faint golden glow */
+}
+
+/* Outer glow pulse */
+.lotus-center::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulseGlow 2.5s infinite ease-in-out;
+  z-index: -1;
+}
+
+/* Glow animation with dual teal + gold */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 
+      0 0 25px rgba(20, 184, 166, 0.5),   /* teal */
+      0 0 15px rgba(255, 215, 0, 0.2);    /* faint gold */
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 
+      0 0 45px rgba(10, 31, 84, 0.8),     /* navy pulse */
+      0 0 25px rgba(255, 215, 0, 0.35);   /* stronger golden pulse */
+  }
+}
+
+
+/* Active State for Clicked Petals */
+.lotus-petal.active {
+  transform: rotate(var(--rotation)) translateY(-135px) scale(1.1) !important;
+  z-index: 100;
+  filter: brightness(1.25);
+  box-shadow: 0 10px 30px rgba(20, 184, 166, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lotus-container {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .lotus-petal {
+    width: 140px;
+    height: 100px;
+  }
+  
+  .lotus-petal:nth-child(n) {
+    transform: rotate(var(--rotation)) translateY(-100px);
+  }
+  
+  .lotus-petal:hover {
+    transform: rotate(var(--rotation)) translateY(-115px) scale(1.15) !important;
+  }
+  
+  .petal-content {
+    font-size: 12px;
+  }
+  
+  .lotus-center {
+    width: 80px;
+    height: 80px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lotus-container {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .lotus-petal {
+    width: 110px;
+    height: 80px;
+  }
+  
+  .lotus-petal:nth-child(n) {
+    transform: rotate(var(--rotation)) translateY(-80px);
+  }
+  
+  .lotus-petal:hover {
+    transform: rotate(var(--rotation)) translateY(-90px) scale(1.15) !important;
+  }
+  
+  .petal-content {
+    font-size: 10px;
+  }
+  
+  .lotus-center {
+    width: 60px;
+    height: 60px;
+    font-size: 9px;
+  }
+}
+
+
+/* ================== HR LIFECYCLE ROADMAP ================== */
+.hr-lifecycle {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.hr-lifecycle h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0a2540;
+}
+
+.hr-lifecycle p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* main roadmap layout */
+.lifecycle-roadmap {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* exactly 7 steps in one row */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* step node */
+.lifecycle-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* required for tooltips */
+}
+
+.step-icon {
+  background: #fff;
+  border: 2px solid #14b8a6;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+.step-icon img {
+  max-width: 32px;   /* keeps icon inside circle */
+  max-height: 32px;
+}
+
+.lifecycle-step span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+/* connector line across all steps */
+.lifecycle-roadmap::before {
+  content: "";
+  position: absolute;
+  top: 50%;   /* middle of the row */
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #14b8a6, #0a2540);
+  z-index: -1;
+}
+
+/* responsive: stack vertically */
+@media (max-width: 992px) {
+  .lifecycle-roadmap {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .lifecycle-roadmap::before {
+    display: none;
+  }
+}
+
+
+/* ================== CTA ================== */
+.cta-banner {
+  background: #0a2540;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+/* ================== PAGE HEADERS ================== */
+.page-header {
+  padding: 2rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 12px; /* space between heading and para */
+}
+
+.page-headers + .founders {
+  margin-top: 30px; /* space between para and images */
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #555;
+margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
+}
+
+/* ================== 4-STEP PATH TO HR EXCELLENCE ================== */
+.our-model-premium {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.our-model-premium h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #0a2540;
+}
+
+.our-model-premium p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* ---- 4-Step Path Styling ---- */
+.premium-lineflow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* exactly 4 steps in one row */
+  align-items: start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.premium-step {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 28px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+}
+
+.premium-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* remove teal background, just keep icon centered */
+.step-badge {
+  background: transparent;     /* no background */
+  width: auto;                 /* let image size control */
+  height: auto;
+  border-radius: 0;            /* no circle */
+  box-shadow: none;            /* remove shadow */
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-badge img {
+  width: 48px;   /* make icons a little bigger */
+  height: auto;
+}
+
+
+/* title + desc */
+.premium-step h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0d1b2a;
+}
+.premium-step p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* fancy curved connectors */
+.premium-connector {
+  position: absolute;
+  top: 60px;
+  height: 40px;
+  width: calc(100% - 60px);
+  left: 80px;
+  right: 80px;
+  border-top: 3px dashed #14b8a6;   /* dashed teal line */
+  z-index: -1;
+}
+
+/* responsive fallback: stack */
+@media (max-width: 992px) {
+  .premium-lineflow {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .premium-connector {
+    display: none; /* hide connectors on mobile */
+  }
+}
+
+
+/* ================== RESOURCES & CONTACT ================== */
+.resources, .contact-form {
+  padding: 2rem;
+}
+
+.contact-form form {
+  max-width: 620px;
+  margin: 0 auto;
+  display: grid;
+  gap: .75rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: .6rem .8rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+
+
+/* Trust / Expertise Section (inside Why Us) */
+.trust {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #f9f9f9;   /* ✅ subtle light gray background */
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  }
+
+.trust h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 1rem;
+}
+
+.trust p {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px;   /* ✅ restrict width */
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.trust .trust-subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 600;
+  margin-top: 2.7rem;  /* ✅ add extra space above */
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.trust-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;  /* ✅ more breathing space */
+  margin-top: 1.5rem;
+}
+
+.trust-logos .logo-img {
+  height: 50px;        /* ✅ consistent logo height */
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.trust-logos .logo-img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+
+/* Why Us Section */
+.why-us {
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.why-us-container {
+  display: flex;
+  flex-wrap: nowrap;         /* ✅ force side-by-side (no wrapping) */
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1380px;  /* ✅ matches Growth Dilemma / Smarter Approach */
+  margin: 0 auto;
+  padding: 0 10px;           /* ✅ consistent left/right padding */
+  box-sizing: border-box;
+}
+
+/* Left Column */
+.why-us-text {
+  flex: 0 0 60%;   /* ✅ fix width instead of flexible grow/shrink */
+}
+
+.why-us-text h2 {
+  font-size: 2.5rem;
+    font-weight: 700;
+  margin-bottom: 2.4rem;
+  color: #0a2540;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.why-item .icon {
+  color: #14b8a6;   /* teal checkmark */
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.why-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #0a2540;
+}
+
+.why-item p {
+  margin: 0.25rem 0 0;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Right Column - Navy + Gold Theme */
+.why-us-highlight {
+  flex: 0 0 35%;  /* ✅ fix width so it always stays side by side */
+  background: linear-gradient(135deg, #ffffff, #f9f9f9); /* subtle gray-white */
+  border: 2px solid #0a2540; /* navy border */
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(10,37,64,0.15); /* soft navy glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-us-highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(10,37,64,0.25);
+}
+
+/* accent bar on top */
+.why-us-highlight::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 60px;
+  background: #FFD700; /* gold */
+  margin: 0 auto 1rem;
+  border-radius: 3px;
+}
+
+/* stat number */
+.why-us-highlight h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #14b8a6; /* ✅ teal */
+  margin: 0 0 0.5rem;
+  text-shadow: 0 0 8px rgba(20,184,166,0.25); /* glowing teal */
+}
+
+/* stat title */
+.why-us-highlight h3 {
+  font-size: 1.25rem;
+  color: #0a2540; /* navy */
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* description text */
+.why-us-highlight p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.why-us-highlight.fade {
+  animation: fadeInOut 5s ease-in-out;
+}
+/* progress bar */
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #FFD700, #e6c200); /* gold gradient */
+  width: 0%;
+  border-radius: 2px;
+  margin-top: 1.5rem;
+  animation: progressAnim 5s linear infinite;
+  box-shadow: 0 0 6px rgba(255,215,0,0.5); /* glowing gold */
+}
+
+@keyframes progressAnim {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* Mobile layout for Why Us section */
+@media (max-width: 768px) {
+  .why-us-container {
+    flex-wrap: wrap;            /* ✅ allow stacking on small screens */
+  }
+
+  .why-us-text {
+    flex: 1 1 100%;             /* ✅ take full width */
+    order: 1;                   /* ✅ show first */
+  }
+
+  .why-us-highlight {
+    flex: 1 1 100%;             /* ✅ take full width */
+    order: 2;                   /* ✅ always comes below */
+    margin-top: 20px;           /* ✅ add spacing from text */
+  }
+}
+
+
+/* ---------- Remove underline for service links (broad first pass) ---------- */
+/* Targets links that go to any /services/ page (safe & non-global) */
+a[href*="/services/"] {
+  text-decoration: none !important;
+  color: inherit !important;
+  border-bottom: none !important;
+}
+
+/* Fallback: target likely service-card selectors (if your markup uses these) */
+.service-card a,
+.service-card,
+.services .service-card,
+.service-item a {
+  text-decoration: none !important;
+  color: inherit !important;
+  border-bottom: none !important;
+}
+
+/* Also remove from any nested elements or pseudo-elements */
+a[href*="/services/"] *,
+.service-card a * {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+a[href*="/services/"]::after,
+a[href*="/services/"]::before,
+.service-card a::after,
+.service-card a::before {
+  content: none !important;
+}
+
+/* ============================= */
+/* Wellbeing Page - Why it Matters */
+/* ============================= */
+.why-matters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;  /* keeps blocks aligned */
+  gap: 30px;             /* spacing between blocks */
+  max-width: 1200px;
+  margin: 0 auto 60px;   /* center + spacing below */
+  padding: 2rem;
+}
+
+.why-matters-block {
+  flex: 1;
+}
+
+.vertical-divider {
+  border-left: 2px solid #0a7d7d; height: 100%; /* teal vertical line */
+}
+
+/* ============================= */
+/* Explore this service */
+/* ============================= */
+
+.explore-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.8rem;       /* small, subtle text */
+  text-decoration: underline;
+  color: #0645AD;          /* standard web link blue */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .explore-link {
+  color: #0a58ca;          /* teal hover, consistent with card hover */
+}
+
+
+/* ================== Growth Dilemma Section (Final Fixed) ================== */
+.growth-dilemma {
+  padding: 80px 20px;
+  background: #f9fafb;
+  text-align: center; /* keep heading + paragraph centered */
+}
+
+.growth-dilemma h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 1rem;
+}
+
+.growth-dilemma p {
+  color: #555;
+  max-width: 780px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  font-size: 1.1rem; /* ✅ slightly larger text */
+}
+
+/* Wider and evenly spaced 3-box grid */
+.growth-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1600px;  /* wider total area */
+  width: 97%;         /* use more horizontal space */
+  margin: 0 auto;     /* center the grid */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .growth-cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .growth-cards {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+}
+
+/* Individual card styling */
+.growth-cards .card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;   /* ✅ add this */
+}
+
+.growth-cards .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.card-img {
+  width: 70px;            /* uniform size */
+  height: auto;
+  margin-bottom: 15px;    /* spacing below image */
+  display: block;
+  margin-left: 0;  /* ✅ align left */
+  margin-right: 0;    
+}
+
+/* ================== Smarter Approach Section ================== */
+.smarter-approach {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.smarter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1600px; /* ✅ matches Growth Dilemma width */
+  width: 97%;          /* ✅ same left-right margin as Growth Dilemma */
+  margin: 0 auto;     /* centers container but with controlled width */
+  padding: 0 10px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;   /* ✅ keep text + image in one row */
+  }
+
+.smarter-text {
+  flex: 0 0 45%;  /* ✅ lock text width to ~45% */
+}
+
+.smarter-text h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a2540; /* navy */
+  margin-bottom: 2.5rem;
+    line-height: 1.05;   /* ✅ tighten spacing between lines */
+}
+
+.smarter-text p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.smarter-image {
+  flex: 0 0 55%;     /* ✅ lock image width to ~50% */
+  text-align: left;  /* ✅ image aligned to left margin */
+}
+
+.smarter-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ✅ On tablets/mobiles, stack them */
+@media (max-width: 992px) {
+  .smarter-container {
+    flex-wrap: wrap;
+  }
+  .smarter-text, .smarter-image {
+    flex: 1 1 100%;
+  }
+}
+
+/* Highlighted final line in Smarter Approach */
+.highlight-line {
+  font-weight: 700;           /* bold entire line */
+  color: #333;                /* regular dark text */
+  margin-top: 22px;
+  font-size: 1.1rem;          /* slightly larger than normal */
+  line-height: 1.6;
+}
+
+.highlight-line span {
+  color: #0a58ca;             /* only highlighted words in brand blue */
+  font-weight: 700;
+}
+
+/* ================== ABOUT US PAGE ================== */
+
+/* ================= About Content ================= */
+.about-content {
+  max-width: 1100px;  /* slightly wider content block */
+  margin: 0 auto;
+  padding: 2rem 2.5rem; /* more breathing room on sides */
+  text-align: justify; /* already looks great in your current setup */
+}
+
+.about-content p {
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ==========================
+   VISION, MISSION & VALUES
+   ========================== */
+
+/* ================== Vision, Mission & Values — 3 box layout ================== */
+
+
+.vision-mission.three-box {
+  background: #fff;
+  padding: 80px 20px; /* Slightly more vertical padding */
+}
+
+.vision-mission.three-box .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+}
+
+/* Base box design */
+.vision-mission.three-box .box {
+  flex: 1 1 380px; /* Slightly wider for balance */
+  text-align: center;
+  padding: 3rem; /* Increased inner padding */
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  background: #f9fafb;
+  min-height: 420px; /* Increased height from 360px → 420px */
+}
+
+/* Individual gradients */
+.vision-mission.three-box .vision {
+  background: linear-gradient(135deg, #d2f6f3 0%, #e0f2ff 100%);
+}
+.vision-mission.three-box .mission {
+  background: linear-gradient(135deg, #e0f2ff 0%, #d2f6f3 100%);
+}
+.vision-mission.three-box .values {
+  background: linear-gradient(135deg, #dcecff 0%, #e6faf8 100%);
+}
+
+/* Hover effect */
+.vision-mission.three-box .box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.07);
+}
+
+/* Glow overlay on hover */
+.vision-mission.three-box .box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.vision-mission.three-box .box:hover::after {
+  opacity: 1;
+}
+
+/* Headings */
+.vision-mission.three-box h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #0a2540;
+}
+
+/* Icons — slightly larger + glow pulse */
+.vision-mission.three-box .icon {
+  font-size: 2.8rem; /* Increased from 2.6rem */
+  margin-bottom: 1.2rem;
+  color: #14b8a6;
+  animation: glowPulse 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Glow pulse animation */
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 0 rgba(20, 184, 166, 0);
+    transform: scale(1);
+  }
+  50% {
+     /* Increased intensity and spread */
+    text-shadow: 0 0 30px rgba(20, 184, 166, 0.9);
+                0 0 45px rgba(20, 184, 166, 0.6);
+    transform: scale(1.09); 
+  }
+}
+
+/* Responsive stacking */
+@media (max-width: 900px) {
+  .vision-mission.three-box .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vision-mission.three-box .box {
+    min-height: 380px; /* Slightly smaller height for mobile */
+  }
+}
+
+
+
+/* ================== FOUNDERS ================== */
+
+/* Founders Section */
+.founders {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 2rem 2rem; /* reduced top padding for tighter spacing */
+  flex-wrap: wrap;
+  margin-top: 20px; /* ✅ adds small gap after paragraph */
+}
+
+.founder {
+  max-width: 420px;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+/* Founder Name */
+.founders h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 0.25rem;
+}
+
+/* Founder Role (teal) */
+.founders h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #14b8a6;
+  margin-bottom: 0.75rem;
+}
+
+/* ✅ Paragraphs inside founder cards */
+.founder p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px; /* reduced from 60px */
+}
+
+/* ✅ Standardize founder images */
+.founder-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.founder:hover .founder-img {
+  transform: scale(1.05);
+}
+
+.founders-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 2.8rem; /* ✅ fixed typo (was 2r.8em) */
+  font-weight: 700;
+  color: #0a2540;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.5rem; /* ✅ reduced from 2rem */
+  font-size: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founders {
+    flex-direction: column;
+    align-items: center;
+  }
+  .founder {
+    max-width: 90%;
+  }
+}
+/* ================== FOUNDERS (ABOUT PAGE) ================== */
+.founders-about {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.founders-about-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+.founders-about-wrapper .founder {
+  flex: 0 1 48%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.founders-about-wrapper .founder-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.founders-about-wrapper h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 0.35rem;
+}
+
+.founders-about-wrapper .founder-role {
+  font-size: 1rem;
+  color: #14b8a6;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.founders-about-wrapper p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founders-about-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .founders-about-wrapper .founder {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .founders-about-wrapper .founder-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+/* === Tighten spacing between founders paragraph and photos (FOUNDERS SECTION ON HOME PAGE=== */
+.page-headers p {
+  margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
+}
+
+.founders {
+  margin-top: 0 !important;       /* ✅ remove any top margin on founders section */
+  padding-top: 0 !important;      /* ✅ ensure no extra padding */
+}
+
+
+/* ================== CTA SECTION ================== */
+
+/* CTA — simple full-width background, constrained content */
+.cta-section {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 80px 0;                 /* top / bottom only so background goes edge-to-edge */
+  background-color: #005a9c;       /* or your preferred color */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* content container keeps text centered and constrained */
+.cta-container {
+  max-width: 1100px;      /* control content width */
+  margin: 0 auto;
+  padding: 0 20px;        /* horizontal gutter so text never touches edges */
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+   margin: 0 0 40px;       /* 32px gap under heading — increase if you want more */
+  line-height: 1.2;
+  color: #eaf2f8;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #eaf2f8;
+  margin-top: 0.5rem; /* ✅ Add this to control spacing from heading */
+  margin-bottom: 4rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;  /* ✅ Add this */
+  margin-right: auto; /* ✅ Add this */
+}
+
+/* 3) Taller CTA button */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;     /* taller button: 16px top/bottom */
+  min-height: 50px;       /* ensures a consistent height */
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: #14b8a6;
+  color: #fff;
+  text-decoration: none;
+  transition: transform .18s ease, background-color .18s ease;
+}
+
+.cta-btn:hover { transform: translateY(-3px); background-color: #0fa192; }
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .cta-section { padding: 60px 0; }
+  .cta-section h2 { font-size: 1.7rem; margin-bottom: 22px; }
+  .cta-section p { font-size: 1rem; margin-bottom: 22px; }
+  .cta-btn { padding: 12px 22px; min-height: 48px; font-size: 1rem; }
+}
+
+/* ================== FOOTER ================== */
+.site-footer {
+  background-color: #f5f5f5; /* ✅ gray tone */
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+/* --- Container Layout --- */
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0 30px;
+}
+
+/* --- Brand Column --- */
+.footer-logo {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #0a2540;
+  margin-bottom: 0.6rem;
+}
+
+.footer-tagline {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+/* --- Headings --- */
+.sub-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.teal-underline::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #14b8a6;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* --- Links --- */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.45rem;
+}
+
+.footer-column ul li a {
+  color: #444;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #14b8a6;
+}
+
+/* --- Contact --- */
+.footer-contact {
+  flex: 1 1 260px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0.6rem 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.footer-contact i {
+  color: #14b8a6;
+  font-size: 1.05rem;
+  width: 20px;
+  min-width: 20px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.footer-contact a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #14b8a6;
+}
+
+/* --- Bottom Navy Bar --- */
+.footer-bottom {
+  background-color: #0a2540;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  padding: 16px 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+}
+
+/* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
+
+/* mobile hamburger button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 8px;
+  color: #0a2540;
+  background: transparent;
+  border-radius: 6px;
+}
+
+/* mobile menu container (hidden by default) */
+.mobile-nav {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  top: 72px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .32s ease, opacity .24s ease;
+  z-index: 1500;
+}
+
+.mobile-nav.open {
+  max-height: 520px;
+  opacity: 1;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: #0a2540;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.mobile-nav a:hover {
+  background: rgba(20,184,166,0.06);
+  color: #14b8a6;
+}
+
+/* Small-screen overrides */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  header nav { display: none !important; }
+  header img { height: 48px; }
+  header .brand-name { font-size: 18px; margin-left: 8px; }
+  body { padding-top: 62px; }
+  .mobile-nav { top: 62px; left: 10px; right: 10px; }
+
+  /* Hero fixes */
+  .hero {
+    padding: 2.25rem 1rem;
+    min-height: calc(100vh - 62px);
+    align-items: flex-start;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .hero-content { 
+    margin-top: 8vh; 
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .hero h1 { 
+    font-size: 1.9rem !important; 
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: 0 0 0.8rem 0 !important;
+    padding: 0 10px !important;
+  }
+
+  .hero p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    margin: 0 0 1.5rem 0 !important;
+    padding: 0 10px !important;
+    max-width: 90% !important;
+  }
+
+  /* CTA Button fixes - MAIN CORRECTION */
+  .btn-primary, 
+  .btn-secondary {
+    display: inline-flex !important; /* Keep flex for centering */
+    width: 90% !important;
+    max-width: 340px !important;
+    margin: 0.5rem auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 54px !important;
+    font-size: 1rem !important;
+    padding: 0 1.2rem !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Extra small screens (<= 480px) */
+@media (max-width: 480px) {
+  header img { height: 42px; }
+  header { padding: 8px 12px; }
+  body { padding-top: 58px; }
+  .mobile-nav.open { max-height: 420px; }
+  .hero-content { margin-top: 6vh; }
+  
+  .btn-primary, 
+  .btn-secondary {
+    width: 95% !important;
+    font-size: 0.95rem !important;
+    height: 52px !important;
+  }
+}
