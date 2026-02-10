@@ -1141,6 +1141,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   box-sizing: border-box;
 }
 
+
 /* Left Column */
 .why-us-text {
   flex: 0 0 60%;   /* ✅ fix width instead of flexible grow/shrink */
@@ -1353,6 +1354,8 @@ a[href*="/services/"]::before,
   padding: 80px 0;
   background-color: #f8f9fa; /* Light grey for visual contrast */
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .section-subtitle {
