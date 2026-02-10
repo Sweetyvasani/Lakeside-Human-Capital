@@ -536,109 +536,67 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
 /* ================== 4-STEP PATH TO HR EXCELLENCE ================== */
-.our-model-premium {
-  text-align: center;
-  padding: 80px 20px;
-  background: #f8f9fa;
+/* Part 5: 4-Step Path Styling */
+.four-step-path {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Light grey background for contrast */
 }
 
-.our-model-premium h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 22px;
-  color: #0a2540;
-}
-
-.our-model-premium p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 60px;
-}
-
-/* ---- 4-Step Path Styling ---- */
-.premium-lineflow {
+.steps-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* exactly 4 steps in one row */
-  align-items: start;
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  padding: 0 20px;
 }
 
-.premium-step {
+.step-card {
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  padding: 28px 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.premium-step:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+.step-card:hover {
+  transform: translateY(-5px);
 }
 
-/* remove teal background, just keep icon centered */
-.step-badge {
-  background: transparent;     /* no background */
-  width: auto;                 /* let image size control */
+.step-icon img {
+  width: 60px;
   height: auto;
-  border-radius: 0;            /* no circle */
-  box-shadow: none;            /* remove shadow */
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.step-badge img {
-  width: 48px;   /* make icons a little bigger */
-  height: auto;
+  margin-bottom: 20px;
 }
 
-
-/* title + desc */
-.premium-step h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #0d1b2a;
-}
-.premium-step p {
+.step-number {
+  display: block;
   font-size: 0.9rem;
-  color: #555;
+  font-weight: 800;
+  color: #9C7C4C; /* Lakeside Gold */
+  margin-bottom: 5px;
+}
+
+.step-content h3 {
+  color: #001540; /* Lakeside Navy */
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.step-content p {
+  font-size: 0.9rem;
+  color: #666;
   line-height: 1.5;
-  margin: 0;
 }
 
-/* fancy curved connectors */
-.premium-connector {
-  position: absolute;
-  top: 60px;
-  height: 40px;
-  width: calc(100% - 60px);
-  left: 80px;
-  right: 80px;
-  border-top: 3px dashed #14b8a6;   /* dashed teal line */
-  z-index: -1;
+/* Responsive */
+@media (max-width: 768px) {
+  .step-card { padding: 20px; }
 }
-
-/* responsive fallback: stack */
-@media (max-width: 992px) {
-  .premium-lineflow {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  .premium-connector {
-    display: none; /* hide connectors on mobile */
-  }
-}
-
 
 /* ================== RESOURCES & CONTACT ================== */
 .resources, .contact-form {
