@@ -1418,82 +1418,79 @@ a[href*="/services/"]::before,
 }
 
 /* ================== Smarter Approach Section ================== */
+/* Part 4: Smarter Approach Styling */
 .smarter-approach {
-  padding: 60px 20px;
-  background: #fff;
+  padding: 100px 0;
+  background-color: #ffffff; /* White to contrast with the grey Dilemma section */
 }
 
-.smarter-container {
+.approach-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  max-width: 1600px; /* ✅ matches Growth Dilemma width */
-  width: 97%;          /* ✅ same left-right margin as Growth Dilemma */
-  margin: 0 auto;     /* centers container but with controlled width */
-  padding: 0 10px;
-  box-sizing: border-box;
-  flex-wrap: nowrap;   /* ✅ keep text + image in one row */
-  }
-
-.smarter-text {
-  flex: 0 0 45%;  /* ✅ lock text width to ~45% */
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.smarter-text h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #0a2540; /* navy */
-  margin-bottom: 2.5rem;
-    line-height: 1.05;   /* ✅ tighten spacing between lines */
+.text-block {
+  flex: 1;
+  text-align: left;
 }
 
-.smarter-text p {
-  color: #555;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.text-block h2 {
+  color: #001540; /* Lakeside Navy */
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.smarter-image {
-  flex: 0 0 55%;     /* ✅ lock image width to ~50% */
-  text-align: left;  /* ✅ image aligned to left margin */
+.lead-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.smarter-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+.dna-badges {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-/* ✅ On tablets/mobiles, stack them */
-@media (max-width: 992px) {
-  .smarter-container {
-    flex-wrap: wrap;
-  }
-  .smarter-text, .smarter-image {
-    flex: 1 1 100%;
-  }
-}
-
-/* Highlighted final line in Smarter Approach */
-.highlight-line {
-  font-weight: 700;           /* bold entire line */
-  color: #333;                /* regular dark text */
-  margin-top: 22px;
-  font-size: 1.1rem;          /* slightly larger than normal */
-  line-height: 1.6;
-}
-
-.highlight-line span {
-  color: #0a58ca;             /* only highlighted words in brand blue */
+.badge {
+  background-color: #f1f3f5;
+  color: #001540; /* Lakeside Navy */
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
   font-weight: 700;
+  border: 1px solid #9C7C4C; /* Lakeside Gold border */
 }
 
-/* ================== ABOUT US PAGE ================== */
+.image-block {
+  flex: 1;
+}
 
-/* ================= About Content ================= */
+.styled-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0px #f8f9fa; /* Artistic offset shadow */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 992px) {
+  .approach-content {
+    flex-direction: column-reverse; /* Puts text above image on mobile */
+    text-align: center;
+  }
+  .text-block { text-align: center; }
+  .dna-badges { justify-content: center; }
+}
+
+
+/* ================= About US Content ================= */
 .about-content {
   max-width: 1100px;  /* slightly wider content block */
   margin: 0 auto;
