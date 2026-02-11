@@ -157,8 +157,8 @@ body {
 /* CTA Buttons */
 .btn-primary,
 .btn-secondary {
-  background: #00BFA5;        /* Teal brand color */
-  color: #fff !important;     /* White text */
+  background: #9C7C4C;        /* Gold brand color */
+  color: #001F54 !important;     /* Navy Blue text */
   min-width: 270px;           /* ✅ wider for longer text (was 250px) */
   height: 58px;               /* ✅ slightly taller for better proportion */
   display: inline-flex;       /* centers content horizontally & vertically */
@@ -182,7 +182,7 @@ body {
 /* Hover effect */
 .btn-primary:hover,
 .btn-secondary:hover {
-  background: #0fa192;        /* Darker teal on hover */
+  background: #7d633d;        /* Darker gold on hover */
   transform: translateY(-3px);
 }
 
