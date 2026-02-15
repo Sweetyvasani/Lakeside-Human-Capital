@@ -509,14 +509,16 @@ body {
 .capability-primary h3 {
   font-size: 2rem;
   font-weight: 800;
-  margin: 15px 0 15px 0;
+  margin: 10px 0 25px 0; /* increase bottom margin */
   color: #001540;
+   letter-spacing: -0.5px;
 }
 
 .cap-subtitle {
   font-size: 1.05rem;
   color: #8a632c;   /* deeper, richer gold */
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 35px;
   letter-spacing: 0.5px;
   font-weight: 700;
 }
