@@ -515,29 +515,30 @@ body {
 
 .cap-subtitle {
   font-size: 1.05rem;
-  color: #7a5c2e;   /* same refined gold */
-  margin-bottom: 25px;
+  color: #8a632c;   /* deeper, richer gold */
+  margin-bottom: 30px;
   letter-spacing: 0.5px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .cap-description {
   font-size: 1.05rem;
-  line-height: 1.9;
+  line-height: 2;
   color: #444;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .cap-list {
   list-style: none;
+   margin-top: 20px;
   padding: 0;
 }
 
 .cap-list li {
   color: #1c4ea3;   /* refined hyperlink-style blue */
   letter-spacing: 0.3px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  font-weight: 400;
+  margin-bottom: 14px;
 }
 
 .cap-number {
@@ -612,6 +613,9 @@ body {
   }
 
   .capability-primary {
+    display: flex;
+flex-direction: column;
+justify-content: center;
     border-right: none;
     padding-right: 0;
   }
