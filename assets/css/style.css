@@ -495,13 +495,10 @@ body {
 
 .capability-primary {
   flex: 1;
-  padding: 50px 60px 50px 0;
+  padding: 60px 60px 60px 40px;
   border-right: 3px solid #9C7C4C;
-  background: linear-gradient(
-    to right,
-    rgba(0, 21, 64, 0.03),
-    rgba(0, 21, 64, 0.00)
-  );
+  background: #f8f9fc;
+  border-radius: 18px 0 0 18px;
 }
 
 .cap-tag {
@@ -513,20 +510,24 @@ body {
 }
 
 .capability-primary h3 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 800;
-  margin: 15px 0 10px 0;
+  margin: 15px 0 15px 0;
   color: #001540;
 }
 
 .cap-subtitle {
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-size: 1.05rem;
+  color: #9C7C4C;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
 }
 
 .cap-description {
   font-size: 1.05rem;
   line-height: 1.9;
+  color: #444;
+  margin-bottom: 30px;
 }
 
 .cap-list {
@@ -536,6 +537,7 @@ body {
 
 .cap-list li {
   font-weight: 500;
+  margin-bottom: 12px;
 }
 
 /* RIGHT SIDE – SUPPORTING CAPABILITIES */
