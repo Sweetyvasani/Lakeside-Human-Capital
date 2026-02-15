@@ -535,6 +535,13 @@ body {
   margin-bottom: 12px;
 }
 
+.cap-number {
+  font-size: 0.9rem;
+  color: #9C7C4C;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
 /* RIGHT SIDE – SUPPORTING CAPABILITIES */
 
 .capability-secondary {
