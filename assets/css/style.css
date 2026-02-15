@@ -451,15 +451,20 @@ body {
 .capability-container {
   display: flex;
   gap: 80px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 /* LEFT SIDE – PRIMARY */
 
 .capability-primary {
   flex: 1;
-  padding-right: 60px;
-  border-right: 1px solid rgba(0, 21, 64, 0.12);
+  padding: 50px 60px 50px 0;
+  border-right: 3px solid #9C7C4C;
+  background: linear-gradient(
+    to right,
+    rgba(0, 21, 64, 0.03),
+    rgba(0, 21, 64, 0.00)
+  );
 }
 
 .cap-tag {
@@ -471,23 +476,20 @@ body {
 }
 
 .capability-primary h3 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 15px 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 15px 0 10px 0;
   color: #001540;
 }
 
 .cap-subtitle {
-  color: #9C7C4C;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .cap-description {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 25px;
+  font-size: 1.05rem;
+  line-height: 1.9;
 }
 
 .cap-list {
@@ -496,9 +498,7 @@ body {
 }
 
 .cap-list li {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-  color: #001540;
+  font-weight: 500;
 }
 
 /* RIGHT SIDE – SUPPORTING CAPABILITIES */
