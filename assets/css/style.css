@@ -516,6 +516,65 @@ body {
   transition: all 0.3s ease;
 }
 
+.cap-secondary-item:last-child {
+  border-bottom: none;
+}
+
+.cap-secondary-item h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #001540;
+  margin-bottom: 10px;
+}
+
+.cap-secondary-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.cap-secondary-item a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #9C7C4C;
+  text-decoration: none;
+}
+
+.cap-secondary-item:hover h4 {
+  color: #9C7C4C;
+}
+
+.cap-secondary-item a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------- */
+/* Mobile Responsive */
+/* --------------------------------- */
+
+@media (max-width: 1024px) {
+
+  .logic-chain {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .capability-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .capability-primary {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .narrative-heading {
+    font-size: 2.4rem;
+  }
+}
+
 
 /* ================== HR LIFECYCLE ROADMAP ================== */
 .hr-lifecycle {
