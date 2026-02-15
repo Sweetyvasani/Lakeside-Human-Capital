@@ -340,14 +340,13 @@ body {
 
 /* ================== NEW SECTION  ================== */
 
-/* ============================= */
-/* PREMIUM HR INFRASTRUCTURE BLOCK */
-/* ============================= */
+/* ========================================= */
+/* HR INFRASTRUCTURE – SPLIT PREMIUM VERSION */
+/* ========================================= */
 
 .hr-infrastructure {
   padding: 160px 0;
   background: linear-gradient(to bottom, #f4f6fa 0%, #ffffff 100%);
-  position: relative;
 }
 
 .hr-infrastructure .container {
@@ -355,15 +354,17 @@ body {
   margin: 0 auto;
 }
 
-/* ---------- Heading Area ---------- */
+/* --------------------------------- */
+/* Heading + Narrative Area */
+/* --------------------------------- */
 
 .chain-narrative {
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .narrative-heading {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 800;
   letter-spacing: -1px;
   line-height: 1.2;
@@ -372,35 +373,49 @@ body {
 }
 
 .punchy-subline {
-  font-size: 0.8rem;
-  letter-spacing: 3px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #9C7C4C;
   font-weight: 700;
-  margin-bottom: 60px;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
 }
 
-/* ---------- 3 Logic Cards ---------- */
+/* --------------------------------- */
+/* 3 LEVERS (Organization / People / Environment) */
+/* --------------------------------- */
 
 .logic-chain {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-bottom: 80px;
+  gap: 60px;
 }
 
 .chain-item {
   flex: 1;
   background: #ffffff;
-  padding: 35px;
-  border-radius: 20px;
-  box-shadow: 0 30px 80px rgba(0, 21, 64, 0.06);
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 30px 70px rgba(0, 21, 64, 0.06);
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .chain-item:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   box-shadow: 0 40px 90px rgba(0, 21, 64, 0.12);
+}
+
+.chain-item strong {
+  color: #001540;
+}
+
+.chain-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
 }
 
 /* Remove arrows completely */
@@ -408,11 +423,13 @@ body {
   display: none;
 }
 
-/* ---------- Transition Text ---------- */
+/* --------------------------------- */
+/* Transition Line */
+/* --------------------------------- */
 
 .capabilities-transition {
   text-align: center;
-  margin: 60px 0 60px 0;
+  margin: 90px 0 60px 0;
 }
 
 .capabilities-transition p {
@@ -423,96 +440,80 @@ body {
   line-height: 1.7;
 }
 
-/* ---------- 4 Capability Cards ---------- */
+/* ================================= */
+/* SPLIT CAPABILITY LAYOUT */
+/* ================================= */
 
-.infrastructure-row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 40px;
+.capability-split {
+  margin-top: 20px;
 }
 
-/* Base Card */
-
-.infra-card {
-  background: #ffffff;
-  padding: 45px 35px;
-  border-radius: 26px;
-  text-align: left;
-  box-shadow: 0 35px 100px rgba(0, 21, 64, 0.08);
+.capability-container {
   display: flex;
-  flex-direction: column;
-  transition: all 0.3s ease;
+  gap: 80px;
+  align-items: flex-start;
 }
 
-.infra-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 45px 120px rgba(0, 21, 64, 0.15);
+/* LEFT SIDE – PRIMARY */
+
+.capability-primary {
+  flex: 1;
+  padding-right: 60px;
+  border-right: 1px solid rgba(0, 21, 64, 0.12);
 }
 
-/* Primary LHC Card */
-
-.highlight-navy {
-  background: linear-gradient(135deg, #001540 0%, #002a6b 100%);
-  color: #ffffff;
-  box-shadow: 0 45px 120px rgba(0, 21, 64, 0.25);
-}
-
-/* Typography inside cards */
-
-.v-tag {
-  color: #9C7C4C;
-  font-weight: 800;
+.cap-tag {
   font-size: 0.75rem;
   letter-spacing: 2px;
-  margin-bottom: 18px;
   text-transform: uppercase;
-}
-
-.punchline {
-  font-weight: 700;
   color: #9C7C4C;
-  font-size: 0.95rem;
-  margin-bottom: 18px;
+  font-weight: 700;
 }
 
-.highlight-navy .punchline {
-  color: #c5a772;
+.capability-primary h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #001540;
 }
 
-.description {
-  font-size: 0.95rem;
+.cap-subtitle {
+  color: #9C7C4C;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cap-description {
+  font-size: 1rem;
   line-height: 1.8;
-  color: #555;
+  color: #444;
   margin-bottom: 25px;
 }
 
-.highlight-navy .description {
-  color: #e5e5e5;
+.cap-list {
+  list-style: none;
+  padding: 0;
 }
 
-.infra-link {
-  margin-top: auto;
-  color: #9C7C4C;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 0.9rem;
+.cap-list li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #001540;
 }
 
-.infra-link:hover {
-  text-decoration: underline;
+/* RIGHT SIDE – SUPPORTING CAPABILITIES */
+
+.capability-secondary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
-/* ---------- Mobile ---------- */
-
-@media (max-width: 1024px) {
-  .logic-chain {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .infrastructure-row {
-    grid-template-columns: 1fr;
-  }
+.cap-secondary-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 21, 64, 0.12);
+  transition: all 0.3s ease;
 }
 
 
