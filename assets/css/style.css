@@ -542,7 +542,7 @@ body {
 }
 
 .cap-number {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #9C7C4C;
   margin-right: 10px;
   font-weight: 600;
@@ -568,7 +568,7 @@ body {
 }
 
 .cap-secondary-item h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #001540;
   margin-bottom: 10px;
