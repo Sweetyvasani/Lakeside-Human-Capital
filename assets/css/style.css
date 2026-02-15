@@ -501,13 +501,6 @@ body {
   border-radius: 18px 0 0 18px;
 }
 
-.cap-tag {
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #9C7C4C;
-  font-weight: 700;
-}
 
 .capability-primary h3 {
   font-size: 2.4rem;
@@ -518,9 +511,10 @@ body {
 
 .cap-subtitle {
   font-size: 1.05rem;
-  color: #9C7C4C;
+  color: #7a5c2e;   /* same refined gold */
   margin-bottom: 25px;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 .cap-description {
@@ -536,7 +530,8 @@ body {
 }
 
 .cap-list li {
-  font-weight: 500;
+  color: #1f5fbf;   /* refined hyperlink-style blue */
+  font-weight: 600;
   margin-bottom: 12px;
 }
 
