@@ -340,64 +340,79 @@ body {
 
 /* ================== NEW SECTION  ================== */
 
-/* Part 2 Styling: Narrative + Infrastructure */
+/* ============================= */
+/* PREMIUM HR INFRASTRUCTURE BLOCK */
+/* ============================= */
+
 .hr-infrastructure {
-  padding: 110px 0;
-  background: linear-gradient(to bottom, #ffffff 0%, #f8f9fb 100%);
-  text-align: center;
+  padding: 160px 0;
+  background: linear-gradient(to bottom, #f4f6fa 0%, #ffffff 100%);
+  position: relative;
 }
 
-/* Narrative Bridge Styling */
-.chain-narrative {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.narrative-heading {
-  color: #001540;
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin-bottom: 18px;
-}
-.punchy-subline {
-  color: #9C7C4C;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 0.85rem;
-  margin-bottom: 60px;
-}
-.logic-chain {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1100px;
+.hr-infrastructure .container {
+  max-width: 1200px;
   margin: 0 auto;
 }
+
+/* ---------- Heading Area ---------- */
+
+.chain-narrative {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.narrative-heading {
+  font-size: 3.4rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #001540;
+  margin-bottom: 25px;
+}
+
+.punchy-subline {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #9C7C4C;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+/* ---------- 3 Logic Cards ---------- */
+
+.logic-chain {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
 .chain-item {
   flex: 1;
   background: #ffffff;
-  padding: 28px;
-  border-radius: 16px;
-  border: 1px solid #e9e9e9;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 21, 64, 0.06);
   transition: all 0.3s ease;
 }
 
 .chain-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  transform: translateY(-10px);
+  box-shadow: 0 40px 90px rgba(0, 21, 64, 0.12);
 }
+
+/* Remove arrows completely */
 .chain-arrow {
-  font-size: 1.2rem;
-  color: #c5a772;
-  font-weight: 600;
+  display: none;
 }
+
+/* ---------- Transition Text ---------- */
 
 .capabilities-transition {
   text-align: center;
-  margin: 70px 0 50px 0;
+  margin: 60px 0 60px 0;
 }
 
 .capabilities-transition p {
@@ -405,79 +420,101 @@ body {
   color: #444;
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Row Styling */
+/* ---------- 4 Capability Cards ---------- */
+
 .infrastructure-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1300px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
 }
+
+/* Base Card */
+
 .infra-card {
-  flex: 1;
   background: #ffffff;
-  padding: 35px 28px;
-  border-radius: 18px;
+  padding: 45px 35px;
+  border-radius: 26px;
   text-align: left;
-  border: 1px solid #f0f0f0;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 35px 100px rgba(0, 21, 64, 0.08);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
 }
 
 .infra-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 22px 55px rgba(0,0,0,0.1);
+  transform: translateY(-12px);
+  box-shadow: 0 45px 120px rgba(0, 21, 64, 0.15);
 }
+
+/* Primary LHC Card */
 
 .highlight-navy {
   background: linear-gradient(135deg, #001540 0%, #002a6b 100%);
-  color: #fff;
-  border: none;
+  color: #ffffff;
+  box-shadow: 0 45px 120px rgba(0, 21, 64, 0.25);
 }
-.v-tag { color: #9C7C4C; font-weight: 800; font-size: 0.85rem; margin-bottom: 10px; display: block; }
-.punchline { font-weight: 700; color: #9C7C4C; font-size: 0.9rem; margin-bottom: 15px; min-height: 40px; }
+
+/* Typography inside cards */
+
+.v-tag {
+  color: #9C7C4C;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.punchline {
+  font-weight: 700;
+  color: #9C7C4C;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.highlight-navy .punchline {
+  color: #c5a772;
+}
+
 .description {
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.8;
   color: #555;
+  margin-bottom: 25px;
 }
+
 .highlight-navy .description {
   color: #e5e5e5;
 }
-.infra-link { color: #9C7C4C; font-weight: 700; text-decoration: none; font-size: 0.85rem; margin-top: auto; padding-top: 15px;}
 
-.infrastructure-row {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  max-width: 1300px;
-  margin: 0 auto;
+.infra-link {
+  margin-top: auto;
+  color: #9C7C4C;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-.infra-card, .chain-item {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;
+.infra-link:hover {
+  text-decoration: underline;
 }
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* ---------- Mobile ---------- */
+
+@media (max-width: 1024px) {
+  .logic-chain {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .infrastructure-row {
+    grid-template-columns: 1fr;
   }
 }
 
-
-/* Mobile Optimization */
-@media (max-width: 1024px) {
-  .logic-chain, .infrastructure-row { flex-direction: column; }
-  .chain-arrow { transform: rotate(90deg); }
-}
 
 /* ================== HR LIFECYCLE ROADMAP ================== */
 .hr-lifecycle {
