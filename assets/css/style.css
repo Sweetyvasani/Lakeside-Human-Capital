@@ -345,8 +345,7 @@ body {
 /* ========================================= */
 
 .hr-infrastructure {
-  padding: 160px 0;
-  background: linear-gradient(to bottom, #f4f6fa 0%, #ffffff 100%);
+  padding: 100px 0 140px 0;
 }
 
 .hr-infrastructure .container {
@@ -373,13 +372,13 @@ body {
 }
 
 .punchy-subline {
-  font-size: 1rem;
-  color: #9C7C4C;
+  font-size: 1.05rem;
+  color: #7a5c2e;   /* darker, richer gold */
   font-weight: 500;
   max-width: 850px;
   margin: 0 auto 60px auto;
-  line-height: 1.7;
-  letter-spacing: 0.5px;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
   text-transform: none;   /* removes ALL CAPS */
 }
 
@@ -418,6 +417,28 @@ body {
   line-height: 1.7;
   color: #555;
 }
+
+.chain-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.chain-title {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #001540;
+  margin-bottom: 10px;
+}
+
+.chain-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+
 
 /* Remove arrows completely */
 .chain-arrow {
