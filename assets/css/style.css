@@ -598,6 +598,32 @@ body {
   text-decoration: underline;
 }
 
+.cap-punchline {
+  font-weight: 700;
+  color: #001540;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.cap-body {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.cap-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #9C7C4C;
+  text-decoration: none;
+}
+
+.cap-link:hover {
+  text-decoration: underline;
+}
+
+
 /* --------------------------------- */
 /* Mobile Responsive */
 /* --------------------------------- */
