@@ -627,20 +627,19 @@ body {
 .cap-link {
   display: inline-block;
   margin-top: 22px;
-  padding: 10px 18px;
-  border: 1.5px solid #9C7C4C;
-  color: #9C7C4C;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  color: #9C7C4C;
   text-decoration: none;
-  border-radius: 4px;
+  border-bottom: 2px solid #9C7C4C;
+  padding-bottom: 4px;
   transition: all 0.3s ease;
 }
 
 .cap-link:hover {
-  background-color: #9C7C4C;
-  color: #ffffff;
+  letter-spacing: 0.5px;
 }
+
 
 
 .infra-link {
