@@ -636,7 +636,7 @@ body {
 
 .cap-link {
   display: inline-flex;
-  justify-content: center;
+  justify-content: left;
   align-items: left;
   margin-top: 22px;
   padding: 8px 16px;
