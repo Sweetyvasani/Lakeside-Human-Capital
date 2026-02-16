@@ -599,7 +599,7 @@ body {
   text-decoration: underline;
 }
 
-.cap-punchline {
+.cap-secondary-item .cap-punchline {
   font-weight: 700;
     font-size: 1rem;
   color: #1c4ea3;   /* refined hyperlink-style blue */
