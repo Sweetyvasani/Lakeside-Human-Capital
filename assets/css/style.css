@@ -514,6 +514,10 @@ body {
    letter-spacing: -0.5px;
 }
 
+.cap-primary .cap-punchline {
+  font-size: 1.1rem;
+}
+
 .cap-subtitle {
   font-size: 1.05rem;
   color: #1c4ea3;   /* refined hyperlink-style blue */
@@ -612,6 +616,10 @@ body {
   line-height: 1.6;
 }
 
+.cap-punchline {
+  margin-bottom: 18px;
+}
+
 .cap-secondary-item .infra-link {
   display: inline-block;
   margin-top: 18px;   /* increase breathing space */
@@ -627,7 +635,7 @@ body {
 .cap-link {
   display: inline-block;
   margin-top: 22px;
-  padding: 10px 18px;
+  padding: 8px 16px;
   border: 1.5px solid #9C7C4C;
   color: #9C7C4C;
   font-size: 0.9rem;
@@ -635,6 +643,8 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.3s ease;
+    min-width: 270px;
+  text-align: center;
 }
 
 .cap-link:hover {
