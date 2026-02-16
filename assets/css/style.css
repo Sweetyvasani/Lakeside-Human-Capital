@@ -564,6 +564,8 @@ body {
 }
 
 .cap-secondary-item {
+  display: flex;
+  flex-direction: column;
   padding-bottom: px;
   border-bottom: 1px solid rgba(0, 21, 64, 0.12);
   transition: all 0.3s ease;
@@ -633,11 +635,12 @@ body {
 }
 
 .cap-link {
-  display: inline-flex;          /* ensures better alignment */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 280px;                  /* fixed uniform width */
-  margin-top: 22px;
+  width: 280px;
+  margin-top: auto;            /* key change */
+  align-self: flex-start;      /* keeps left alignment */
   padding: 8px 16px;
   border: 1.5px solid #9C7C4C;
   color: #9C7C4C;
