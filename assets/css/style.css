@@ -1741,14 +1741,17 @@ a[href*="/services/"]::before,
     font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #0b1f3b; /* Same navy as headings */
+  color: #b4832c;   /* Refined gold tone */
   letter-spacing: 0.5px;
 }
 
 .architecture-intro {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.7;
+  font-size: 17px;
+  color: #444;
+  line-height: 1.9;
+  letter-spacing: 0.3px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .architecture-line {
