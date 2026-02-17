@@ -1554,8 +1554,8 @@ a[href*="/services/"]::before,
 }
 
 .ecosystem-card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 20px;
+  margin-bottom: 6px;
   font-weight: 600;
   color: #0b1f3b;
 }
@@ -1591,8 +1591,8 @@ a[href*="/services/"]::before,
 .card-subtitle {
   font-size: 14px;
   font-weight: 600;
-  color: #c9a14a;
-  margin-bottom: 12px;
+  color: #1e5eff; /* Bright Blue */
+  margin-bottom: 14px;
 }
 
 .ecosystem-card p {
