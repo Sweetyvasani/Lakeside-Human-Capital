@@ -1419,16 +1419,18 @@ a[href*="/services/"]::before,
 }
 
 .outcome-list li::before {
-  content: "→";
+  content: "";
   position: absolute;
   left: 0;
+  top: 9px;
+  width: 8px;
+  height: 2px;
   color: #9aa7bd;   /* muted initial arrow */
-  font-weight: 600;
   transition: all 0.25s ease;
 }
 
 .ecosystem-card:hover .outcome-list li::before {
-  transform: translateX(4px);
+  width: 14px;
   color: #1e5eff;   /* brand blue activation */
 }
 
