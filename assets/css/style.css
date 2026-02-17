@@ -1,9 +1,14 @@
 /* ================== GLOBAL ================== */
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+/* Headings & Brand Font */
+h1, h2, h3, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -1726,11 +1731,11 @@ a[href*="/services/"]::before,
 }
 
 .architecture-subtitle {
+    font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #0b1f3b; /* Same navy as headings */
   letter-spacing: 0.5px;
-  margin-bottom: 20px;
 }
 
 .architecture-intro {
