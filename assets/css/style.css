@@ -149,8 +149,6 @@ body {
   animation: fadeInUp 1.2s ease-in-out;
   line-height: 1;
   leading:tight; 
-    max-width: 900px;
-  margin: 0 auto;
  }
 
 /* Subtext */
