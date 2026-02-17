@@ -1755,6 +1755,7 @@ a[href*="/services/"]::before,
 }
 
 .architecture-line {
+  font-size: 15px;
   text-align: center;
   margin: 60px 0;
   position: relative;
