@@ -1806,7 +1806,7 @@ a[href*="/services/"]::before,
   display: block;
   width: 40px;
   height: 1px;
-  background: #d8d8d8;
+  background: #d6b36a;  /* softer gold */
   margin-top: 8px;
 }
 
