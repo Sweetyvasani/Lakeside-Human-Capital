@@ -1816,7 +1816,7 @@ a[href*="/services/"]::before,
   margin-bottom: 18px;
 }
 
-.pillar p {
+.pillar p:not(.pillar-category) {
   font-size: 16px;
   color: #555;
   line-height: 1.8;
