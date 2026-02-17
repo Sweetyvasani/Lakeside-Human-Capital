@@ -1794,7 +1794,7 @@ a[href*="/services/"]::before,
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #0b1f3b;  /* Navy instead of muted gold */
+  color: #b4832c;  /* Same gold as subheading */
   margin-bottom: 12px;
   position: relative;
   padding-bottom: 8px;
@@ -1831,7 +1831,7 @@ a[href*="/services/"]::before,
 
 .outcome-label {
   font-weight: 700;
-  color: #b4832c;  /* Same refined gold */
+  color: #0b1f3b;  /* Navy */
 }
 
 /* Responsive */
