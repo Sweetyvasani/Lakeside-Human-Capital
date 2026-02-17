@@ -140,7 +140,7 @@ body {
 
 /* Heading */
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   margin-bottom: 1rem;  /* ✅ increase spacing below heading */
   font-weight: 700;
   color: #fff;
