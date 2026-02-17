@@ -1343,11 +1343,13 @@ a[href*="/services/"]::before,
 }
 
 
-/* ================== NEW SECTION (v.2) ================== */
+/* ================== NEW SECTION (Final) ================== */
 
-.lakeside-architecture {
-  padding: 120px 20px;
-  background-color: #fafaf8;
+/* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
+
+.ecosystem-section {
+  background: #f4f7fb;
+  padding: 100px 0;
 }
 
 .container {
@@ -1355,105 +1357,33 @@ a[href*="/services/"]::before,
   margin: 0 auto;
 }
 
-.architecture-header {
+
+/* Header */
+.section-header {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px;
-    margin-bottom: 80px;
+  max-width: 900px;
+  margin: 0 auto 70px auto;
 }
 
-.architecture-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #0b1f3b; /* Deep navy */
-  margin-bottom: 10px;
+.section-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #001F54;  /* Your true brand navy */
+  letter-spacing: -0.3px;
+  margin-bottom: 20px;
 }
 
-.architecture-subtitle {
-    font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #b4832c;   /* Refined gold tone */
-  letter-spacing: 0.5px;
-}
-
-.architecture-intro {
-  font-size: 17px;
-  color: #444;
-  line-height: 1.9;
-  letter-spacing: 0.3px;
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.architecture-line {
-  font-size: 15px;
-  text-align: center;
-  margin: 60px 0;
-  position: relative;
-  font-size: 13px;
-  letter-spacing: 2px;
-  color: #888;
-}
-
-.architecture-line::before,
-.architecture-line::after {
-  content: "";
-  display: inline-block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  vertical-align: middle;
-  margin: 0 15px;
-}
-
-.architecture-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
-}
-
-.architecture-connector {
-  height: 1px;
-  background: #e5e5e5;
-  margin: 40px 0 60px 0;
-}
-
-.pillar {
-  text-align: left;
-}
-
-.pillar-category {
+.section-header p {
   font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #b4832c;  /* Same gold as subheading */
-  margin-bottom: 12px;
-  position: relative;
-  padding-bottom: 8px;
-}
-
-.pillar-category::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 1px;
-  background: #d6b36a;  /* softer gold */
-  margin-top: 8px;
-}
-
-.pillar h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #0b1f3b;
-  margin-bottom: 18px;
-}
-
-.pillar p:not(.pillar-category) {
-  font-size: 16px;
-  color: #555;
   line-height: 1.8;
+  color: #5c6b82;
+}
+
+/* Grid */
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 32px;
 }
 
 .pillar-outcome {
@@ -1503,59 +1433,6 @@ a[href*="/services/"]::before,
 
 .ecosystem-card:hover .outcome-list li {
   color: #001F54;
-}
-
-
-/* Responsive */
-@media (max-width: 992px) {
-  .architecture-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .architecture-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-/* ================== NEW SECTION (Final) ================== */
-
-/* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
-
-.ecosystem-section {
-  background: #f4f7fb;
-  padding: 100px 0;
-}
-
-/* Header */
-.section-header {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 70px auto;
-}
-
-.section-header h2 {
-  font-size: 34px;
-  font-weight: 800;
-  color: #001F54;  /* Your true brand navy */
-  letter-spacing: -0.3px;
-  margin-bottom: 20px;
-}
-
-.section-header p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #5c6b82;
-}
-
-/* Grid */
-.ecosystem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 32px;
 }
 
 /* Cards */
