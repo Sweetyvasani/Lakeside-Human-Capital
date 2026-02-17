@@ -1718,7 +1718,8 @@ a[href*="/services/"]::before,
 }
 
 .architecture-header h2 {
-  font-size: 32px;
+  font-size: 36px;
+  font-weight: 700;
   letter-spacing: 1px;
   color: #0b1f3b; /* Deep navy */
   margin-bottom: 10px;
@@ -1774,9 +1775,20 @@ a[href*="/services/"]::before,
 
 .pillar-category {
   font-size: 12px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   color: #8a6d3b;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.pillar-category::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #d8d8d8;
+  margin-top: 8px;
 }
 
 .pillar h3 {
