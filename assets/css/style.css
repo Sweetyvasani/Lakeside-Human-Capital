@@ -1481,9 +1481,10 @@ a[href*="/services/"]::before,
   font-size: 14.5px;
   font-weight: 500;
   color: #0b1f3b;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   position: relative;
-  padding-left: 18px;
+  padding-left: 20px;
+  transition: all 0.25s ease;
 }
 
 .outcome-list li::before {
@@ -1492,6 +1493,16 @@ a[href*="/services/"]::before,
   left: 0;
   color: #1e5eff;  /* brand blue arrow */
   font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.ecosystem-card:hover .outcome-list li::before {
+  transform: translateX(4px);
+  color: #001F54;  /* brand navy */
+}
+
+.ecosystem-card:hover .outcome-list li {
+  color: #001F54;
 }
 
 
