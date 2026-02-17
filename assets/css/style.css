@@ -1801,6 +1801,7 @@ a[href*="/services/"]::before,
 }
 
 .pillar-category::after {
+  font-size: 16px;
   content: "";
   display: block;
   width: 40px;
