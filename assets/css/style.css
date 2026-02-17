@@ -1701,8 +1701,8 @@ a[href*="/services/"]::before,
 /* ================== NEW SECTION (v.2) ================== */
 
 .lakeside-architecture {
-  padding: 100px 20px;
-  background-color: #ffffff;
+  padding: 120px 20px;
+  background-color: #fafaf8;
 }
 
 .container {
@@ -1714,6 +1714,7 @@ a[href*="/services/"]::before,
   text-align: center;
   max-width: 800px;
   margin: 0 auto 60px;
+    margin-bottom: 80px;
 }
 
 .architecture-header h2 {
@@ -1761,6 +1762,12 @@ a[href*="/services/"]::before,
   gap: 40px;
 }
 
+.architecture-connector {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 40px 0 60px 0;
+}
+
 .pillar {
   text-align: left;
 }
@@ -1773,9 +1780,10 @@ a[href*="/services/"]::before,
 }
 
 .pillar h3 {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
   color: #0b1f3b;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .pillar p {
@@ -1785,9 +1793,10 @@ a[href*="/services/"]::before,
 }
 
 .pillar-outcome {
-  margin-top: 15px;
+  margin-top: 18px;
   font-style: italic;
-  color: #6b5a3a;
+  color: #8a6d3b;
+  font-weight: 500;
 }
 
 /* Responsive */
