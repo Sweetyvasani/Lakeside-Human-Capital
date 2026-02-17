@@ -1457,15 +1457,24 @@ a[href*="/services/"]::before,
 }
 
 .pillar-outcome {
-  margin-top: 22px;
+  font-size: 14.5px;
+  margin-top: 18px;
   font-style: italic;
-  color: #8a6d3b;
+  color: #0b1f3b;
   font-weight: 500;
 }
 
 .outcome-label {
   font-weight: 700;
-  color: #0b1f3b;  /* Navy */
+  color: #1e5eff;
+}
+
+.outcome-points {
+    font-size: 14.5px;
+  font-weight: 500;
+  color: #0b1f3b;
+  margin-top: 6px;
+  margin-bottom: 18px;
 }
 
 /* Responsive */
@@ -1641,7 +1650,7 @@ a[href*="/services/"]::before,
 .learn-more {
   font-size: 14px;
   font-weight: 600;
-  color: #0b1f3b;
+  color: #1e5eff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
