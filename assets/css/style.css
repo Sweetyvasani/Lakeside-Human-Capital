@@ -1532,26 +1532,6 @@ a[href*="/services/"]::before,
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.ecosystem-card .icon {
-  font-size: 28px;
-  margin-bottom: 18px;
-}
-
-.ecosystem-card.primary .icon {
-  color: #0b3d91; /* Blue dominance */
-}
-
-.ecosystem-card .icon.health {
-  color: #2bb673;
-}
-
-.ecosystem-card .icon.happiness {
-  color: #f4b400;
-}
-
-.ecosystem-card .icon.breathe {
-  color: #2aa8d8;
-}
 
 .ecosystem-card h3 {
   font-size: 20px;
@@ -1616,6 +1596,21 @@ a[href*="/services/"]::before,
   font-weight: 600;
 }
 
+.icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(11, 31, 59, 0.06); /* very soft navy tint */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.icon-wrapper i {
+  font-size: 20px;
+  color: #0b1f3b; /* brand navy */
+}
 
 
 
