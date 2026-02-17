@@ -516,6 +516,7 @@ body {
 
 .cap-primary .cap-punchline {
   font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .cap-subtitle {
@@ -639,7 +640,7 @@ body {
   justify-content: left;
   align-items: left;
   margin-top: 22px;
-  padding: 8px 16px;
+  padding: 6px 14px;
   border: 1.5px solid #9C7C4C;
   color: #9C7C4C;
   font-size: 0.9rem;
@@ -655,6 +656,7 @@ body {
 .cap-link:hover {
   background-color: #9C7C4C;
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 
