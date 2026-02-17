@@ -1820,7 +1820,6 @@ a[href*="/services/"]::before,
   font-size: 15px;
   color: #555;
   line-height: 1.7;
-  text-align: justify;
 }
 
 .pillar-outcome {
