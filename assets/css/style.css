@@ -1462,7 +1462,7 @@ a[href*="/services/"]::before,
   font-style: italic;
   color: #0b1f3b;
   font-weight: 500;
-  margin-bottom: 4px;   /* reduce gap */
+  margin-bottom: 2px;   /* reduce gap */
 }
 
 .outcome-label {
