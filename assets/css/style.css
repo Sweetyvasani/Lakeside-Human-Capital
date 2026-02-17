@@ -1485,83 +1485,131 @@ a[href*="/services/"]::before,
 
 /* ================== NEW SECTION (Final) ================== */
 
-/* Ecosystem Section */
+/* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
+
 .ecosystem-section {
-  background: #f6f8fb;
-  padding: 80px 0;
+  background: #f4f7fb;
+  padding: 100px 0;
 }
 
+/* Header */
 .section-header {
   text-align: center;
   max-width: 900px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 70px auto;
 }
 
 .section-header h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 34px;
   font-weight: 700;
   color: #0b1f3b;
+  margin-bottom: 20px;
 }
 
 .section-header p {
   font-size: 16px;
   line-height: 1.8;
-  color: #555;
+  color: #5f6b7a;
 }
 
 /* Grid */
 .ecosystem-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 32px;
 }
 
 /* Cards */
 .ecosystem-card {
   background: #ffffff;
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
-  text-align: left;
+  padding: 36px 28px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(11, 31, 59, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .ecosystem-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(11, 31, 59, 0.08);
 }
 
+/* Top Accent Line */
+.ecosystem-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #e3e8f0;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
 
+/* Primary Card (Dominant but Elegant) */
+.ecosystem-card.primary {
+  box-shadow: 0 18px 45px rgba(11, 61, 145, 0.12);
+  transform: translateY(-4px);
+}
+
+.ecosystem-card.primary::before {
+  background: #0b3d91;
+}
+
+/* Accent colors for others */
+.ecosystem-card:nth-child(2)::before {
+  background: #2bb673; /* Health – soft green */
+}
+
+.ecosystem-card:nth-child(3)::before {
+  background: #d4a73f; /* Happiness – soft gold */
+}
+
+.ecosystem-card:nth-child(4)::before {
+  background: #2c7be5; /* BreathEasier – soft blue */
+}
+
+/* Premium Icon Container */
+.icon-wrapper {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: #f1f4f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+}
+
+.ecosystem-card.primary .icon-wrapper {
+  background: rgba(11, 61, 145, 0.08);
+}
+
+.ecosystem-card:nth-child(2) .icon-wrapper {
+  background: rgba(43, 182, 115, 0.08);
+}
+
+.ecosystem-card:nth-child(3) .icon-wrapper {
+  background: rgba(212, 167, 63, 0.10);
+}
+
+.ecosystem-card:nth-child(4) .icon-wrapper {
+  background: rgba(44, 123, 229, 0.08);
+}
+
+.icon-wrapper i {
+  font-size: 22px;
+  color: #0b1f3b;
+}
+
+/* Typography */
 .ecosystem-card h3 {
   font-size: 20px;
-  margin-bottom: 6px;
   font-weight: 600;
   color: #0b1f3b;
-}
-
-.ecosystem-card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.learn-more {
-  font-size: 14px;
-  color: #0b1f3b;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.learn-more:hover {
-  text-decoration: underline;
-}
-
-/* Subtle Dominance */
-.ecosystem-card.primary {
-  border: 2px solid #0b3d91;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(11,61,145,0.12);
+  margin-bottom: 8px;
 }
 
 .ecosystem-card.primary h3 {
@@ -1571,46 +1619,36 @@ a[href*="/services/"]::before,
 .card-subtitle {
   font-size: 14px;
   font-weight: 600;
-  color: #1e5eff; /* Bright Blue */
-  margin-bottom: 14px;
+  color: #1e5eff;
+  margin-bottom: 16px;
 }
 
 .ecosystem-card p {
   font-size: 15px;
   line-height: 1.7;
-  margin-bottom: 18px;
+  color: #5f6b7a;
+  margin-bottom: 20px;
 }
 
+/* Links */
 .learn-more {
+  font-size: 14px;
   font-weight: 600;
   color: #0b1f3b;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .learn-more:hover {
   color: #c9a14a;
 }
 
+/* Highlighted names in intro paragraph */
 .highlight-blue {
-  color: #1e5eff; /* clean bright corporate blue */
+  color: #1e5eff;
   font-weight: 600;
 }
 
-.icon-wrapper {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: rgba(11, 31, 59, 0.06); /* very soft navy tint */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-
-.icon-wrapper i {
-  font-size: 20px;
-  color: #0b1f3b; /* brand navy */
-}
 
 
 
