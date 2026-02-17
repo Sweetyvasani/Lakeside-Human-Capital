@@ -1655,6 +1655,11 @@ a[href*="/services/"]::before,
   font-weight: 600;
 }
 
+.framework-line {
+  font-weight: 600;
+  color: #001F54;
+  margin-bottom: 18px;
+}
 
 
 
