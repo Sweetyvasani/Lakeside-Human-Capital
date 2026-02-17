@@ -1551,8 +1551,8 @@ a[href*="/services/"]::before,
 /* Primary Card (Dominant but Elegant) */
 .ecosystem-card.primary {
   border: 2px solid #001F54;
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(0, 31, 84, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 31, 84, 0.18);
   background: linear-gradient(to bottom, #ffffff 0%, #f9fbff 100%);
 }
 
