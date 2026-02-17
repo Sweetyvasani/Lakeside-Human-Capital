@@ -1482,55 +1482,94 @@ a[href*="/services/"]::before,
 }
 
 
-/* ================== NEW SECTION (v.2) ================== */
-<section class="ecosystem-section">
-  <div class="container">
 
-    <div class="section-header">
-      <h2>Our Integrated Human Performance Network</h2>
-      <p>
-        Lakeside Human Capital collaborates with Lakeside Health, Lakeside Happiness, and Lakeside BreathEasier to deliver connected systems that strengthen HR architecture, workforce resilience, cultural intelligence, and performance-focused environments.
-      </p>
-    </div>
+/* ================== NEW SECTION (Final) ================== */
 
-    <div class="ecosystem-grid">
+/* Ecosystem Section */
+.ecosystem-section {
+  background: #f6f8fb;
+  padding: 80px 0;
+}
 
-      <!-- Primary Card -->
-      <div class="ecosystem-card primary">
-        <div class="icon">🏢</div>
-        <h3>Lakeside Human Capital</h3>
-        <p>HR Strategy & CHRO Architecture</p>
-        <a href="#" class="learn-more">Learn More →</a>
-      </div>
+.section-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+}
 
-      <!-- Health -->
-      <div class="ecosystem-card">
-        <div class="icon">💚</div>
-        <h3>Lakeside Health</h3>
-        <p>Mental Wellness & Workforce Resilience</p>
-        <a href="https://health.lakesideasia.com/" target="_blank" class="learn-more">Learn More →</a>
-      </div>
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #0b1f3b;
+}
 
-      <!-- Happiness -->
-      <div class="ecosystem-card">
-        <div class="icon">📊</div>
-        <h3>Lakeside Happiness</h3>
-        <p>Culture & Behavioral Intelligence</p>
-        <a href="https://rohitnalwade.github.io/Happiness/" target="_blank" class="learn-more">Learn More →</a>
-      </div>
+.section-header p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
 
-      <!-- BreathEasier -->
-      <div class="ecosystem-card">
-        <div class="icon">🌿</div>
-        <h3>Lakeside BreathEasier</h3>
-        <p>Performance-Focused Work Environments</p>
-        <a href="https://rohitnalwade.github.io/" target="_blank" class="learn-more">Learn More →</a>
-      </div>
+/* Grid */
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
 
-    </div>
+/* Cards */
+.ecosystem-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+  text-align: left;
+}
 
-  </div>
-</section>
+.ecosystem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ecosystem-card .icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.ecosystem-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0b1f3b;
+}
+
+.ecosystem-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.learn-more {
+  font-size: 14px;
+  color: #0b1f3b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Subtle Dominance */
+.ecosystem-card.primary {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ecosystem-card.primary h3 {
+  font-weight: 700;
+}
+
 
 
 
