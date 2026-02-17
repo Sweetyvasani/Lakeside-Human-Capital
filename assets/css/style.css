@@ -1793,7 +1793,8 @@ a[href*="/services/"]::before,
 .pillar-category {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #8a6d3b;
+  font-weight: 600;
+  color: #0b1f3b;  /* Navy instead of muted gold */
   margin-bottom: 12px;
   position: relative;
   padding-bottom: 8px;
@@ -1818,14 +1819,20 @@ a[href*="/services/"]::before,
 .pillar p {
   font-size: 15px;
   color: #555;
-  line-height: 1.6;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 .pillar-outcome {
-  margin-top: 18px;
+  margin-top: 22px;
   font-style: italic;
   color: #8a6d3b;
   font-weight: 500;
+}
+
+.outcome-label {
+  font-weight: 700;
+  color: #b4832c;  /* Same refined gold */
 }
 
 /* Responsive */
