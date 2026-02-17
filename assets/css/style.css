@@ -1412,9 +1412,9 @@ a[href*="/services/"]::before,
   font-size: 14.5px;
   font-weight: 500;
   color: #0b1f3b;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   position: relative;
-  padding-left: 26px;
+  padding-left: 28px;
   transition: all 0.25s ease;
 }
 
@@ -1422,15 +1422,15 @@ a[href*="/services/"]::before,
   content: "";
   position: absolute;
   left: 0;
-  top: 9px;
-  width: 8px;
+  top: 10px;
+  width: 12px;
   height: 2px;
-  color: #9aa7bd;   /* muted initial arrow */
-  transition: all 0.25s ease;
+  color: #c7cfdd;  /* soft neutral */
+  transition: all 0.35s ease;
 }
 
 .ecosystem-card:hover .outcome-list li::before {
-  width: 14px;
+  width: 22px;
   color: #1e5eff;   /* brand blue activation */
 }
 
