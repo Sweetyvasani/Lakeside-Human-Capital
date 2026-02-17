@@ -1578,7 +1578,18 @@ a[href*="/services/"]::before,
   color: #001F54;
   letter-spacing: 0.5px;
   margin-top: 28px;      /* increase space above */
-  margin-bottom: 22px;   /* increase space below */  
+  margin-bottom: 22px;   /* increase space below */
+  position: relative;
+}
+
+.framework-line::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #001F54;
+  margin: 12px auto 0 auto;
+  opacity: 0.15;
 }
 
 .framework-intro p:last-child {
