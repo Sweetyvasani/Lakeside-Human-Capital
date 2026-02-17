@@ -1534,7 +1534,23 @@ a[href*="/services/"]::before,
 
 .ecosystem-card .icon {
   font-size: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+}
+
+.ecosystem-card.primary .icon {
+  color: #0b3d91; /* Blue dominance */
+}
+
+.ecosystem-card .icon.health {
+  color: #2bb673;
+}
+
+.ecosystem-card .icon.happiness {
+  color: #f4b400;
+}
+
+.ecosystem-card .icon.breathe {
+  color: #2aa8d8;
 }
 
 .ecosystem-card h3 {
