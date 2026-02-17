@@ -1570,6 +1570,28 @@ a[href*="/services/"]::before,
   font-weight: 700;
 }
 
+.card-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c9a14a;
+  margin-bottom: 12px;
+}
+
+.ecosystem-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.learn-more {
+  font-weight: 600;
+  color: #0b1f3b;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  color: #c9a14a;
+}
 
 
 
