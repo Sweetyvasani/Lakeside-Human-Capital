@@ -1502,7 +1502,8 @@ a[href*="/services/"]::before,
 .section-header h2 {
   font-size: 34px;
   font-weight: 800;
-  color: #122c5c;
+  color: #001F54;  /* Your true brand navy */
+  letter-spacing: -0.3px;
   margin-bottom: 20px;
 }
 
