@@ -717,7 +717,7 @@ a[href*="/services/"]::before,
 /* Part 3: Growth Dilemma Styling */
 .growth-dilemma {
   padding: 80px 0;
-    background-color: #f1f4f8;
+    background-color: #edf2f8;;
     font-family: 'Inter', sans-serif;
     color: #333;
 }
@@ -753,7 +753,7 @@ a[href*="/services/"]::before,
   background: #fff;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 30px rgba(0, 31, 84, 0.06);
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -774,7 +774,7 @@ a[href*="/services/"]::before,
 .bridge-text {
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid #e6e9ef;
+  border-top: 1px solid #e6e9ee;
 }
 
 .growth-cards h3 {
@@ -790,13 +790,15 @@ font-size: 18px;
   font-size: 15px;
   line-height: 1.7;
   color: #5f6b7a;
+  margin-bottom: 14px;
 }
 
 .growth-cards .label {
   font-size: 14px;
   font-weight: 600;
   color: #1e5eff;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  display: block;
 }
 
 
