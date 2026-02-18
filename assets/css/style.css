@@ -247,64 +247,112 @@ body {
   }
 }
 
-/* ================== Impact ================== */
-/* Institutional Impact Styling */
+/* ================= Institutional Impact ================= */
 
 .institutional-impact {
-  padding: 80px 0;
-  background-color: #ffffff;
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafc 100%);
   text-align: center;
 }
 
-.impact-table-container {
-  max-width: 1000px;
-  margin: 40px auto;
-  overflow-x: auto;
-  padding: 0 20px;
+/* Section Title */
+.institutional-impact .section-title {
+  color: #001540;
+  margin-bottom: 10px;
 }
 
+.institutional-impact .section-subtitle {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  color: #5a5a5a;
+  font-size: 1.05rem;
+}
+
+/* Table Container */
+.impact-table-container {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+/* Table */
 .impact-table {
   width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  background: #fff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  border-radius: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 21, 64, 0.06);
 }
 
+/* Header */
 .impact-table th {
-  background-color: #001540; /* Lakeside Navy */
-  color: #fff;
-  padding: 20px;
-  font-size: 1.1rem;
+  background-color: #001540;
+  color: #ffffff;
+  padding: 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
+/* Body Cells */
 .impact-table td {
-  padding: 20px;
-  border-bottom: 1px solid #eee;
+  padding: 24px;
+  border-bottom: 1px solid #f0f0f0;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 0.98rem;
 }
 
 .impact-table tr:last-child td {
   border-bottom: none;
 }
 
+/* First Column Styling */
 .impact-table td:first-child {
-  background-color: #fdfaf5; /* Subtle highlight for the sector column */
+  background-color: #fdfaf5;
   color: #001540;
+  font-weight: 600;
   width: 35%;
 }
 
+/* Highlighted Numbers */
+.impact-highlight {
+  font-weight: 700;
+  color: #0f2a68;
+}
+
+/* CTA Section */
 .impact-cta {
   margin-top: 40px;
 }
 
-.impact-cta p {
+.impact-question {
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  color: #001540;
+  margin-bottom: 25px;
 }
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: #001540;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0f2a68;
+  transform: translateY(-2px);
+}
+
 
 
 /* ================== SERVICES ================== */
