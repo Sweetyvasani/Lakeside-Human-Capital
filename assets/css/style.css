@@ -251,106 +251,73 @@ body {
 
 .institutional-impact {
   padding: 100px 0;
-  background: linear-gradient(to bottom, #ffffff 0%, #f9fafc 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f8fb 100%);
   text-align: center;
 }
 
-/* Section Title */
-.institutional-impact .section-title {
-  color: #001540;
-  margin-bottom: 10px;
-}
-
 .institutional-impact .section-subtitle {
-  max-width: 720px;
-  margin: 0 auto 50px;
-  color: #5a5a5a;
-  font-size: 1.05rem;
-}
-
-/* Table Container */
-.impact-table-container {
-  max-width: 1100px;
+  max-width: 700px;
   margin: 0 auto 60px;
-  padding: 0 20px;
-  overflow-x: auto;
+  color: #6b7280;
 }
 
-/* Table */
-.impact-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+/* Cards Container */
+.impact-cards {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Individual Card */
+.impact-card {
   background: #ffffff;
   border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 21, 64, 0.06);
-}
-
-/* Header */
-.impact-table th {
-  background-color: #001540;
-  color: #ffffff;
-  padding: 22px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* Body Cells */
-.impact-table td {
-  padding: 24px;
-  border-bottom: 1px solid #f0f0f0;
-  color: #444;
-  line-height: 1.7;
-  font-size: 0.98rem;
-}
-
-.impact-table tr:last-child td {
-  border-bottom: none;
-}
-
-/* First Column Styling */
-.impact-table td:first-child {
-  background-color: #fdfaf5;
-  color: #001540;
-  font-weight: 600;
-  width: 35%;
-}
-
-/* Highlighted Numbers */
-.impact-highlight {
-  font-weight: 700;
-  color: #0f2a68;
-}
-
-/* CTA Section */
-.impact-cta {
-  margin-top: 40px;
-}
-
-.impact-question {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #001540;
-  margin-bottom: 25px;
-}
-
-/* Button */
-.btn-primary {
-  display: inline-block;
-  padding: 14px 30px;
-  background-color: #001540;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: 600;
+  padding: 30px 35px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 8px 30px rgba(0, 21, 64, 0.05);
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #0f2a68;
-  transform: translateY(-2px);
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 21, 64, 0.08);
+}
+
+/* Gold Accent Line */
+.impact-accent {
+  width: 4px;
+  background: linear-gradient(to bottom, #c5a46d, #b89352);
+  border-radius: 4px;
+}
+
+/* Card Content */
+.impact-content h3 {
+  color: #001540;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.impact-content p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.impact-highlight {
+  font-weight: 700;
+  color: #b89352;
+}
+
+/* CTA */
+.impact-question {
+  font-weight: 600;
+  color: #001540;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
 }
 
 
