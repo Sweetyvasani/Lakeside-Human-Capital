@@ -756,13 +756,21 @@ a[href*="/services/"]::before,
   box-shadow: 0 8px 30px rgba(0, 31, 84, 0.06);
  border-bottom: 4px solid #9C7C4C; /* Gold Accent for all */
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
 }
 
 .growth-cards .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 31, 84, 0.12);
+  border-bottom: 4px solid #9C7C4C;
+  box-shadow:
+    0 18px 45px rgba(0, 31, 84, 0.12),
+    0 4px 0 #9C7C4C;
 }
 
+.growth-cards .card:hover h3 {
+  color: #000f2e;
+}
 
 .card-icon {
   font-size: 2rem;
