@@ -320,6 +320,23 @@ body {
   font-size: 1.05rem;
 }
 
+.institutional-impact .impact-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #c5a46d, #b89352);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(184, 147, 82, 0.35);
+}
+
+.institutional-impact .impact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(184, 147, 82, 0.45);
+}
+
 
 
 /* ================== SERVICES ================== */
