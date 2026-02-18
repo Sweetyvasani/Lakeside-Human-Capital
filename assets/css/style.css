@@ -772,11 +772,9 @@ a[href*="/services/"]::before,
 }
 
 .bridge-text {
-  margin-top: 15px;
-  padding-top: 15px;
-  border-top: 1px solid #eee;
-  color: #001540; /* Lakeside Navy */
-  font-size: 0.95rem;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e6e9ef;
 }
 
 .growth-cards h3 {
