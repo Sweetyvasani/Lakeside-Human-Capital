@@ -774,7 +774,7 @@ a[href*="/services/"]::before,
 .bridge-text {
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid #9C7C4C;  /* Lakeside Gold */
+  border-top: 2px solid #9C7C4C;  /* Lakeside Gold */
 }
 
 .growth-cards h3 {
