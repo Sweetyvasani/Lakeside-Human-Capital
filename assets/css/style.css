@@ -717,7 +717,7 @@ a[href*="/services/"]::before,
 /* Part 3: Growth Dilemma Styling */
 .growth-dilemma {
   padding: 80px 0;
-    background-color: #f8f9fa; /* Light grey background */
+    background-color: #f1f4f8;
     font-family: 'Inter', sans-serif;
     color: #333;
 }
@@ -728,12 +728,12 @@ a[href*="/services/"]::before,
     font-size: 34px;
   font-weight: 800;
   letter-spacing: -0.3px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .section-subtitle {
   max-width: 900px;
-  margin: 0 auto 60px;
+  margin: 0 auto 70px;
   font-size: 16px;
   line-height: 1.8;
   color: #5c6b82;
@@ -796,6 +796,7 @@ font-size: 18px;
   font-size: 14px;
   font-weight: 600;
   color: #1e5eff;
+  margin-bottom: 6px;
 }
 
 
