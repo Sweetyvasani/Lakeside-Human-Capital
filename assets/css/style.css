@@ -790,17 +790,20 @@ font-size: 18px;
   font-size: 15px;
   line-height: 1.7;
   color: #5f6b7a;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .growth-cards .label {
   font-size: 14px;
   font-weight: 600;
   color: #1e5eff;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   display: block;
 }
 
+.growth-cards .card p.label {
+  margin-bottom: 6px;
+}
 
 /* ================== Smarter Approach Section ================== */
 /* Part 4: Smarter Approach Styling */
