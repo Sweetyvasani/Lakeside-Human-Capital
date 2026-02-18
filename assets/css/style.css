@@ -754,6 +754,7 @@ a[href*="/services/"]::before,
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 31, 84, 0.06);
+  border-bottom: 4px solid #9C7C4C; /* Gold Accent for all */
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -762,9 +763,6 @@ a[href*="/services/"]::before,
   transform: translateY(-5px);
 }
 
-.highlight-card {
-  border-bottom: 5px solid #9C7C4C; /* Lakeside Gold accent */
-}
 
 .card-icon {
   font-size: 2rem;
