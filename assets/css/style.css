@@ -754,7 +754,7 @@ a[href*="/services/"]::before,
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 31, 84, 0.06);
-  border-bottom: 4px solid #9C7C4C; /* Gold Accent for all */
+  border: 1px solid rgba(0, 31, 84, 0.08);
   text-align: left;
   transition: transform 0.3s ease;
 }
