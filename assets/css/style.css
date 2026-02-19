@@ -1019,7 +1019,7 @@ font-size: 18px;
 
 
 
-/* ================= Blueprint Architecture Grid (Circular Core) ================= */
+/* ================= Refined Blueprint Architecture ================= */
 
 .framework-blueprint {
   padding: 140px 0;
@@ -1035,63 +1035,56 @@ font-size: 18px;
 
 .framework-blueprint .section-subtitle {
   max-width: 720px;
-  margin: 0 auto 80px;
+  margin: 0 auto 100px;
   color: #6b7280;
 }
 
-/* Wrapper */
+/* Layout wrapper */
 .blueprint-wrapper {
   position: relative;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  min-height: 500px;
+  min-height: 520px;
 }
 
-/* Center Circle */
+/* CENTER CIRCLE (Adjusted Size + Better Balance) */
 .blueprint-core {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 280px;
-  height: 280px;
+  width: 240px;              /* Reduced from 280 */
+  height: 240px;
   border-radius: 50%;
   background: #001F54;
   color: #fff;
-  padding: 40px 25px;
+  padding: 35px 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 25px 60px rgba(0, 31, 84, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 31, 84, 0.25);
 }
 
 .blueprint-core h3 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 
 .blueprint-core p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   opacity: 0.85;
 }
 
-/* Steps */
+/* Step Blocks */
 .blueprint-step {
   position: absolute;
-  width: 240px;
+  width: 260px;
   text-align: center;
-}
-
-.blueprint-step span {
-  font-weight: 700;
-  color: #2c7be5;
-  display: block;
-  margin-bottom: 8px;
 }
 
 .blueprint-step h4 {
   color: #001F54;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 1rem;
 }
 
@@ -1100,121 +1093,179 @@ font-size: 18px;
   color: #4b5563;
 }
 
-/* Positioning */
-.step-1 { top: 0; left: 50%; transform: translateX(-50%); }
-.step-2 { right: 0; top: 50%; transform: translateY(-50%); }
-.step-3 { bottom: 0; left: 50%; transform: translateX(-50%); }
-.step-4 { left: 0; top: 50%; transform: translateY(-50%); }
+/* Brand Colored Numbers */
+.step-1 span { color: #2bb673; font-weight: 700; }
+.step-2 span { color: #d4a73f; font-weight: 700; }
+.step-3 span { color: #2c7be5; font-weight: 700; }
+.step-4 span { color: #2bb673; font-weight: 700; }
 
-/* Optional subtle connection lines */
-.blueprint-wrapper::before,
-.blueprint-wrapper::after {
+/* Spacing Adjustments */
+.step-1 { top: -20px; left: 50%; transform: translateX(-50%); }
+.step-2 { right: -20px; top: 50%; transform: translateY(-50%); }
+.step-3 { bottom: -20px; left: 50%; transform: translateX(-50%); }
+.step-4 { left: -20px; top: 50%; transform: translateY(-50%); }
+
+/* Optional subtle connection dots */
+.blueprint-wrapper::before {
   content: "";
   position: absolute;
-  background: rgba(0, 31, 84, 0.1);
-}
-
-.blueprint-wrapper::before {
-  width: 2px;
-  height: 100%;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-
-.blueprint-wrapper::after {
-  height: 2px;
-  width: 100%;
+  width: 70%;
+  height: 70%;
+  border: 1px dashed rgba(0, 31, 84, 0.08);
+  border-radius: 50%;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
 
-
-
-/* ================= Vertical Transformation Spine (Directional Process Flow) ================= */
-
-/* ================= Vertical Transformation Spine ================= */
+/* ================= Framework Spine ================= */
 
 .framework-spine {
   padding: 140px 0;
   background: #ffffff;
-  text-align: center;
+  position: relative;
 }
 
 .framework-spine .section-title {
-  font-size: 2rem;
+  text-align: center;
   color: #001F54;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .framework-spine .section-subtitle {
-  max-width: 720px;
-  margin: 0 auto 90px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 100px;
   color: #6b7280;
 }
 
-/* Spine Layout */
+/* Wrapper */
+
 .spine-wrapper {
   position: relative;
-  max-width: 700px;
+  max-width: 950px;
   margin: 0 auto;
 }
+
+/* Vertical Spine Line */
 
 .spine-line {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 2px;
+  width: 3px;
   height: 100%;
-  background: linear-gradient(to bottom, #2bb673, #2c7be5);
   transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    #2bb673,
+    #d4a73f,
+    #2c7be5,
+    #2bb673
+  );
+  opacity: 0.8;
 }
 
-/* Step */
+/* Steps */
+
 .spine-step {
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
   position: relative;
 }
 
-.spine-step:nth-child(even) {
-  flex-direction: row-reverse;
+.spine-step.left {
+  justify-content: flex-start;
 }
 
-.spine-number {
-  background: #001F54;
-  color: #fff;
-  width: 60px;
-  height: 60px;
+.spine-step.right {
+  justify-content: flex-end;
+}
+
+/* Step Number */
+
+.step-number {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  background: #ffffff;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  margin: 0 30px;
-  box-shadow: 0 10px 25px rgba(0, 31, 84, 0.2);
+  border: 2px solid;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
 }
 
-.spine-content {
-  background: #f8fafc;
-  padding: 25px 30px;
+/* Brand Colors */
+
+.step-number.green {
+  color: #2bb673;
+  border-color: #2bb673;
+}
+
+.step-number.gold {
+  color: #d4a73f;
+  border-color: #d4a73f;
+}
+
+.step-number.blue {
+  color: #2c7be5;
+  border-color: #2c7be5;
+}
+
+/* Step Cards */
+
+.step-card {
+  width: 42%;
+  background: #ffffff;
+  padding: 32px 38px;
   border-radius: 14px;
-  width: 300px;
-  text-align: left;
+  box-shadow: 0 12px 30px rgba(0, 21, 64, 0.06);
+  transition: all 0.3s ease;
 }
 
-.spine-content h4 {
+.spine-step.left .step-card {
+  margin-right: auto;
+}
+
+.spine-step.right .step-card {
+  margin-left: auto;
+}
+
+/* Subtle Accent Strip (Enterprise Touch) */
+
+.spine-step.left .step-card {
+  border-left: 4px solid #e5e7eb;
+}
+
+.spine-step.right .step-card {
+  border-right: 4px solid #e5e7eb;
+}
+
+/* Hover Effect (Subtle) */
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 21, 64, 0.10);
+}
+
+/* Typography */
+
+.step-card h3 {
   color: #001F54;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-.spine-content p {
-  font-size: 0.9rem;
+.step-card p {
   color: #4b5563;
+  line-height: 1.7;
 }
 
 
