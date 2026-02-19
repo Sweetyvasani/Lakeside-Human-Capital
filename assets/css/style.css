@@ -278,23 +278,22 @@ body {
   border-radius: 18px;
   padding: 45px 55px;
   transition: all 0.3s ease;
+  border: 1.2px solid transparent;  /* important */
+  box-shadow: 0 6px 18px rgba(0, 21, 64, 0.05);
   min-height: 130px;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   justify-content: center;
-  }
+}
 
-/* Card 1 – Light Blue */
 .impact-card:nth-child(1) {
   border-color: #8fbfa6;
 }
 
-/* Card 2 – Light Pista Green */
 .impact-card:nth-child(2) {
   border-color: #d6b778;
 }
 
-/* Card 3 – Light Peach */
 .impact-card:nth-child(3) {
   border-color: #7fa3e6;
 }
