@@ -278,8 +278,6 @@ body {
   border-radius: 18px;
   padding: 45px 55px;
   transition: all 0.3s ease;
-  border: 1.5px solid transparent;
-  box-shadow: 0 8px 25px rgba(0, 21, 64, 0.04);
   min-height: 130px;
   display: flex;
     flex-direction: column;
