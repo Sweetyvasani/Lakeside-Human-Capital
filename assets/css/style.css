@@ -1085,6 +1085,7 @@ font-size: 18px;
   position: absolute;
   width: 260px;
   text-align: center;
+  transform: translate(-50%, -50%); /* center the step on its coordinates */
 }
 
 .blueprint-step h4 {
@@ -1101,10 +1102,26 @@ font-size: 18px;
 }
 
 /* Brand Colored Numbers */
-.step-1 span { color: #2bb673; font-weight: 700; }
-.step-2 span { color: #d4a73f; font-weight: 700; }
-.step-3 span { color: #2c7be5; font-weight: 700; }
-.step-4 span { color: #2bb673; font-weight: 700; }
+.step-1 {
+  top: calc(50% - 210px);  /* 210px above center */
+  left: 50%;
+}
+
+.step-2 {
+  top: 50%;
+  left: calc(50% + 210px); /* 210px right of center */
+}
+
+.step-3 {
+  top: calc(50% + 210px);  /* 210px below center */
+  left: 50%;
+}
+
+.step-4 {
+  top: 50%;
+  left: calc(50% - 210px); /* 210px left of center */
+}
+
 
 /* Spacing Adjustments */
 .step-1 { top: -40px; left: 50%; transform: translateX(-50%); }
