@@ -1124,53 +1124,6 @@ font-size: 18px;
   pointer-events: none;
 }
 
-.blueprint-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.blueprint-wrapper .arrow {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  transform: rotate(45deg);
-}
-
-.arrow-1 { 
-  top: 50px; 
-  left: 50%; 
-  transform: translateX(-50%) rotate(45deg); 
-  color: #2bb673;
-}
-
-.arrow-2 { 
-  right: 50px; 
-  top: 50%; 
-  transform: translateY(-50%) rotate(135deg); 
-  color: #d4a73f;
-}
-
-.arrow-3 { 
-  bottom: 50px; 
-  left: 50%; 
-  transform: translateX(-50%) rotate(225deg); 
-  color: #2c7be5;
-}
-
-.arrow-4 { 
-  left: 50px; 
-  top: 50%; 
-  transform: translateY(-50%) rotate(315deg); 
-  color: #2bb673;
-}
 
 
 
