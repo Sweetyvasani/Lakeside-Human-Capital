@@ -278,7 +278,7 @@ body {
   border-radius: 18px;
   padding: 45px 55px;
   transition: all 0.3s ease;
-  border: 1.2px solid transparent;  /* important */
+  border: 1.5px solid transparent;  /* important */
   box-shadow: 0 6px 18px rgba(0, 21, 64, 0.05);
   min-height: 130px;
   display: flex;
