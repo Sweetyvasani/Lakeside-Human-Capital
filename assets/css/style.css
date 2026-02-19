@@ -1044,7 +1044,7 @@ font-size: 18px;
   position: relative;
   max-width: 900px;
   margin: 100px auto;
-  min-height: 520px;
+  min-height: 480px;
 }
 
 /* CENTER CIRCLE (Adjusted Size + Better Balance) */
@@ -1053,8 +1053,8 @@ font-size: 18px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180px;              /* Reduced from 280 */
-  height: 180px;
+  width: 220px;              /* Reduced from 280 */
+  height: 220px;
   border-radius: 50%;
   background: #001F54;
   color: #fff;
@@ -1101,25 +1101,33 @@ font-size: 18px;
 .step-4 span { color: #2bb673; font-weight: 700; }
 
 /* Spacing Adjustments */
-.step-1 { top: 0; left: 50%; transform: translateX(-50%); }
+.step-1 { top: 40x; left: 50%; transform: translateX(-50%); }
 .step-2 { right: 0; top: 50%; transform: translateY(-50%); }
-.step-3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.step-3 { bottom: 40px; left: 50%; transform: translateX(-50%); }
 .step-4 { left: 0; top: 50%; transform: translateY(-50%); }
 
 /* Optional subtle connection dots */
 .blueprint-wrapper::before {
   content: "";
   position: absolute;
-  width: 70%;
-  height: 70%;
-  border: 1px dashed rgba(0, 31, 84, 0.08);
+  width: 420px;
+  height: 420px;
+  border: 1px dashed rgba(0, 31, 84, 0.15);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
+.blueprint-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 31, 84, 0.08);
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /* ================= Framework Spine ================= */
 
