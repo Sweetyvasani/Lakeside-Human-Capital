@@ -1099,58 +1099,80 @@ font-size: 18px;
 
 /* ================= Framework - Circular Flow ================= */
 
-.framework-section {
-  padding: 140px 0;
-  background: #f9fafc;
+/* ================= Circular Human Capital Framework ================= */
+
+.hc-framework {
+  padding: 120px 0;
   text-align: center;
-}
-
-.circular-framework {
-  position: relative;
-  width: 550px;
-  height: 550px;
-  margin: 80px auto 0;
-}
-
-/* Outer Circle */
-.circular-framework::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 2px dashed rgba(0, 21, 64, 0.15);
-}
-
-/* Step Cards */
-.circular-step {
-  position: absolute;
-  width: 220px;
-  padding: 20px;
   background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 21, 64, 0.08);
+}
+
+.framework-subtitle {
+  max-width: 650px;
+  margin: 20px auto 80px;
+  color: #6b7280;
+}
+
+/* Circle container */
+.framework-circle {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(0, 31, 84, 0.15);
+}
+
+/* Step base styling */
+.step {
+  position: absolute;
+  width: 160px;
   text-align: center;
 }
 
-/* Positioning 4 Steps */
-.circular-step:nth-child(1) { top: -20px; left: 50%; transform: translateX(-50%); }
-.circular-step:nth-child(2) { top: 50%; right: -40px; transform: translateY(-50%); }
-.circular-step:nth-child(3) { bottom: -20px; left: 50%; transform: translateX(-50%); }
-.circular-step:nth-child(4) { top: 50%; left: -40px; transform: translateY(-50%); }
-
-/* Step Title */
-.circular-step h3 {
-  font-size: 1rem;
-  color: #001540;
-  margin-bottom: 8px;
-}
-
-/* Step Text */
-.circular-step p {
+.step span {
+  display: inline-block;
+  background: #001F54;
+  color: #ffffff;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
   font-size: 0.9rem;
-  color: #4b5563;
-  line-height: 1.5;
+  margin-bottom: 12px;
 }
+
+.step h4 {
+  font-size: 0.95rem;
+  color: #001540;
+  font-weight: 600;
+}
+
+/* Positioning steps around circle */
+.step-1 {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.step-2 {
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+}
+
+.step-3 {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.step-4 {
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+}
+
 
 
 /* ================= About US Content ================= */
