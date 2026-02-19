@@ -406,7 +406,7 @@ background-image: url("../Impact-Background-image.jpg");
   display: inline-block;
   margin-top: 20px;
   padding: 16px 42px;
-  background: #001F54;
+  background: linear-gradient(135deg, #001F54, #003080);
   color: #ffffff !important;
   border-radius: 50px;
   font-weight: 600;
@@ -417,7 +417,8 @@ background-image: url("../Impact-Background-image.jpg");
 
 .institutional-impact .impact-cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 35px rgba(184, 147, 82, 0.45);
+  background: #003080;
+  box-shadow: 0 10px 25px rgba(0, 31, 84, 0.35);
 }
 
 /* Headings */
