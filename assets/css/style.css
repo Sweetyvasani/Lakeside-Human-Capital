@@ -286,12 +286,13 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
-  border: 1.2px solid transparent;
+  border: 1.2px solid transparent; /* transparent border – gradient shows through */
   min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background-clip: padding-box;            /* white bg stops at padding, border area transparent */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
 }
 
@@ -312,14 +313,16 @@ background-image: url("../Impact-Background-image.jpg");
   opacity: 0.6;
 }
 
+/* White inner background (covers the center, leaving only the pseudo‑element’s edges visible) */
 .impact-card::after {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border-radius: 16px;
-  background: #ffffff;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 2px;                               /* sits inside, creating a "border" of the pseudo */
+    border-radius: 16px;
+    background: #ffffff;
+    z-index: -1;
 }
+
 
 @keyframes rotateGlow {
   0% {
@@ -331,22 +334,19 @@ background-image: url("../Impact-Background-image.jpg");
 }
 
 .impact-card:nth-child(1) {
-  border-color: #5eb987;
-  box-shadow:
+   box-shadow:
     0 0 0 2px rgba(94, 185, 135, 0.08),
     0 10px 25px rgba(94, 185, 135, 0.12);
 }
 
 .impact-card:nth-child(2) {
-  border-color: #cfa854;
   box-shadow:
     0 0 0 2px rgba(207, 168, 84, 0.08),
     0 10px 25px rgba(207, 168, 84, 0.12);
 }
 
 .impact-card:nth-child(3) {
-  border-color: #5f92e8;
-  box-shadow:
+    box-shadow:
     0 0 0 2px rgba(95, 146, 232, 0.08),
     0 10px 25px rgba(95, 146, 232, 0.12);
 }
