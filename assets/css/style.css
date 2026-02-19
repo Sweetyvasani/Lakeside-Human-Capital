@@ -251,7 +251,12 @@ body {
 
 .institutional-impact {
     padding: 140px 0;
-   background: #ffffff;
+    background: 
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+    url("images/impact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
