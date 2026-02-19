@@ -250,7 +250,7 @@ body {
 /* ================= Institutional Impact ================= */
 
 .institutional-impact {
-    padding: 120px 0;
+    padding: 140px 0;
   background: linear-gradient(to bottom, #f8f9fc 0%, #eef1f6 100%);
   text-align: center;
 }
@@ -259,6 +259,7 @@ body {
   max-width: 700px;
   margin: 0 auto 70px;
   color: #6b7280;
+  margin-bottom: 90px;
 }
 
 /* Cards wrapper */
@@ -275,7 +276,7 @@ body {
 .impact-card {
   background: #ffffff;
   border-radius: 20px;
-  padding: 45px 50px;
+  padding: 50px 60px;
   box-shadow: 0 20px 60px rgba(0, 21, 64, 0.06);
   transition: all 0.35s ease;
   border: 1px solid rgba(0, 21, 64, 0.05);
@@ -333,10 +334,12 @@ body {
 /* ================= Impact CTA Button ================= */
 
 .institutional-impact .impact-cta-btn {
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
   display: inline-block;
   margin-top: 20px;
-  padding: 14px 36px;
-  background: linear-gradient(135deg, #c5a46d, #b89352);
+  padding: 16px 42px;
+  background: linear-gradient(135deg, #c9a76b, #b48a3c);
   color: #ffffff !important;
   border-radius: 50px;
   font-weight: 600;
