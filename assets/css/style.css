@@ -330,7 +330,9 @@ body {
   font-size: 1.05rem;
 }
 
-.institutional-impact .impact-btn {
+/* ================= Impact CTA Button ================= */
+
+.institutional-impact .impact-cta-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 36px;
@@ -343,7 +345,7 @@ body {
   box-shadow: 0 8px 24px rgba(184, 147, 82, 0.35);
 }
 
-.institutional-impact .impact-btn:hover {
+.institutional-impact .impact-cta-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 35px rgba(184, 147, 82, 0.45);
 }
