@@ -287,7 +287,7 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
-  border: 1.2px solid transparent;    /* keeps layout, but background-clip will hide it */
+  border: 1.5px solid transparent;    /* keeps layout, but background-clip will hide it */
   min-height: 130px;
   display: flex;
   flex-direction: column;
