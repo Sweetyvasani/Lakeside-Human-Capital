@@ -307,10 +307,10 @@ background-image: url("../Impact-Background-image.jpg");
   border-radius: 20px;                   /* card radius (18) + 2 */
   background: conic-gradient(
     from 0deg,
-    #5eb987,
-    #cfa854,
-    #5f92e8,
-    #5eb987
+  #229a60,
+  #c6942e,
+  #1f6fd6,
+  #229a60
   );
   animation: rotateGlow 10s linear infinite;
   opacity: 0.6;
