@@ -1158,6 +1158,88 @@ font-size: 18px;
 
 
 
+/* ================= Geometric Framework ================= */ 
+
+/* ================= Geometric Framework ================= */
+
+.hc-framework-geo {
+  padding: 140px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.geo-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px 120px;
+}
+
+/* Step Cards */
+.geo-step {
+  position: relative;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 21, 64, 0.06);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.geo-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 21, 64, 0.12);
+}
+
+.geo-step span {
+  display: inline-block;
+  background: #001F54;
+  color: #ffffff;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.geo-step h4 {
+  font-size: 1rem;
+  color: #001540;
+  margin-bottom: 10px;
+}
+
+.geo-step p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Subtle Connector Lines */
+.geo-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background: rgba(0, 31, 84, 0.1);
+  transform: translateX(-50%);
+}
+
+.geo-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background: rgba(0, 31, 84, 0.1);
+  transform: translateY(-50%);
+}
+
+
+
 
 /* ================= About US Content ================= */
 .about-content {
@@ -1644,8 +1726,6 @@ font-size: 18px;
   }
 }
 
-
-/* ================== NEW SECTION (Final) ================== */
 
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
 
