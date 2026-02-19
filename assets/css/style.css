@@ -275,22 +275,25 @@ body {
 /* Card */
 .impact-card {
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 18px;
   padding: 50px 60px;
-  transition: all 0.35s ease;
-  border: 1px solid rgba(0, 21, 64, 0.05);
+  transition: all 0.3s ease;
+  border: 1.5px solid transparent;
   }
 
+/* Card 1 – Light Blue */
 .impact-card:nth-child(1) {
-  background: #fbfcff;
+  border-color: #d6e6ff;  /* soft sky blue */
 }
 
+/* Card 2 – Light Pista Green */
 .impact-card:nth-child(2) {
-  background: #fbfdfb;
+  border-color: #dff3e6;  /* soft pastel green */
 }
 
+/* Card 3 – Light Peach */
 .impact-card:nth-child(3) {
-  background: #fffdf9;
+  border-color: #fde3dc;  /* soft peach tone */
 }
 
 
