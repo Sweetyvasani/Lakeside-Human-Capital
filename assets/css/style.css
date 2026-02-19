@@ -1123,14 +1123,20 @@ font-size: 18px;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  border-top: 3px solid #2bb673;
-  border-right: 3px solid #d4a73f;
-  border-bottom: 3px solid #2c7be5;
-  border-left: 3px solid #2bb673;
+  background: conic-gradient(
+    #2bb673 0deg 90deg,
+    #d4a73f 90deg 180deg,
+    #2c7be5 180deg 270deg,
+    #2bb673 270deg 360deg
+  );
 
-  opacity: 0.4;
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), black 0);
+  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), black 0);
+
+  opacity: 0.6;
   z-index: 0;
 }
+
 
 
 
