@@ -251,7 +251,7 @@ body {
 
 .institutional-impact {
     padding: 140px 0;
-  background: linear-gradient(to bottom, #f8f9fc 0%, #eef1f6 100%);
+  background: #f3f5f9;
   text-align: center;
 }
 
@@ -286,24 +286,24 @@ body {
 
 /* Card 1 – Light Blue */
 .impact-card:nth-child(1) {
-  border: 1.5px solid #9fd1b5;   /* softened green */
+  border-color: #8fbfa6;
 }
 
 /* Card 2 – Light Pista Green */
 .impact-card:nth-child(2) {
-  border: 1.5px solid #e0c28c;   /* softened gold */
+  border-color: #d6b778;
 }
 
 /* Card 3 – Light Peach */
 .impact-card:nth-child(3) {
-  border: 1.5px solid #8fb6ff;   /* softened blue */
+  border-color: #7fa3e6;
 }
 
 
 
 .impact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 30px 80px rgba(0, 21, 64, 0.1);
+  transform: translateY(-4px);
+ box-shadow: 0 10px 30px rgba(0, 21, 64, 0.08);
 }
 
 /* Gold Accent Line */
