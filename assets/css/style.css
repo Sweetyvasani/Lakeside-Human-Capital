@@ -287,35 +287,44 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
-  border: 1.2px solid transparent;
+  /* Remove the border property entirely */
   min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: visible;                /* ← changed from hidden */
-  background-clip: padding-box;      /* ← new */
+  overflow: visible;                /* allows the pseudo‑element to extend outside */
+  background-clip: padding-box;      /* white bg stays inside, border area transparent */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;                        /* establishes stacking context */
 }
 
+
+/* Rotating coloured "border" */
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: -1px;
-  border-radius: 20px;
-  z-index: -1;
-  background: red;  /* temporary test */
+  inset: -2px;                       /* extends 2px outside the card */
+  border-radius: 20px;                /* slightly larger to match the extension */
+  background: conic-gradient(
+    from 0deg,
+    #5eb987,
+    #cfa854,
+    #5f92e8,
+    #5eb987
   );
   animation: rotateGlow 10s linear infinite;
   opacity: 0.6;
+  z-index: -1;                        /* behind the white overlay */
 }
 
+/* White inner overlay – creates the "border" by covering the centre */
 .impact-card::after {
   content: "";
   position: absolute;
-  inset: 1px;
-  border-radius: 16px;
+  inset: 2px;                         /* sits 2px inside the card */
+  border-radius: 16px;                 /* matches card radius minus border width */
   background: #ffffff;
-  z-index: -1;
+  z-index: -1;                        /* behind the card content but in front of ::before */
 }
 
 @keyframes rotateGlow {
@@ -324,7 +333,6 @@ background-image: url("../Impact-Background-image.jpg");
 }
 
 .impact-card:nth-child(1) {
-  border-color: #5eb987;
     box-shadow:
     0 0 0 2px rgba(94, 185, 135, 0.08),
     0 10px 25px rgba(94, 185, 135, 0.12);
@@ -332,15 +340,13 @@ background-image: url("../Impact-Background-image.jpg");
 
 
 .impact-card:nth-child(2) {
-  border-color: #cfa854;
-    box-shadow:
+      box-shadow:
     0 0 0 2px rgba(207, 168, 84, 0.08),
     0 10px 25px rgba(207, 168, 84, 0.12);
 }
 
 .impact-card:nth-child(3) {
-  border-color: #5f92e8;
-    box-shadow:
+      box-shadow:
     0 0 0 2px rgba(95, 146, 232, 0.08),
     0 10px 25px rgba(95, 146, 232, 0.12);
 }
