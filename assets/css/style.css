@@ -251,7 +251,7 @@ body {
 
 .institutional-impact {
     padding: 140px 0;
-  background: #f3f5f9;
+  background: #f4f7fb;  /* same family as Block 2 */
   text-align: center;
 }
 
@@ -287,15 +287,15 @@ body {
 }
 
 .impact-card:nth-child(1) {
-  border-color: #8fbfa6;
+  border-color: #6fbf95;  /* lighter tone of Block 2 green */
 }
 
 .impact-card:nth-child(2) {
-  border-color: #d6b778;
+  border-color: #d9b56b;
 }
 
 .impact-card:nth-child(3) {
-  border-color: #7fa3e6;
+  border-color: #6fa3f7;
 }
 
 
