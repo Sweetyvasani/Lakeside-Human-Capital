@@ -282,11 +282,22 @@ background-image: url("../Impact-Background-image.jpg");
   padding: 45px 55px;
   transition: all 0.3s ease;
   border: 1.5px solid transparent;  /* important */
-  box-shadow: 0 6px 18px rgba(0, 21, 64, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 21, 64, 0.06);
   min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.impact-card::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 22px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
 }
 
 .impact-card:nth-child(1) {
@@ -295,7 +306,7 @@ background-image: url("../Impact-Background-image.jpg");
     0 0 0 2px rgba(94, 185, 135, 0.08),
     0 10px 25px rgba(94, 185, 135, 0.12);
 }
-}
+
 
 .impact-card:nth-child(2) {
   border-color: #cfa854;
