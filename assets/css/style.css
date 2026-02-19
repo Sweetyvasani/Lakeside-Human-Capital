@@ -1018,6 +1018,141 @@ font-size: 18px;
 }
 
 
+/* ================= Framework - Linear Spine ================= */
+
+.framework-section {
+  padding: 140px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.framework-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 40px;
+}
+
+/* Central Line */
+.framework-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #2bb673,
+    #d4a73f,
+    #2c7be5
+  );
+  opacity: 0.4;
+}
+
+/* Steps Container */
+.framework-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+/* Individual Step */
+.framework-step {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 21, 64, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.framework-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 21, 64, 0.12);
+}
+
+/* Step Number */
+.framework-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #001f54;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.framework-step h3 {
+  font-size: 1.1rem;
+  color: #001540;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.framework-step p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+
+/* ================= Framework - Circular Flow ================= */
+
+.framework-section {
+  padding: 140px 0;
+  background: #f9fafc;
+  text-align: center;
+}
+
+.circular-framework {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin: 80px auto 0;
+}
+
+/* Outer Circle */
+.circular-framework::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed rgba(0, 21, 64, 0.15);
+}
+
+/* Step Cards */
+.circular-step {
+  position: absolute;
+  width: 220px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 21, 64, 0.08);
+  text-align: center;
+}
+
+/* Positioning 4 Steps */
+.circular-step:nth-child(1) { top: -20px; left: 50%; transform: translateX(-50%); }
+.circular-step:nth-child(2) { top: 50%; right: -40px; transform: translateY(-50%); }
+.circular-step:nth-child(3) { bottom: -20px; left: 50%; transform: translateX(-50%); }
+.circular-step:nth-child(4) { top: 50%; left: -40px; transform: translateY(-50%); }
+
+/* Step Title */
+.circular-step h3 {
+  font-size: 1rem;
+  color: #001540;
+  margin-bottom: 8px;
+}
+
+/* Step Text */
+.circular-step p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+
 /* ================= About US Content ================= */
 .about-content {
   max-width: 1100px;  /* slightly wider content block */
