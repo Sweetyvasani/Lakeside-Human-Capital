@@ -1042,8 +1042,8 @@ font-size: 18px;
 /* Layout wrapper */
 .blueprint-wrapper {
   position: relative;
-  max-width: 950px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 100px auto;
   min-height: 520px;
 }
 
@@ -1053,16 +1053,17 @@ font-size: 18px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 240px;              /* Reduced from 280 */
-  height: 240px;
+  width: 320px;              /* Reduced from 280 */
+  height: 320px;
   border-radius: 50%;
   background: #001F54;
   color: #fff;
-  padding: 35px 25px;
-  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 20px 50px rgba(0, 31, 84, 0.25);
+  box-shadow: 0 30px 60px rgba(0, 21, 64, 0.18);
 }
 
 .blueprint-core h3 {
@@ -1084,13 +1085,13 @@ font-size: 18px;
 
 .blueprint-step h4 {
   color: #001F54;
-  margin-bottom: 8px;
-  font-size: 1rem;
-}
+  margin-bottom: 10px;
+  }
 
 .blueprint-step p {
-  font-size: 0.85rem;
+  font-size: 14px;
   color: #4b5563;
+  line-height: 1.6;
 }
 
 /* Brand Colored Numbers */
@@ -1100,10 +1101,10 @@ font-size: 18px;
 .step-4 span { color: #2bb673; font-weight: 700; }
 
 /* Spacing Adjustments */
-.step-1 { top: -20px; left: 50%; transform: translateX(-50%); }
-.step-2 { right: -20px; top: 50%; transform: translateY(-50%); }
-.step-3 { bottom: -20px; left: 50%; transform: translateX(-50%); }
-.step-4 { left: -20px; top: 50%; transform: translateY(-50%); }
+.step-1 { top: 0; left: 50%; transform: translateX(-50%); }
+.step-2 { right: 0; top: 50%; transform: translateY(-50%); }
+.step-3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.step-4 { left: 0; top: 50%; transform: translateY(-50%); }
 
 /* Optional subtle connection dots */
 .blueprint-wrapper::before {
