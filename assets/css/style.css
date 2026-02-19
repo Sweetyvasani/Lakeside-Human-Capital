@@ -292,32 +292,33 @@ background-image: url("../Impact-Background-image.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: visible;
+  overflow: hidden; /* Important */
+  box-shadow: 0 8px 25px rgba(0, 21, 64, 0.06);
 }
 
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: -3px;
-  border-radius: 20px;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px; /* Controls border thickness */
+  filter: blur(0.6px);
   background: conic-gradient(
     #5eb987,
     #cfa854,
     #5f92e8,
     #5eb987
   );
-  animation: rotateGlow 16s linear infinite;
-  z-index: 0;              /* Important */
+  animation: rotateGlow 18s linear infinite;
+
+    /* Mask to make it a thin border */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
-.impact-card::after {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border-radius: 16px;
-  background: #ffffff;
-  z-index: 1;
-}
 
 @keyframes rotateGlow {
   to {
