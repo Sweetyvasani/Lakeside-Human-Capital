@@ -250,42 +250,40 @@ body {
 /* ================= Institutional Impact ================= */
 
 .institutional-impact {
-  padding: 100px 0;
-  background: linear-gradient(to bottom, #ffffff 0%, #f7f8fb 100%);
+    padding: 110px 0;
+  background: linear-gradient(to bottom, #f9fafc 0%, #f2f4f8 100%);
   text-align: center;
 }
 
 .institutional-impact .section-subtitle {
   max-width: 700px;
-  margin: 0 auto 60px;
+  margin: 0 auto 70px;
   color: #6b7280;
 }
 
-/* Cards Container */
+/* Cards wrapper */
 .impact-cards {
-  max-width: 1000px;
-  margin: 0 auto 60px;
+  max-width: 900px;
+  margin: 0 auto 70px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
   padding: 0 20px;
 }
 
-/* Individual Card */
+/* Card */
 .impact-card {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 30px 35px;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  box-shadow: 0 8px 30px rgba(0, 21, 64, 0.05);
-  transition: all 0.3s ease;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0, 21, 64, 0.06);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(0, 21, 64, 0.04);
 }
 
 .impact-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 21, 64, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(0, 21, 64, 0.1);
 }
 
 /* Gold Accent Line */
@@ -335,6 +333,21 @@ body {
 .institutional-impact .impact-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(184, 147, 82, 0.45);
+}
+
+/* Headings */
+.impact-card h3 {
+  color: #001540;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Body text */
+.impact-card p {
+  color: #4b5563;
+  line-height: 1.8;
+  font-size: 0.98rem;
 }
 
 
