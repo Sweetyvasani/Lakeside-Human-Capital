@@ -299,21 +299,20 @@ background-image: url("../Impact-Background-image.jpg");
 }
 
 
-/* Rotating gradient – this creates the moving light */
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: -2px;                          /* extends 2px outside the card */
-  border-radius: 20px;                   /* card radius (18) + 2 */
+  inset: -3px;
+  border-radius: 21px;
   background: conic-gradient(
     from 0deg,
-  #229a60,
-  #c6942e,
-  #1f6fd6,
-  #229a60
+    #229a60,
+    #c6942e,
+    #1f6fd6,
+    #229a60
   );
-  animation: rotateGlow 10s linear infinite;
-  opacity: 0.6;
+  animation: rotateGlow 12s linear infinite;
+  opacity: 0.45;
   z-index: -1;
 }
 
