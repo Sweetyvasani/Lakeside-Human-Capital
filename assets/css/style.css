@@ -287,15 +287,18 @@ body {
 }
 
 .impact-card:nth-child(1) {
-  border-color: #6fbf95;  /* lighter tone of Block 2 green */
+  border-color: #5eb987;
+  box-shadow: 0 4px 18px rgba(111, 191, 149, 0.15);
 }
 
 .impact-card:nth-child(2) {
-  border-color: #d9b56b;
+  border-color: #cfa854;
+  box-shadow: 0 4px 18px rgba(217, 181, 107, 0.15);
 }
 
 .impact-card:nth-child(3) {
-  border-color: #6fa3f7;
+  border-color: #5f92e8;
+  box-shadow: 0 4px 18px rgba(111, 163, 247, 0.15);
 }
 
 
@@ -339,7 +342,7 @@ body {
 
 .impact-question {
   font-weight: 600;
-  color: #001540;
+   color:  #1e5eff;
   margin-bottom: 25px;
   font-size: 1.05rem;
 }
