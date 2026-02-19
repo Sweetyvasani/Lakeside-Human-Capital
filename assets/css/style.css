@@ -292,7 +292,6 @@ background-image: url("../Impact-Background-image.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden; /* Important */
   box-shadow: 0 8px 25px rgba(0, 21, 64, 0.06);
 }
 
@@ -308,8 +307,17 @@ background-image: url("../Impact-Background-image.jpg");
     #5eb987
   );
   animation: rotateGlow 18s linear infinite;
-  z-index: -1;                 /* Sit behind the card */
+  z-index: -2;                 /* Sit behind the card */
   opacity: 0.35;               /* Permanent visible glow */
+}
+
+.impact-card::after {
+  content: "";
+  position: absolute;
+  inset: 3px;              /* Controls border thickness */
+  border-radius: 15px;
+  background: #ffffff;
+  z-index: 0;
 }
 
 @keyframes rotateGlow {
