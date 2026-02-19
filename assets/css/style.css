@@ -277,22 +277,26 @@ body {
   background: #ffffff;
   border-radius: 20px;
   padding: 50px 60px;
-  box-shadow: 0 20px 60px rgba(0, 21, 64, 0.06);
   transition: all 0.35s ease;
   border: 1px solid rgba(0, 21, 64, 0.05);
-  position: relative;
+  }
+
+/* Card 1 – Soft Blue */
+.impact-card:nth-child(1) {
+  border-color: #dfe7f5;   /* very soft blue */
 }
 
-.impact-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 40px;
-  height: 4px;
-  width: 60px;
-  background: #0f2a68;
-  border-radius: 4px;
+/* Card 2 – Soft Sage */
+.impact-card:nth-child(2) {
+  border-color: #e3efe9;   /* very light sage green */
 }
+
+/* Card 3 – Soft Sand */
+.impact-card:nth-child(3) {
+  border-color: #f2e9dc;   /* subtle sand tone */
+}
+
+
 
 .impact-card:hover {
   transform: translateY(-6px);
