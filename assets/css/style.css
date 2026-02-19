@@ -281,19 +281,16 @@ body {
   border: 1px solid rgba(0, 21, 64, 0.05);
   }
 
-/* Card 1 – Soft Blue */
 .impact-card:nth-child(1) {
-  border-color: #dfe7f5;   /* very soft blue */
+  background: #fbfcff;
 }
 
-/* Card 2 – Soft Sage */
 .impact-card:nth-child(2) {
-  border-color: #e3efe9;   /* very light sage green */
+  background: #fbfdfb;
 }
 
-/* Card 3 – Soft Sand */
 .impact-card:nth-child(3) {
-  border-color: #f2e9dc;   /* subtle sand tone */
+  background: #fffdf9;
 }
 
 
