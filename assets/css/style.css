@@ -292,36 +292,40 @@ background-image: url("../Impact-Background-image.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 8px 25px rgba(0, 21, 64, 0.06);
+  overflow: hidden;
 }
 
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: -3px;                 /* Slightly outside card */
-  border-radius: 20px;         /* Slightly bigger radius */
+  inset: -2px;
+  border-radius: 20px;
+  z-index: -1;
   background: conic-gradient(
+    from 0deg,
     #5eb987,
     #cfa854,
     #5f92e8,
     #5eb987
   );
-  animation: rotateGlow 18s linear infinite;
-  z-index: -2;                 /* Sit behind the card */
-  opacity: 0.35;               /* Permanent visible glow */
+  animation: rotateGlow 10s linear infinite;
+  opacity: 0.6;
 }
 
 .impact-card::after {
   content: "";
   position: absolute;
-  inset: 3px;              /* Controls border thickness */
-  border-radius: 15px;
+  inset: 2px;
+  border-radius: 16px;
   background: #ffffff;
-  z-index: 0;
+  z-index: -1;
 }
 
 @keyframes rotateGlow {
-  to {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
