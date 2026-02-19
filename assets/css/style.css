@@ -402,23 +402,23 @@ background-image: url("../Impact-Background-image.jpg");
 
 .institutional-impact .impact-cta-btn {
   font-size: 0.95rem;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
   display: inline-block;
   margin-top: 20px;
   padding: 16px 42px;
   background: linear-gradient(135deg, #001F54, #003080);
   color: #ffffff !important;
-  border-radius: 50px;
+  border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(184, 147, 82, 0.35);
+  box-shadow: 0 8px 18px rgba(0, 31, 84, 0.25);
+  text-transform: uppercase;
 }
 
 .institutional-impact .impact-cta-btn:hover {
   transform: translateY(-3px);
-  background: #003080;
-  box-shadow: 0 10px 25px rgba(0, 31, 84, 0.35);
+    box-shadow: 0 14px 30px rgba(0, 31, 84, 0.35);
 }
 
 /* Headings */
