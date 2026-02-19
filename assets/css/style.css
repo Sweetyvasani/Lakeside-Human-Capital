@@ -1065,6 +1065,7 @@ font-size: 18px;
   justify-content: center;
   box-shadow: 0 30px 60px rgba(0, 21, 64, 0.18);
   display: flex;
+  z-index: 1;
 }
 
 .blueprint-core h3 {
@@ -1112,7 +1113,8 @@ font-size: 18px;
 .step-4 { left: 0; top: 50%; transform: translateY(-50%); }
 
 
-content: "";
+.blueprint-wrapper::before {
+  content: "";
   position: absolute;
   width: 420px;
   height: 420px;
@@ -1120,34 +1122,32 @@ content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(40deg);
-
   border: 3px solid transparent;
-
   border-image: linear-gradient(
     90deg,
     #2bb673,
     #d4a73f,
     #2c7be5
   ) 1;
-
   border-left-color: transparent;
   border-bottom-color: transparent;
-
   z-index: 0;
 }
+
 
 .process-arrow {
   position: absolute;
   top: 20%;
   right: 22%;
 
-  width: 14px;
-  height: 14px;
+  width: 120px;
+  height: 120px;
 
   border-top: 3px solid #2c7be5;
   border-right: 3px solid #2c7be5;
 
   transform: rotate(45deg);
+    z-index: 2;
 }
 
 /* ================= Framework Spine ================= */
