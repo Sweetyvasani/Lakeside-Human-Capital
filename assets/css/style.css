@@ -281,7 +281,7 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
-  border: 1.5px solid transparent;
+  border: 1.2px solid transparent;
   min-height: 130px;
   display: flex;
   flex-direction: column;
@@ -302,8 +302,8 @@ background-image: url("../Impact-Background-image.jpg");
     #5f92e8,
     #5eb987
   );
-  animation: rotateGlow 10s linear infinite;
-  opacity: 0.6;
+  animation: rotateGlow 14s linear infinite;
+  opacity: 0.45;   /* Always visible */
 }
 
 .impact-card::after {
@@ -350,7 +350,7 @@ background-image: url("../Impact-Background-image.jpg");
 
 .impact-card:hover {
   transform: translateY(-6px);
-box-shadow: 0 20px 40px rgba(0, 21, 64, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 21, 64, 0.12);
 }
 
 /* Gold Accent Line */
