@@ -279,6 +279,18 @@ body {
   box-shadow: 0 15px 40px rgba(0, 21, 64, 0.06);
   transition: all 0.35s ease;
   border: 1px solid rgba(0, 21, 64, 0.04);
+  position: relative;
+}
+
+.impact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 60px;
+  background: #001540;
+  border-top-left-radius: 18px;
 }
 
 .impact-card:hover {
@@ -307,7 +319,7 @@ body {
 
 .impact-highlight {
   font-weight: 700;
-  color: #b89352;
+  color:  #0f2a68;
 }
 
 /* CTA */
