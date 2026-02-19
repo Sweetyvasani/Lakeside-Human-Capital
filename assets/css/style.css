@@ -276,7 +276,6 @@ background-image: url("../Impact-Background-image.jpg");
 }
 
 /* Card */
-
 .impact-card > * {
   position: relative;
   z-index: 2;
@@ -293,6 +292,7 @@ background-image: url("../Impact-Background-image.jpg");
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
 }
 
 .impact-card::before {
@@ -332,27 +332,24 @@ background-image: url("../Impact-Background-image.jpg");
 
 .impact-card:nth-child(1) {
   border-color: #5eb987;
-    box-shadow:
+  box-shadow:
     0 0 0 2px rgba(94, 185, 135, 0.08),
     0 10px 25px rgba(94, 185, 135, 0.12);
 }
 
-
 .impact-card:nth-child(2) {
   border-color: #cfa854;
-    box-shadow:
+  box-shadow:
     0 0 0 2px rgba(207, 168, 84, 0.08),
     0 10px 25px rgba(207, 168, 84, 0.12);
 }
 
 .impact-card:nth-child(3) {
   border-color: #5f92e8;
-    box-shadow:
+  box-shadow:
     0 0 0 2px rgba(95, 146, 232, 0.08),
     0 10px 25px rgba(95, 146, 232, 0.12);
 }
-
-
 
 .impact-card:hover {
   transform: translateY(-6px);
