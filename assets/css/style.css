@@ -1121,18 +1121,15 @@ font-size: 18px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(40deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+
   border: 3px solid transparent;
-  border-image: linear-gradient(
-    90deg,
-    #2bb673,
-    #d4a73f,
-    #2c7be5
-  ) 1;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
+  border-top: 3px solid #2bb673;
+  border-right: 3px solid #d4a73f;
+
   z-index: 0;
 }
+
 
 
 .process-arrow {
