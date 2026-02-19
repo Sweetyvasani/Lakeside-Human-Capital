@@ -1044,7 +1044,7 @@ font-size: 18px;
   position: relative;
   max-width: 900px;
   margin: 100px auto;
-  min-height: 480px;
+  min-height: 600px;
 }
 
 /* CENTER CIRCLE (Adjusted Size + Better Balance) */
@@ -1053,8 +1053,8 @@ font-size: 18px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 220px;              /* Reduced from 280 */
-  height: 220px;
+  width: 160px;              /* Reduced from 280 */
+  height: 160px;
   border-radius: 50%;
   background: #001F54;
   color: #fff;
@@ -1103,18 +1103,18 @@ font-size: 18px;
 .step-4 span { color: #2bb673; font-weight: 700; }
 
 /* Spacing Adjustments */
-.step-1 { top: 70x; left: 50%; transform: translateX(-50%); }
+.step-1 { top: -40px; left: 50%; transform: translateX(-50%); }
 .step-2 { right: 0; top: 50%; transform: translateY(-50%); }
-.step-3 { bottom: 70px; left: 50%; transform: translateX(-50%); }
+.step-3 { bottom: -40px; left: 50%; transform: translateX(-50%); }
 .step-4 { left: 0; top: 50%; transform: translateY(-50%); }
 
 /* Optional subtle connection dots */
 .blueprint-wrapper::before {
   content: "";
   position: absolute;
-  width: 360px;   /* was larger */
-  height: 360px;
-  border: 1px dashed rgba(0, 31, 84, 0.18);
+  width: 420px;   /* was larger */
+  height: 420px;
+  border: 1px dashed rgba(0, 31, 84, 0.15);
   border-radius: 50%;
   top: 50%;
   left: 50%;
