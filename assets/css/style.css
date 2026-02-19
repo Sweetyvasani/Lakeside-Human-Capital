@@ -287,13 +287,13 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
-  border: 1.2px solid transparent;      /* transparent border – gradient shows through */
+  border: 1.2px solid transparent;
   min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: visible;                    /* was "hidden" – now lets the pseudo‑element extend */
-  background-clip: padding-box;          /* white background stops at the padding, leaving the border area transparent */
+  overflow: visible;                /* ← changed from hidden */
+  background-clip: padding-box;      /* ← new */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -324,12 +324,8 @@ background-image: url("../Impact-Background-image.jpg");
 }
 
 @keyframes rotateGlow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .impact-card:nth-child(1) {
