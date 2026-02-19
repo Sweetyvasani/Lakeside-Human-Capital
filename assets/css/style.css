@@ -1113,31 +1113,16 @@ font-size: 18px;
 .step-4 { left: 0; top: 50%; transform: translateY(-50%); }
 
 
-.blueprint-wrapper::before {
-  content: "";
+
+.process-arcs {
   position: absolute;
-  width: 380px;              /* Reduced from 420 */
-  height: 380px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  background: conic-gradient(
-    #2bb673 0deg 90deg,
-    #d4a73f 90deg 180deg,
-    #2c7be5 180deg 270deg,
-    #2bb673 270deg 360deg
-  );
-
-  /* Clean thin ring */
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), black 0);
-  mask: radial-gradient(farthest-side, transparent calc(100% - 2px), black 0);
-
-  opacity: 0.9;  /* Sharper */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   z-index: 0;
+  pointer-events: none;
 }
-
 
 .blueprint-wrapper::after {
   content: "";
