@@ -287,24 +287,23 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
-  /* No border property needed */
   min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: visible;                /* allows pseudo‑element to extend */
-  background-clip: padding-box;      /* white background stays inside */
+  background-clip: padding-box;      /* white bg stays inside the padding */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
 
 
-/* Rotating gradient "border" (the thin line) */
+/* The moving line */
 .impact-card::before {
   content: "";
   position: absolute;
   inset: -1px;                       /* extends 1px outside the card */
-  border-radius: 19px;                /* card radius (18) + 1 = 19px */
+  border-radius: 19px;                /* card radius (18) + 1 */
   background: conic-gradient(
     from 0deg,
     #5eb987,
@@ -313,27 +312,31 @@ background-image: url("../Impact-Background-image.jpg");
     #5eb987
   );
   animation: rotateGlow 10s linear infinite;
-  opacity: 0.6;                       /* adjust for subtlety */
+  opacity: 0.6;
   z-index: -1;
+  /* Create a thin ring using mask */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  padding: 1px;                      /* thickness of the ring */
 }
 
 
-/* White inner cover – creates the border by hiding the centre */
+/* White inner background (covers the centre) */
 .impact-card::after {
   content: "";
   position: absolute;
   inset: 1px;                         /* sits 1px inside the card */
-  border-radius: 17px;                 /* card radius (18) - 1 = 17px */
+  border-radius: 17px;                 /* card radius (18) - 1 */
   background: #ffffff;
   z-index: -1;
 }
-
 
 @keyframes rotateGlow {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 .impact-card:nth-child(1) {
     box-shadow:
     0 0 0 2px rgba(94, 185, 135, 0.08),
