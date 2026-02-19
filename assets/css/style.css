@@ -1121,14 +1121,13 @@ font-size: 18px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%);
 
-  border: 3px solid transparent;
-  border-top: 3px solid #2bb673;
-  border-right: 3px solid #d4a73f;
+  border: 2px dashed rgba(44, 123, 229, 0.35);
 
   z-index: 0;
 }
+
 
 
 
