@@ -1018,160 +1018,144 @@ font-size: 18px;
 }
 
 
-/* ================= Framework - Linear Spine ================= */
 
-.framework-section {
+/* ================= Strategic Architecture Framework ================= */
+
+.hc-architecture {
   padding: 140px 0;
   background: #ffffff;
   text-align: center;
 }
 
-.framework-wrapper {
-  max-width: 1100px;
+.hc-architecture .section-subtitle {
+  max-width: 700px;
+  margin: 20px auto 100px;
+  color: #6b7280;
+}
+
+/* Wrapper */
+.architecture-wrapper {
+  position: relative;
+  max-width: 900px;
+  height: 500px;
   margin: 0 auto;
-  position: relative;
-  padding: 0 40px;
 }
 
-/* Central Line */
-.framework-wrapper::before {
-  content: "";
+/* Center Hub */
+.architecture-center {
   position: absolute;
-  top: 60px;
-  left: 5%;
-  right: 5%;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    #2bb673,
-    #d4a73f,
-    #2c7be5
-  );
-  opacity: 0.4;
-}
-
-/* Steps Container */
-.framework-steps {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 80px;
-}
-
-/* Individual Step */
-.framework-step {
-  flex: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  padding: 40px;
   background: #ffffff;
-  padding: 30px 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 21, 64, 0.06);
-  transition: all 0.3s ease;
-  position: relative;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 21, 64, 0.08);
+  z-index: 2;
 }
 
-.framework-step:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 21, 64, 0.12);
-}
-
-/* Step Number */
-.framework-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #001f54;
+.architecture-center h3 {
+  font-size: 1.2rem;
+  color: #001540;
   margin-bottom: 10px;
 }
 
-/* Title */
-.framework-step h3 {
-  font-size: 1.1rem;
-  color: #001540;
-  margin-bottom: 12px;
-}
-
-/* Description */
-.framework-step p {
+.architecture-center p {
   font-size: 0.95rem;
   color: #4b5563;
   line-height: 1.6;
 }
 
-
-/* ================= Framework - Circular Flow ================= */
-
-/* ================= Circular Human Capital Framework ================= */
-
-.hc-framework {
-  padding: 120px 0;
-  text-align: center;
-  background: #ffffff;
-}
-
-.framework-subtitle {
-  max-width: 650px;
-  margin: 20px auto 80px;
-  color: #6b7280;
-}
-
-/* Circle container */
-.framework-circle {
-  position: relative;
-  width: 520px;
-  height: 520px;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 1.5px dashed rgba(0, 31, 84, 0.15);
-}
-
-/* Step base styling */
-.step {
+/* Step Boxes */
+.architecture-step {
   position: absolute;
-  width: 160px;
+  width: 240px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 21, 64, 0.06);
   text-align: center;
+  transition: all 0.3s ease;
 }
 
-.step span {
+.architecture-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 21, 64, 0.12);
+}
+
+.architecture-step h4 {
+  font-size: 1rem;
+  color: #001540;
+  margin: 10px 0;
+}
+
+.architecture-step p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Step Number */
+.step-number {
   display: inline-block;
   background: #001F54;
   color: #ffffff;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  border-radius: 50%;
-  font-size: 0.9rem;
-  margin-bottom: 12px;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
 }
 
-.step h4 {
-  font-size: 0.95rem;
-  color: #001540;
-  font-weight: 600;
-}
-
-/* Positioning steps around circle */
+/* Positioning */
 .step-1 {
-  top: -20px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .step-2 {
   top: 50%;
-  right: -20px;
+  right: 0;
   transform: translateY(-50%);
 }
 
 .step-3 {
-  bottom: -20px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .step-4 {
   top: 50%;
-  left: -20px;
+  left: 0;
   transform: translateY(-50%);
 }
+
+/* Connector Lines */
+.architecture-wrapper::before,
+.architecture-wrapper::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 31, 84, 0.15);
+  z-index: 1;
+}
+
+/* Vertical Line */
+.architecture-wrapper::before {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Horizontal Line */
+.architecture-wrapper::after {
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 
 
