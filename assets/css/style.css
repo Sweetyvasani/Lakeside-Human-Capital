@@ -1042,8 +1042,8 @@ font-size: 18px;
 /* Layout wrapper */
 .blueprint-wrapper {
   position: relative;
-  max-width: 900px;
-  margin: 100px auto;
+  width: 600px;
+  height: 600px;   /* force square */
   min-height: 600px;
 }
 
