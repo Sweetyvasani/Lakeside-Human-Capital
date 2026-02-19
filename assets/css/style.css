@@ -300,7 +300,7 @@ background-image: url("../Impact-Background-image.jpg");
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: -2px;
+  inset: -1px;
   border-radius: 20px;
   z-index: -1;
   background: conic-gradient(
@@ -317,7 +317,7 @@ background-image: url("../Impact-Background-image.jpg");
 .impact-card::after {
   content: "";
   position: absolute;
-  inset: 2px;
+  inset: 1px;
   border-radius: 16px;
   background: #ffffff;
   z-index: -1;
