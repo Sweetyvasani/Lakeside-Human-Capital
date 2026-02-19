@@ -276,7 +276,7 @@ body {
 .impact-card {
   background: #ffffff;
   border-radius: 18px;
-  padding: 50px 60px;
+  padding: 45px 55px;
   transition: all 0.3s ease;
   border: 1.5px solid transparent;
   box-shadow: 0 8px 25px rgba(0, 21, 64, 0.04);
@@ -288,17 +288,17 @@ body {
 
 /* Card 1 – Light Blue */
 .impact-card:nth-child(1) {
-  border-color: #c4d9ff;
+  border: 1.5px solid #9fd1b5;   /* softened green */
 }
 
 /* Card 2 – Light Pista Green */
 .impact-card:nth-child(2) {
-  border-color: #cdebd6;
+  border: 1.5px solid #e0c28c;   /* softened gold */
 }
 
 /* Card 3 – Light Peach */
 .impact-card:nth-child(3) {
-  border-color: #f7cfc4;
+  border: 1.5px solid #8fb6ff;   /* softened blue */
 }
 
 
