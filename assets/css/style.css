@@ -303,12 +303,7 @@ background-image: url("../Impact-Background-image.jpg");
   inset: -1px;
   border-radius: 20px;
   z-index: -1;
-  background: conic-gradient(
-    from 0deg,
-    #5eb987,
-    #cfa854,
-    #5f92e8,
-    #5eb987
+  background: red;  /* temporary test */
   );
   animation: rotateGlow 10s linear infinite;
   opacity: 0.6;
