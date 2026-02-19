@@ -287,23 +287,24 @@ background-image: url("../Impact-Background-image.jpg");
   background: #ffffff;
   border-radius: 18px;
   padding: 45px 55px;
+  border: 1.2px solid transparent;    /* keeps layout, but background-clip will hide it */
   min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: visible;                /* allows pseudo‑element to extend */
-  background-clip: padding-box;      /* white bg stays inside the padding */
+  overflow: hidden;                    /* CRITICAL: clips the rotating pseudo‑element */
+  background-clip: padding-box;         /* white bg stays inside padding, border area transparent */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
 
 
-/* The moving line */
+/* Rotating gradient – this creates the moving light */
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: -1px;                       /* extends 1px outside the card */
-  border-radius: 19px;                /* card radius (18) + 1 */
+  inset: -2px;                          /* extends 2px outside the card */
+  border-radius: 20px;                   /* card radius (18) + 2 */
   background: conic-gradient(
     from 0deg,
     #5eb987,
@@ -314,21 +315,16 @@ background-image: url("../Impact-Background-image.jpg");
   animation: rotateGlow 10s linear infinite;
   opacity: 0.6;
   z-index: -1;
-  /* Create a thin ring using mask */
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  padding: 1px;                      /* thickness of the ring */
 }
 
 
-/* White inner background (covers the centre) */
+
+/* Solid white interior – covers the centre, leaving only the border area of ::before visible */
 .impact-card::after {
   content: "";
   position: absolute;
-  inset: 1px;                         /* sits 1px inside the card */
-  border-radius: 17px;                 /* card radius (18) - 1 */
+  inset: 2px;                            /* sits 2px inside the card */
+  border-radius: 16px;                    /* card radius (18) - 2 */
   background: #ffffff;
   z-index: -1;
 }
@@ -337,6 +333,7 @@ background-image: url("../Impact-Background-image.jpg");
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 .impact-card:nth-child(1) {
     box-shadow:
     0 0 0 2px rgba(94, 185, 135, 0.08),
