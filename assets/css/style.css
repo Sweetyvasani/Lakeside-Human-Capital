@@ -332,19 +332,20 @@ body {
 
 .institutional-impact .impact-btn {
   display: inline-block;
+  margin-top: 20px;
   padding: 14px 36px;
   background: linear-gradient(135deg, #c5a46d, #b89352);
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(184, 147, 82, 0.35);
+  box-shadow: 0 8px 24px rgba(184, 147, 82, 0.35);
 }
 
 .institutional-impact .impact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(184, 147, 82, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(184, 147, 82, 0.45);
 }
 
 /* Headings */
