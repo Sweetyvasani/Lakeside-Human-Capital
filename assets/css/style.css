@@ -299,10 +299,8 @@ background-image: url("../Impact-Background-image.jpg");
 .impact-card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  padding: 2px; /* Controls border thickness */
-  filter: blur(0.6px);
+  inset: -3px;                 /* Slightly outside card */
+  border-radius: 20px;         /* Slightly bigger radius */
   background: conic-gradient(
     #5eb987,
     #cfa854,
@@ -310,15 +308,9 @@ background-image: url("../Impact-Background-image.jpg");
     #5eb987
   );
   animation: rotateGlow 18s linear infinite;
-
-    /* Mask to make it a thin border */
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  z-index: -1;                 /* Sit behind the card */
+  opacity: 0.35;               /* Permanent visible glow */
 }
-
 
 @keyframes rotateGlow {
   to {
