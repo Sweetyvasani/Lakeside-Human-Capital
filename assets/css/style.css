@@ -304,13 +304,13 @@ background-image: url("../Impact-Background-image.jpg");
   z-index: -1;
   background: conic-gradient(
     from 0deg,
-    #5eb987,
-    #cfa854,
-    #5f92e8,
-    #5eb987
+    #ff0000,                  /* bright red */
+    #00ff00,                  /* bright green */
+    #0000ff,                  /* bright blue */
+    #ff0000
   );
   animation: rotateGlow 10s linear infinite;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 /* White inner background (covers the center, leaving only the pseudo‑element’s edges visible) */
