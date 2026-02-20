@@ -1108,10 +1108,23 @@ font-size: 18px;
 .step-4 span { color: #2bb673; font-weight: 700; }
 
 /* Spacing Adjustments */
-.step-1 { top: -40px; left: 50%; transform: translateX(-50%); }
-.step-2 { right: 0; top: 50%; transform: translateY(-50%); }
-.step-3 { bottom: -40px; left: 50%; transform: translateX(-50%); }
-.step-4 { left: 0; top: 50%; transform: translateY(-50%); }
+.step-1  { top: calc(50% - 220px);  /* 220px above center */
+  left: 50%;
+}
+.step-2 {
+  top: 50%;
+  left: calc(50% + 220px); /* 220px right of center */
+}
+
+.step-3 {
+  top: calc(50% + 220px);  /* 220px below center */
+  left: 50%;
+}
+
+.step-4 {
+  top: 50%;
+  left: calc(50% - 220px); /* 220px left of center */
+}
 
 
 
