@@ -298,68 +298,42 @@ Environmental stressors directly influence cognitive clarity and executive funct
 
     <div class="blueprint-wrapper">
 
-<svg class="process-arcs"
-     viewBox="0 0 600 600"
-     width="600"
-     height="600"
-     preserveAspectRatio="xMidYMid meet">
-
+<svg class="process-arcs" viewBox="0 0 600 600" width="600" height="600" preserveAspectRatio="xMidYMid meet">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2bb673"/>
       <stop offset="100%" stop-color="#d4a73f"/>
     </linearGradient>
-
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#d4a73f"/>
       <stop offset="100%" stop-color="#2c7be5"/>
     </linearGradient>
-
     <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2c7be5"/>
       <stop offset="100%" stop-color="#2bb673"/>
     </linearGradient>
-
-    <marker id="arrow"
-            markerWidth="5"
-            markerHeight="5"
-            refX="4"
-            refY="2.5"
-            orient="auto">
-      <polygon points="0 0, 5 2.5, 0 5" fill="#2c7be5"/>
+    <!-- Smaller arrowhead (size 4) -->
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0 0, 4 2, 0 4" fill="#2c7be5"/>
     </marker>
   </defs>
 
-  <!-- 01 → 02 -->
-  <path d="M420 100 A235 235 0 0 1 540 240"
-        stroke="url(#grad1)"
-        stroke-width="3"
-        fill="none"
-        marker-end="url(#arrow)" />
+  <!-- 01 (top) → 02 (right) – 28° gap -->
+  <path d="M471.5 32.4 A320 320 0 0 1 567.6 128.5"
+        stroke="url(#grad1)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 
-  <!-- 02 → 03 -->
-  <path d="M540 420 A235 235 0 0 1 420 540"
-        stroke="url(#grad2)"
-        stroke-width="3"
-        fill="none"
-        marker-end="url(#arrow)" />
+  <!-- 02 (right) → 03 (bottom) -->
+  <path d="M567.6 471.5 A320 320 0 0 1 471.5 567.6"
+        stroke="url(#grad2)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 
-  <!-- 03 → 04 -->
-  <path d="M180 540 A235 235 0 0 1 60 420"
-        stroke="url(#grad3)"
-        stroke-width="3"
-        fill="none"
-        marker-end="url(#arrow)" />
+  <!-- 03 (bottom) → 04 (left) -->
+  <path d="M128.5 567.6 A320 320 0 0 1 32.4 471.5"
+        stroke="url(#grad3)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 
-  <!-- 04 → 01 -->
-  <path d="M60 180 A235 235 0 0 1 180 60"
-        stroke="url(#grad1)"
-        stroke-width="3"
-        fill="none"
-        marker-end="url(#arrow)" />
-
+  <!-- 04 (left) → 01 (top) -->
+  <path d="M32.4 128.5 A320 320 0 0 1 128.5 32.4"
+        stroke="url(#grad1)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 </svg>
-
 
 
 
