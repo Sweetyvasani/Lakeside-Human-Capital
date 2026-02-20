@@ -298,55 +298,72 @@ Environmental stressors directly influence cognitive clarity and executive funct
 
     <div class="blueprint-wrapper">
 
-       <svg class="process-arcs" viewBox="0 0 600 600" width="600" height="600" preserveAspectRatio="xMidYMid meet">
+      <svg class="process-arcs"
+     viewBox="0 0 600 600"
+     width="600"
+     height="600"
+     preserveAspectRatio="xMidYMid meet">
+
   <defs>
+    <!-- Gradients -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2bb673"/>
       <stop offset="100%" stop-color="#d4a73f"/>
     </linearGradient>
+
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#d4a73f"/>
       <stop offset="100%" stop-color="#2c7be5"/>
     </linearGradient>
+
     <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2c7be5"/>
       <stop offset="100%" stop-color="#2bb673"/>
     </linearGradient>
-    <!-- Smaller arrowhead (size 4) -->
-    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
-      <polygon points="0 0, 4 2, 0 4" fill="#2c7be5"/>
+
+    <!-- Smaller, cleaner arrowhead -->
+    <marker id="arrow"
+            markerWidth="5"
+            markerHeight="5"
+            refX="4"
+            refY="2.5"
+            orient="auto">
+      <polygon points="0 0, 5 2.5, 0 5" fill="#2c7be5"/>
     </marker>
   </defs>
 
+  <!-- Radius reduced to 260 to avoid full circle & overflow -->
+
   <!-- 01 → 02 -->
-<path d="M300 70 A230 230 0 0 1 530 300"
-      stroke="url(#grad1)"
-      stroke-width="3"
-      fill="none"
-      marker-end="url(#arrow)" />
+  <path d="M453 53 A260 260 0 0 1 547 147"
+        stroke="url(#grad1)"
+        stroke-width="3"
+        fill="none"
+        marker-end="url(#arrow)" />
 
-<!-- 02 → 03 -->
-<path d="M530 300 A230 230 0 0 1 300 530"
-      stroke="url(#grad2)"
-      stroke-width="3"
-      fill="none"
-      marker-end="url(#arrow)" />
+  <!-- 02 → 03 -->
+  <path d="M547 453 A260 260 0 0 1 453 547"
+        stroke="url(#grad2)"
+        stroke-width="3"
+        fill="none"
+        marker-end="url(#arrow)" />
 
-<!-- 03 → 04 -->
-<path d="M300 530 A230 230 0 0 1 70 300"
-      stroke="url(#grad3)"
-      stroke-width="3"
-      fill="none"
-      marker-end="url(#arrow)" />
+  <!-- 03 → 04 -->
+  <path d="M147 547 A260 260 0 0 1 53 453"
+        stroke="url(#grad3)"
+        stroke-width="3"
+        fill="none"
+        marker-end="url(#arrow)" />
 
-<!-- 04 → 01 -->
-<path d="M70 300 A230 230 0 0 1 300 70"
-      stroke="url(#grad1)"
-      stroke-width="3"
-      fill="none"
-      marker-end="url(#arrow)" />
+  <!-- 04 → 01 -->
+  <path d="M53 147 A260 260 0 0 1 147 53"
+        stroke="url(#grad1)"
+        stroke-width="3"
+        fill="none"
+        marker-end="url(#arrow)" />
 
 </svg>
+
 
       <!-- Center Circle -->
       <div class="blueprint-core">
