@@ -312,31 +312,27 @@ Environmental stressors directly influence cognitive clarity and executive funct
       <stop offset="0%" stop-color="#2c7be5"/>
       <stop offset="100%" stop-color="#2bb673"/>
     </linearGradient>
-    <!-- Smaller arrowhead (size 4) -->
     <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
       <polygon points="0 0, 4 2, 0 4" fill="#2c7be5"/>
     </marker>
   </defs>
 
-  <!-- 01 (top) → 02 (right) – 28° gap -->
-  <path d="M471.5 32.4 A320 320 0 0 1 567.6 128.5"
+  <!-- 01 (top) → 02 (right) – start 33° after top, end 28° before right -->
+  <path d="M474.1 31.6 A320 320 0 0 1 582.5 149.8"
         stroke="url(#grad1)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 
-  <!-- 02 (right) → 03 (bottom) -->
-  <path d="M567.6 471.5 A320 320 0 0 1 471.5 567.6"
+  <!-- 02 (right) → 03 (bottom) – 28° offset both ends -->
+  <path d="M582.5 450.2 A320 320 0 0 1 450.2 582.5"
         stroke="url(#grad2)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 
-  <!-- 03 (bottom) → 04 (left) -->
-  <path d="M128.5 567.6 A320 320 0 0 1 32.4 471.5"
+  <!-- 03 (bottom) → 04 (left) – 28° offset both ends -->
+  <path d="M149.8 582.5 A320 320 0 0 1 31.6 450.2"
         stroke="url(#grad3)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 
-  <!-- 04 (left) → 01 (top) -->
-  <path d="M32.4 128.5 A320 320 0 0 1 128.5 32.4"
+  <!-- 04 (left) → 01 (top) – start 23° after left, end 28° before top -->
+  <path d="M5.4 175.0 A320 320 0 0 1 149.8 17.5"
         stroke="url(#grad1)" stroke-width="3" fill="none" marker-end="url(#arrow)" />
 </svg>
-
-
-
 
 
       <!-- Center Circle -->
