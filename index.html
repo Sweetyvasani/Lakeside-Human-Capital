@@ -298,14 +298,13 @@ Environmental stressors directly influence cognitive clarity and executive funct
 
     <div class="blueprint-wrapper">
 
-      <svg class="process-arcs"
+    <svg class="process-arcs"
      viewBox="0 0 600 600"
      width="600"
      height="600"
      preserveAspectRatio="xMidYMid meet">
 
   <defs>
-    <!-- Gradients -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2bb673"/>
       <stop offset="100%" stop-color="#d4a73f"/>
@@ -321,7 +320,6 @@ Environmental stressors directly influence cognitive clarity and executive funct
       <stop offset="100%" stop-color="#2bb673"/>
     </linearGradient>
 
-    <!-- Smaller, cleaner arrowhead -->
     <marker id="arrow"
             markerWidth="5"
             markerHeight="5"
@@ -332,37 +330,39 @@ Environmental stressors directly influence cognitive clarity and executive funct
     </marker>
   </defs>
 
-  <!-- Radius reduced to 260 to avoid full circle & overflow -->
+  <!-- Radius now 220 (tighter + aligned with 220px center circle logic) -->
 
   <!-- 01 → 02 -->
-  <path d="M453 53 A260 260 0 0 1 547 147"
+  <path d="M435 80 A220 220 0 0 1 520 165"
         stroke="url(#grad1)"
         stroke-width="3"
         fill="none"
         marker-end="url(#arrow)" />
 
   <!-- 02 → 03 -->
-  <path d="M547 453 A260 260 0 0 1 453 547"
+  <path d="M520 435 A220 220 0 0 1 435 520"
         stroke="url(#grad2)"
         stroke-width="3"
         fill="none"
         marker-end="url(#arrow)" />
 
   <!-- 03 → 04 -->
-  <path d="M147 547 A260 260 0 0 1 53 453"
+  <path d="M165 520 A220 220 0 0 1 80 435"
         stroke="url(#grad3)"
         stroke-width="3"
         fill="none"
         marker-end="url(#arrow)" />
 
   <!-- 04 → 01 -->
-  <path d="M53 147 A260 260 0 0 1 147 53"
+  <path d="M80 165 A220 220 0 0 1 165 80"
         stroke="url(#grad1)"
         stroke-width="3"
         fill="none"
         marker-end="url(#arrow)" />
 
 </svg>
+
+
 
 
       <!-- Center Circle -->
