@@ -698,78 +698,78 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 
 /* ---------- WHY US ---------- */
 
-/* Part 6: Lakeside Advantage Styling */
-.lakeside-advantage {
-  padding: 100px 0;
-  background-color: #fdfaf5; /* Subtle gold tint */
+/* ================= Lakeside Difference Section ================= */
+
+.lakeside-difference {
+  padding: 120px 0;
+  background: #f9fafc; /* soft background like other sections */
 }
 
-.advantage-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  max-width: 1200px;
+.lakeside-difference .container {
+  max-width: 1100px;
   margin: 0 auto;
-}
-
-.advantage-text {
-  flex: 1.2;
-}
-
-.advantage-item {
   display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
-  text-align: left;
+  gap: 80px;
+  padding: 0 20px;
 }
 
-.check-icon {
-  color: #9C7C4C; /* Lakeside Gold */
-  font-weight: bold;
-  font-size: 1.5rem;
+/* LEFT SIDE */
+.difference-left {
+  flex: 1;
 }
 
-.item-content h3 {
-  color: #001540; /* Lakeside Navy */
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+.difference-left .section-title {
+  font-size: 2rem;
+  color: #001F54;
+  margin-bottom: 18px;
 }
 
-.trust-logos-block {
-  flex: 0.8;
-  background: #fff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+.difference-left .section-subtitle {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 500px;
 }
 
-.logo-title {
-  font-weight: 800;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  color: #999;
-  margin-bottom: 30px;
+/* LIST */
+.difference-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  align-items: center;
+.difference-list li {
+  margin-bottom: 28px;
+  position: relative;
+  padding-left: 28px;
 }
 
-.logo-grid img {
-  width: 100%;
-  max-height: 40px;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.7;
+/* Green Tick */
+.difference-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #2bb673;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-@media (max-width: 992px) {
-  .advantage-wrapper { flex-direction: column; }
+/* Title inside each point */
+.difference-list h4 {
+  font-size: 1.05rem;
+  color: #001540;
+  margin-bottom: 6px;
 }
 
+/* Supporting text */
+.difference-list p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
 
 
 /* ---------- Remove underline for service links (broad first pass) ---------- */
