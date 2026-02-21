@@ -742,7 +742,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .capability-row h3,
 .industry-row h3 {
   font-size: 1.3rem;
-  color: #0E2A47;
+  color: #001F54;   /* navy */
   font-weight: 600;
 }
 
@@ -754,6 +754,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .difference-left {
   flex: 0 0 42%;
   max-width: 100%;
+  padding-top: 20px;
 }
 
 .difference-right {
@@ -790,7 +791,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 /* Title inside each point */
 .difference-list h4 {
   font-size: 1.20rem;
-  color: #1E5EFF;   /* light brand blue */
+  color: #2C5CF6
   margin-bottom: 6px;
   font-weight: 700;  
 }
