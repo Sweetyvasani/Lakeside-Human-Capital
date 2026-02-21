@@ -739,6 +739,9 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   flex: 1;
 }
 
+.difference-right {
+  flex: 1;
+}
 
 
 /* LIST */
