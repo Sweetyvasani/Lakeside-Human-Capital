@@ -747,7 +747,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
 .difference-subheading {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 
@@ -790,7 +790,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 /* Title inside each point */
 .difference-list h4 {
   font-size: 1.20rem;
-  color: #001F54;
+  color: #1E5EFF;   /* light brand blue */
   margin-bottom: 6px;
   font-weight: 700;  
 }
@@ -877,8 +877,9 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
 .industry-mini-card p {
-  font-size: 0.85rem;
-  color: #4b5563;
+  font-size: 0.95rem;
+  color: #1E5EFF;
+  font-weight: 600;
   line-height: 1.5;
   margin: 0;
 }
