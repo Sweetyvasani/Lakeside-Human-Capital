@@ -751,11 +751,6 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   margin-bottom: 40px;
 }
 
-.difference-list h4 {
-  font-size: 1.25rem;   /* increased from 1.05 */
-  font-weight: 600;
-}
-
 
 .difference-left {
   flex: 1;
@@ -795,9 +790,10 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 
 /* Title inside each point */
 .difference-list h4 {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   color: #001540;
   margin-bottom: 6px;
+  font-weight: 600;  
 }
 
 /* Supporting text */
