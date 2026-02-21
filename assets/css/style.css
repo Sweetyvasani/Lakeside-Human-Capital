@@ -735,6 +735,23 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
 /* LEFT SIDE */
+
+.difference-subheading {
+  font-size: 1.3rem;
+  color: #001F54;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.difference-list h4 {
+  font-size: 1.1rem;   /* increased from 1.05 */
+  font-weight: 600;
+}
+
+.difference-list p {
+  font-size: 1rem;     /* increased from 0.95 */
+}
+
 .difference-left {
   flex: 1;
   max-width: 100%;
