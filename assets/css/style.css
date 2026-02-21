@@ -776,11 +776,21 @@ background: linear-gradient(
 
 /* Unified Subheading Style */
 
-.difference-subheading,
-.capability-row h3,
+.difference-subheading {
+  font-size: 1.3rem;
+  color: #0f2a5c;  /* Softer Navy */
+  font-weight: 600;
+}
+
+.capability-row h3 {
+  font-size: 1.3rem;
+  color: #1E5EFF;  /* Strategic Blue Accent */
+  font-weight: 600;
+}
+
 .industry-row h3 {
   font-size: 1.3rem;
-  color: #001F54;   /* navy */
+  color: #2BB673;  /* Subtle Green Authority */
   font-weight: 600;
 }
 
@@ -856,18 +866,30 @@ background: linear-gradient(
 .cap-card {
   flex: 1;
   background: #ffffff;
-  padding: 18px 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 21, 64, 0.06);
-  font-size: 0.9rem;
-  color: #001540;
-  line-height: 1.4;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 26px 28px;
+  border-radius: 14px;
+   border-top: 3px solid transparent;
+  background-image: 
+    linear-gradient(#ffffff, #ffffff), 
+    linear-gradient(90deg, #2bb673, #d4a73f, #2c7be5);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  * Elegant layered shadow */
+  box-shadow: 
+    0 6px 18px rgba(0, 21, 64, 0.08),
+    0 2px 6px rgba(0, 21, 64, 0.04);
+    font-size: 1rem;
+  font-weight: 500;
+  color: #0f2a5c;               /* Slightly softer navy */
+  line-height: 1.6;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .cap-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(0, 21, 64, 0.1);
+  transform: translateY(-6px);
+   box-shadow: 
+    0 18px 35px rgba(0, 21, 64, 0.12),
+    0 6px 12px rgba(0, 21, 64, 0.06);
 }
 
 /* =========== Industry Footprint – Compact Vertical Cards ========= */
@@ -882,7 +904,9 @@ background: linear-gradient(
   background: #ffffff;
   padding: 22px 25px;
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 21, 64, 0.05);
+  box-shadow: 
+  0 10px 28px rgba(0, 21, 64, 0.07),
+  0 3px 8px rgba(0, 21, 64, 0.04);
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -906,7 +930,9 @@ background: linear-gradient(
 
 .industry-mini-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(0, 21, 64, 0.08);
+ box-shadow: 
+  0 20px 40px rgba(0, 21, 64, 0.12),
+  0 8px 16px rgba(0, 21, 64, 0.06);
 }
 
 .industry-mini-card h4 {
