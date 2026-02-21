@@ -8,7 +8,7 @@ body {
 
 /* Headings & Brand Font */
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;  
 }
 
 .navbar-brand {
@@ -868,88 +868,21 @@ background: linear-gradient(
   gap: 18px;
 }
 
-.cap-card {
-  flex: 1;
-  background: #ffffff;
-  padding: 20px 22px;   /* back to compact size */
-  border-radius: 14px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  min-height: 105px;   /* tighter height */
-
-  position: relative;
-  overflow: hidden;
-
-  /* Clean institutional depth */
-  box-shadow:
-    0 10px 22px rgba(0, 21, 64, 0.08),
-    0 3px 6px rgba(0, 21, 64, 0.05);
-
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.cap-card { 
+  flex: 1; 
+  background: #ffffff; 
+  padding: 18px 20px; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 20px rgba(0, 21, 64, 0.06); 
+  font-size: 0.9rem; color: #001540; 
+  line-height: 1.4; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cap-card:nth-child(1)::before {
-  background: #2BB673;
-}
-
-.cap-card:nth-child(2)::before {
-  background: #d4a73f;
-}
-
-.cap-card:nth-child(3)::before {
-  background: #2c7be5;
-}
   
-.cap-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 18px;
-  right: 18px;
-  height: 2px;   /* thinner */
-  border-radius: 4px;
-}
-
-.cap-card::after {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border-radius: 18px;
-    z-index: -1;
-filter: blur(12px);
-  opacity: 0.7;
-  animation: cardGlow 4s ease-in-out infinite alternate;
-}
-
-@keyframes cardGlow {
-  from {
-    opacity: 0.45;
-  }
-  to {
-    opacity: 0.85;
-  }
-}
-
-.cap-card:nth-child(1)::after {
-  background: rgba(43, 182, 115, 0.25);
-}
-
-.cap-card:nth-child(2)::after {
-  background: rgba(212, 167, 63, 0.25);
-}
-
-.cap-card:nth-child(3)::after {
-  background: rgba(44, 123, 229, 0.25);
-}
-
 .cap-card:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 16px 30px rgba(0, 21, 64, 0.12),
-    0 6px 12px rgba(0, 21, 64, 0.06);
+transform: translateY(-4px); 
+  box-shadow: 0 14px 28px rgba(0, 21, 64, 0.1); 
 }
 
 .cap-highlight {
