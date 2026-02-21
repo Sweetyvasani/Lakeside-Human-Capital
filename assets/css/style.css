@@ -742,7 +742,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .capability-row h3,
 .industry-row h3 {
   font-size: 1.3rem;
-  color: #1e5eff;
+  color: #0E2A47;
   font-weight: 600;
 }
 
@@ -782,7 +782,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   position: absolute;
   left: 0;
   top: 2px;
-  color: #2bb673;
+  color: #2BB673;
   font-size: 22px;
   font-weight: 800;
 }
