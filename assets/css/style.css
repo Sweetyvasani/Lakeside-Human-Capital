@@ -746,6 +746,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   text-align: center;
   margin: 0 auto 60px;
   max-width: 650px;
+  font-weight: 600;
 }
 
 .difference-columns {
@@ -780,7 +781,7 @@ background: linear-gradient(
    font-size: 1.15rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #6b7280;   /* Elegant neutral grey */
+  color: #1E5EFF;
   font-weight: 600;
   margin-bottom: 50px;
 }
@@ -972,7 +973,6 @@ background: linear-gradient(
 .industry-mini-card p {
   font-size: 0.95rem;
   color: #4b5563;
-  font-weight: 600;
   line-height: 1.5;
   margin: 0;
 }
