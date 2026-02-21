@@ -790,10 +790,10 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 
 /* Title inside each point */
 .difference-list h4 {
-  font-size: 1.25rem;
+  font-size: 1.20rem;
   color: #001F54;
   margin-bottom: 6px;
-  font-weight: 600;  
+  font-weight: 700;  
 }
 
 /* Supporting text */
@@ -802,6 +802,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   color: #4b5563;
   line-height: 1.7;
   margin: 0;
+  text-align: center;
 }
 
 /* ===========Institutional Capability – Horizontal Cards=========*/
