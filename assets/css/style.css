@@ -737,6 +737,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 /* LEFT SIDE */
 .difference-left {
   flex: 1;
+  max-width: 100%;
 }
 
 .difference-right {
@@ -749,12 +750,14 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .difference-list li {
-  margin-bottom: 28px;
+  margin-bottom: 36px;
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
+  max-width: 95%;
 }
 
 /* Green Tick */
