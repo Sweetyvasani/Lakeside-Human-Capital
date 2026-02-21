@@ -759,15 +759,15 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .difference-columns::after {
   content: "";
   position: absolute;
-  top: 60px;
-  bottom: 60px;
+  top: 100px;
+  bottom: 80px;
   left: 42%; /* aligns with your left column width */
   width: 1px;
 background: linear-gradient(
   to bottom,
   transparent,
-  rgba(0, 31, 84, 0.08),
-  rgba(0, 31, 84, 0.08),
+  rgba(0, 31, 84, 0.10),
+  rgba(0, 31, 84, 0.10),
   transparent
 );
   }
