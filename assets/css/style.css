@@ -701,14 +701,28 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 /* ================= Lakeside Difference Section ================= */
 
 .lakeside-difference {
-  padding: 120px 0;
-  background: #f9fafc; /* soft background like other sections */
+  padding: 140px 0;
+  background-image: url("../Impact-Background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.lakeside-difference::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
 }
 
 .lakeside-difference .container {
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 40px;
+  position: relative;
+  z-index: 1;
 }
 
 /* NEW WRAPPER FOR COLUMNS */
