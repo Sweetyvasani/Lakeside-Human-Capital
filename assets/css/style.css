@@ -748,6 +748,29 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   max-width: 650px;
 }
 
+.difference-columns {
+  display: flex;
+  gap: 80px;
+  margin-top: 70px;
+  position: relative;
+}
+
+/* Vertical separator */
+.difference-columns::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 42%; /* aligns with your left column width */
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 31, 84, 0.12),
+    transparent
+  );
+}
+
 /* LEFT SIDE */
 
 /* Unified Subheading Style */
