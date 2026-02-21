@@ -805,8 +805,8 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 /* Title inside each point */
 .difference-list h4 {
   font-size: 1.20rem;
-  color: #2C5CF6
-  margin-bottom: 4px;
+  color: #2C5CF6;
+  margin-bottom: 2px;
   font-weight: 700;  
 }
 
