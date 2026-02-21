@@ -756,10 +756,6 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   font-weight: 600;
 }
 
-.difference-list p {
-  font-size: 1.02rem;     /* increased from 0.95 */
-   line-height: 1.7;
-}
 
 .difference-left {
   flex: 1;
@@ -806,9 +802,9 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 
 /* Supporting text */
 .difference-list p {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   color: #4b5563;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
 }
 
