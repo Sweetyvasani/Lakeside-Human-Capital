@@ -771,6 +771,55 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   margin: 0;
 }
 
+/* RIGHT SIDE WRAPPER */
+.difference-right {
+  flex: 1;
+  background: #ffffff;
+  padding: 40px 45px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 21, 64, 0.06);
+}
+
+/* Right Headings */
+.difference-right h3 {
+  font-size: 1.2rem;
+  color: #001F54;
+  margin-bottom: 18px;
+}
+
+/* Bullet List */
+.capability-block ul {
+  padding-left: 18px;
+  margin-bottom: 30px;
+}
+
+.capability-block li {
+  margin-bottom: 10px;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+/* Divider */
+.industry-block {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 25px;
+}
+
+/* Industry Titles */
+.industry-item h4 {
+  font-size: 1rem;
+  color: #001540;
+  margin-bottom: 6px;
+  margin-top: 18px;
+}
+
+/* Industry Description */
+.industry-item p {
+  font-size: 0.92rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.5;
+}
 
 /* ---------- Remove underline for service links (broad first pass) ---------- */
 /* Targets links that go to any /services/ page (safe & non-global) */
