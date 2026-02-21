@@ -870,58 +870,78 @@ background: linear-gradient(
 .cap-card {
   flex: 1;
   background: #ffffff;
-  padding: 22px 24px;   /* Back closer to original size */
+  padding: 22px 24px;
   border-radius: 14px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  min-height: 115px;    /* Reduced from 140px */
+  min-height: 115px;
 
   position: relative;
   overflow: hidden;
 
+  /* Base elevation */
   box-shadow:
-    0 12px 28px rgba(0, 21, 64, 0.10),
-    0 4px 8px rgba(0, 21, 64, 0.05);
+    0 14px 30px rgba(0, 21, 64, 0.10),
+    0 4px 10px rgba(0, 21, 64, 0.05);
 
   transition: transform 0.35s ease;
 }
 
-.cap-card:nth-child(1) {
-  border-top: 3px solid #2BB673;   /* Green */
+.cap-card:nth-child(1)::before {
+  background: #2BB673;
 }
 
-.cap-card:nth-child(2) {
-  border-top: 3px solid #d4a73f;   /* Gold */
+.cap-card:nth-child(2)::before {
+  background: #d4a73f;
 }
 
-.cap-card:nth-child(3) {
-  border-top: 3px solid #2c7be5;   /* Blue */
+.cap-card:nth-child(3)::before {
+  background: #2c7be5;
+}
+  
+.cap-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12px;
+  height: 3px;
+  border-radius: 6px;
 }
 
 .cap-card::after {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 14px;
-  box-shadow: 0 0 20px rgba(44, 123, 229, 0.15);
-  opacity: 0.6;
-  animation: glowPulse 3.5s ease-in-out infinite;
-  pointer-events: none;
+  inset: -8px;
+  border-radius: 18px;
+    z-index: -1;
+filter: blur(12px);
+  opacity: 0.7;
+  animation: cardGlow 4s ease-in-out infinite alternate;
 }
 
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 18px rgba(44, 123, 229, 0.12);
+@keyframes cardGlow {
+  from {
+    opacity: 0.45;
   }
-  50% {
-    box-shadow: 0 0 28px rgba(44, 123, 229, 0.22);
+  to {
+    opacity: 0.85;
   }
-  100% {
-    box-shadow: 0 0 18px rgba(44, 123, 229, 0.12);
-  }
+}
+
+.cap-card:nth-child(1)::after {
+  background: rgba(43, 182, 115, 0.25);
+}
+
+.cap-card:nth-child(2)::after {
+  background: rgba(212, 167, 63, 0.25);
+}
+
+.cap-card:nth-child(3)::after {
+  background: rgba(44, 123, 229, 0.25);
 }
 
 .cap-card:hover {
