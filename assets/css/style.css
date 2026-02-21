@@ -794,7 +794,7 @@ background: linear-gradient(
 
 .industry-row h3 {
   font-size: 1.3rem;
-  color: #0f2a5c;   /* Deep authority navy */
+  color: #1E5EFF;
   font-weight: 600;
 }
 
@@ -966,7 +966,7 @@ background: linear-gradient(
 
 .industry-mini-card h4 {
   font-size: 0.95rem;
-  color: #1E5EFF;
+  color: #001F54;
   margin-bottom: 6px;
 }
 
