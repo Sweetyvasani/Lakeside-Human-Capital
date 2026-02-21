@@ -713,7 +713,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.65);
   z-index: 0;
 }
 
@@ -806,7 +806,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .difference-list h4 {
   font-size: 1.20rem;
   color: #2C5CF6
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-weight: 700;  
 }
 
