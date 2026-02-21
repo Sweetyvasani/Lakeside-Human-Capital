@@ -742,7 +742,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .capability-row h3,
 .industry-row h3 {
   font-size: 1.3rem;
-  color: #001F54;
+  color: #1e5eff;
   margin-bottom: 28px;
   font-weight: 600;
 }
@@ -784,14 +784,14 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   left: 0;
   top: 2px;
   color: #2bb673;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 /* Title inside each point */
 .difference-list h4 {
   font-size: 1.25rem;
-  color: #1e5eff;
+  color: #001F54;
   margin-bottom: 6px;
   font-weight: 600;  
 }
