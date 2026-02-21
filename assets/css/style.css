@@ -752,12 +752,12 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 
 
 .difference-left {
-  flex: 1;
+  flex: 0 0 42%;
   max-width: 100%;
 }
 
 .difference-right {
-  flex: 1;
+  flex: 0 0 58%;
 }
 
 
