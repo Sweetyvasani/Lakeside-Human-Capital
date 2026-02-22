@@ -1238,6 +1238,95 @@ font-size: 18px;
 }
 
 
+/* ================== FOUNDERS OLD ================== */
+
+/* Part 5: Founders Section Styling */
+.founders-section {
+  padding: 120px 0;
+  background-color: #f8f9fa; /* Light grey to distinguish from the Smarter Approach section */
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 60px;
+  background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(6px);
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(0, 21, 64, 0.06);
+}
+
+.founder-card {
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  gap: 30px;
+  text-align: left;
+}
+  
+
+.founder-card:first-child {
+  padding-right: 40px;
+  border-right: 1px solid rgba(0, 21, 64, 0.08);
+}
+
+.founder-card:first-child .founder-image {
+  margin-top: 12px;
+}
+
+.founder-card:last-child {
+  padding-left: 40px;
+}
+
+.founder-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+   object-position: top center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 5px solid #9C7C4C; /* Lakeside Gold border */
+  transition: transform 0.3s ease;
+}
+
+
+.founder-info h3 {
+  color: #001540; /* Lakeside Navy */
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.founder-role {
+  display: block;
+  font-weight: 700;
+  color: #9C7C4C; /* Lakeside Gold */
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.founder-info p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+  }
+}
+
+
 
 /* ================== FOUNDERS ================== */
 
