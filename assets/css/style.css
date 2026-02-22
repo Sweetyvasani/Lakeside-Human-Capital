@@ -141,7 +141,7 @@ body {
 /* Heading */
 .hero h1 {
   font-size: 3.2rem;
-  margin-bottom: 1rem;  /* ✅ increase spacing below heading */
+  margin-bottom: 24px;  /* ✅ increase spacing below heading */
   font-weight: 700;
   color: #fff;
   white-space: normal; /* ✅ allow wrapping */
@@ -158,14 +158,14 @@ body {
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.85);
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 /* Subtext */
 .hero p {
   font-size: 1.2rem;
   margin-top: 0.5rem; /* ✅ Add this to control spacing from heading */
-  margin-bottom: 2rem;
+  margin-bottom: 36px;
   line-height: 1.6;
   color: #fff;
   white-space: normal;
@@ -235,6 +235,12 @@ body {
   .hero p {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 768px) {
+  .hero h1 { margin-bottom: 16px; }
+  .hero-subline { margin-bottom: 14px; }
+  .hero p { margin-bottom: 24px; }
 }
 
 
