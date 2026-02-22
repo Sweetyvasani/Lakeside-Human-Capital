@@ -942,6 +942,7 @@ background: linear-gradient(
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
 }
 
 .industry-mini-card::before {
@@ -969,6 +970,26 @@ background: linear-gradient(
   background: #ffffff;
   z-index: -1;
 }
+
+.impact-card:nth-child(1) {
+    box-shadow:
+    0 0 0 2px rgba(94, 185, 135, 0.08),
+    0 10px 25px rgba(94, 185, 135, 0.12);
+}
+
+
+.impact-card:nth-child(2) {
+      box-shadow:
+    0 0 0 2px rgba(207, 168, 84, 0.08),
+    0 10px 25px rgba(207, 168, 84, 0.12);
+}
+
+.impact-card:nth-child(3) {
+      box-shadow:
+    0 0 0 2px rgba(95, 146, 232, 0.08),
+    0 10px 25px rgba(95, 146, 232, 0.12);
+}
+
 
 @keyframes rotateGlow {
   0% { transform: rotate(0deg); }
