@@ -1240,92 +1240,99 @@ font-size: 18px;
 
 /* ================== FOUNDERS OLD ================== */
 
-/* Part 5: Founders Section Styling */
-.founders-section {
-  padding: 120px 0;
-  background-color: #f8f9fa; /* Light grey to distinguish from the Smarter Approach section */
-}
+/* ================== FOUNDERS ================== */
 
-.founders-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 70px 60px;
-  background: rgba(255, 255, 255, 0.85);
-backdrop-filter: blur(6px);
-  border-radius: 28px;
-  box-shadow: 0 25px 60px rgba(0, 21, 64, 0.06);
-}
-
-.founder-card {
-  background: transparent;
+/* Founders Section */
+.founders {
   display: flex;
-  align-items: flex-start;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  gap: 30px;
-  text-align: left;
-}
-  
-
-.founder-card:first-child {
-  padding-right: 40px;
-  border-right: 1px solid rgba(0, 21, 64, 0.08);
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 2rem 2rem; /* reduced top padding for tighter spacing */
+  flex-wrap: wrap;
+  margin-top: 20px; /* ✅ adds small gap after paragraph */
 }
 
-.founder-card:first-child .founder-image {
-  margin-top: 12px;
+.founder {
+  max-width: 420px;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
 }
 
-.founder-card:last-child {
-  padding-left: 40px;
+/* Founder Name */
+.founders h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 0.25rem;
 }
 
-.founder-image img {
-  width: 150px;
-  height: 150px;
+/* Founder Role (teal) */
+.founders h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #14b8a6;
+  margin-bottom: 0.75rem;
+}
+
+/* ✅ Paragraphs inside founder cards */
+.founder p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px; /* reduced from 60px */
+}
+
+/* ✅ Standardize founder images */
+.founder-img {
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-   object-position: top center;
+  object-position: top center;
+  margin-bottom: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border: 5px solid #9C7C4C; /* Lakeside Gold border */
   transition: transform 0.3s ease;
 }
-
-
-.founder-info h3 {
-  color: #001540; /* Lakeside Navy */
-  font-size: 1.6rem;
-  margin-bottom: 5px;
+.founder:hover .founder-img {
+  transform: scale(1.05);
 }
 
-.founder-role {
-  display: block;
+.founders-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 2.8rem; /* ✅ fixed typo (was 2r.8em) */
   font-weight: 700;
-  color: #9C7C4C; /* Lakeside Gold */
-  margin-bottom: 15px;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #0a2540;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
-.founder-info p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+.section-subtitle {
+  text-align: center;
   color: #555;
+  margin-bottom: 1.5rem; /* ✅ reduced from 2rem */
+  font-size: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 900px) {
-  .founders-grid {
-    grid-template-columns: 1fr;
-    padding: 50px 30px;
+/* Responsive */
+@media (max-width: 768px) {
+  .founders {
+    flex-direction: column;
+    align-items: center;
+  }
+  .founder {
+    max-width: 90%;
   }
 }
-
 
 
 /* ================== FOUNDERS ================== */
