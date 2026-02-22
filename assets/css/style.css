@@ -1271,7 +1271,7 @@ font-size: 18px;
 .founder-additionalpara {
   display: block;               /* makes it behave like paragraph */
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #9C7C4C;               /* Lakeside gold */
   font-weight: 600;
 }
