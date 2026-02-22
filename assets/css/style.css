@@ -1460,7 +1460,10 @@ font-size: 18px;
   transition: transform .18s ease, background-color .18s ease;
 }
 
-.cta-btn:hover { transform: translateY(-3px); background-color: #0fa192; }
+.cta-btn:hover {   
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22); 
+}
 
 /* responsive tweaks */
 @media (max-width: 768px) {
@@ -1992,6 +1995,7 @@ font-size: 18px;
   padding: 0 1.2rem !important;
   box-sizing: border-box !important;
   border-radius: 999px !important;   /* ← ADD THIS */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* Extra small screens (<= 480px) */
@@ -2008,4 +2012,10 @@ font-size: 18px;
   font-size: 0.95rem !important;
   height: 52px !important;
   border-radius: 999px !important;   /* ← ADD THIS HERE TOO */
+}
+
+  .btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
 }
