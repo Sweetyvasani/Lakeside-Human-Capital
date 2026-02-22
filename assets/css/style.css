@@ -775,11 +775,10 @@ background: linear-gradient(
 /* Unified Subheading Style */
 
 .difference-subheading {
-   font-size: 1.15rem;
-  letter-spacing: 0.5px;
+   font-size: 1.3rem;
     color: #1E5EFF;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .capability-row h3 {
@@ -792,10 +791,6 @@ background: linear-gradient(
   font-size: 1.3rem;
   color: #1E5EFF;
   font-weight: 600;
-}
-
-.difference-subheading {
-  margin-bottom: 70px;
 }
 
 
