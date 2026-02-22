@@ -1453,7 +1453,7 @@ font-size: 18px;
   min-height: 50px;       /* ensures a consistent height */
   font-size: 1.2rem;
   font-weight: 700;
-  border-radius: 8px;
+  border-radius: 999px;
   background-color: #14b8a6;
   color: #fff;
   text-decoration: none;
