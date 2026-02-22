@@ -751,12 +751,6 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   font-weight: 600;
 }
 
-.difference-columns {
-  display: flex;
-  gap: 80px;
-  margin-top: 70px;
-  position: relative;
-}
 
 /* Vertical separator */
 .difference-columns::after {
@@ -808,8 +802,7 @@ background: linear-gradient(
 .difference-left {
   flex: 0 0 42%;
   max-width: 100%;
-  padding-top: 0;
-}
+  }
 
 .difference-right {
   flex: 0 0 58%;
