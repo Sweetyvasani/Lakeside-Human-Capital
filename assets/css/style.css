@@ -1249,9 +1249,14 @@ font-size: 18px;
 }
 
 .founders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 60px;
   background: linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
   border-radius: 28px;
-  padding: 70px 60px;
   box-shadow: 0 25px 60px rgba(0, 21, 64, 0.06);
 }
 
@@ -1290,12 +1295,6 @@ font-size: 18px;
   transition: transform 0.3s ease;
 }
 
-.founder-card:hover .founder-imgage {
-  transform: scale(1.05);
-}
-
-  
-
 
 .founder-info h3 {
   color: #001540; /* Lakeside Navy */
@@ -1320,10 +1319,10 @@ font-size: 18px;
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .founder-card {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 900px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
   }
 }
 
