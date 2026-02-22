@@ -1337,6 +1337,12 @@ font-size: 18px;
   margin-right: auto;
 }
 
+.lead-subtitle {
+  color: #4b5563;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .founders {
