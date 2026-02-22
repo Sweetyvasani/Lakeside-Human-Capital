@@ -1258,7 +1258,7 @@ font-size: 18px;
 .founder-card {
   background: transparent;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
   border-radius: 0;
   box-shadow: none;
@@ -1280,6 +1280,7 @@ font-size: 18px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+   object-position: center 20%; /* adjust vertically */
   border: 5px solid #9C7C4C; /* Lakeside Gold border */
 }
 
