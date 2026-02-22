@@ -757,18 +757,18 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 .difference-columns::after {
   content: "";
   position: absolute;
-  top: 140px;
-  bottom: 120px;
-  left: 45%; /* aligns with your left column width */
+  top: 155px;         /* slightly tighter */
+  bottom: 135px;      /* tighter end */
+  left: 45%;
   width: 1px;
-background: linear-gradient(
-  to bottom,
-  transparent,
-  rgba(212, 167, 63, 0.25),
-  rgba(212, 167, 63, 0.25),
-  transparent
-);
-  }
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(212, 167, 63, 0.18),
+    rgba(212, 167, 63, 0.18),
+    transparent
+  );
+}
 
 /* LEFT SIDE */
 
