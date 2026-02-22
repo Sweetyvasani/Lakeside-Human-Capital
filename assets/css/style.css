@@ -18,6 +18,10 @@ h1, h2, h3 {
   color: #0b1f3b;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 
 /* ================== HEADER ================== */
 header {
@@ -134,7 +138,8 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 1500px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   animation: fadeIn 1.5s ease-in-out;
   }
