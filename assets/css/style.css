@@ -1280,9 +1280,18 @@ font-size: 18px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-   object-position: center 20%; /* adjust vertically */
+   object-position: top center;
+    margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border: 5px solid #9C7C4C; /* Lakeside Gold border */
+  transition: transform 0.3s ease;
 }
+.founder:hover .founder-img {
+  transform: scale(1.05);
+}
+
+  
+
 
 .founder-info h3 {
   color: #001540; /* Lakeside Navy */
