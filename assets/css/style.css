@@ -22,62 +22,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* ================== Mobile view for Blueprint Circle ================== */
-
-@media (max-width: 768px) {
-
-  .framework-blueprint {
-    padding: 80px 0;
-  }
-
-  .framework-blueprint .section-subtitle {
-    margin-bottom: 50px;
-    padding: 0 1.2rem;
-  }
-
-  .blueprint-wrapper {
-    position: static;
-    min-height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .process-arcs {
-    display: none;   /* hide curved arrows */
-  }
-
-  .blueprint-core {
-    position: static;
-    transform: none;
-    width: 180px;
-    height: 180px;
-    padding: 24px;
-    margin-bottom: 20px;
-  }
-
-  .blueprint-core h3 {
-    font-size: 1rem;
-  }
-
-  .blueprint-core p {
-    font-size: 0.85rem;
-  }
-
-  .blueprint-step {
-    position: static;
-    transform: none;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .blueprint-step p {
-    max-width: 100%;
-  }
-
-}
 
 /* ================== HEADER ================== */
 header {
@@ -1026,6 +970,62 @@ font-size: 18px;
 
 
 
+/* ================== Mobile view for Blueprint Circle ================== */
+
+@media (max-width: 768px) {
+
+  .framework-blueprint {
+    padding: 80px 0;
+  }
+
+  .framework-blueprint .section-subtitle {
+    margin-bottom: 50px;
+    padding: 0 1.2rem;
+  }
+
+  .blueprint-wrapper {
+    position: static;
+    min-height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .process-arcs {
+    display: none;   /* hide curved arrows */
+  }
+
+  .blueprint-core {
+    position: static;
+    transform: none;
+    width: 180px;
+    height: 180px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+
+  .blueprint-core h3 {
+    font-size: 1rem;
+  }
+
+  .blueprint-core p {
+    font-size: 0.85rem;
+  }
+
+  .blueprint-step {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .blueprint-step p {
+    max-width: 100%;
+  }
+
+}
 
 
 
