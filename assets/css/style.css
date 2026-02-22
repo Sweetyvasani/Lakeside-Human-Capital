@@ -1445,7 +1445,7 @@ font-size: 18px;
 }
 
 /* 3) Taller CTA button */
-.cta-buttons {
+.cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1460,7 +1460,7 @@ font-size: 18px;
   transition: transform .18s ease, background-color .18s ease;
 }
 
-.cta-buttons:hover { transform: translateY(-3px); background-color: #0fa192; }
+.cta-btn:hover { transform: translateY(-3px); background-color: #0fa192; }
 
 /* responsive tweaks */
 @media (max-width: 768px) {
@@ -1978,20 +1978,20 @@ font-size: 18px;
   }
 
   /* CTA Button fixes - MAIN CORRECTION */
-  .btn-primary, 
-  .btn-secondary {
-    display: inline-flex !important; /* Keep flex for centering */
-    width: 90% !important;
-    max-width: 340px !important;
-    margin: 0.5rem auto !important;
-    text-align: center !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 54px !important;
-    font-size: 1rem !important;
-    padding: 0 1.2rem !important;
-    box-sizing: border-box !important;
-  }
+.btn-primary, 
+.btn-secondary {
+  display: inline-flex !important;
+  width: 90% !important;
+  max-width: 340px !important;
+  margin: 0.5rem auto !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 54px !important;
+  font-size: 1rem !important;
+  padding: 0 1.2rem !important;
+  box-sizing: border-box !important;
+  border-radius: 999px !important;   /* ← ADD THIS */
 }
 
 /* Extra small screens (<= 480px) */
@@ -2002,10 +2002,10 @@ font-size: 18px;
   .mobile-nav.open { max-height: 420px; }
   .hero-content { margin-top: 6vh; }
   
-  .btn-primary, 
-  .btn-secondary {
-    width: 95% !important;
-    font-size: 0.95rem !important;
-    height: 52px !important;
-  }
+.btn-primary, 
+.btn-secondary {
+  width: 95% !important;
+  font-size: 0.95rem !important;
+  height: 52px !important;
+  border-radius: 999px !important;   /* ← ADD THIS HERE TOO */
 }
