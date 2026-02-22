@@ -777,8 +777,7 @@ background: linear-gradient(
 .difference-subheading {
    font-size: 1.15rem;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #1E5EFF;
+    color: #1E5EFF;
   font-weight: 600;
   margin-bottom: 50px;
 }
