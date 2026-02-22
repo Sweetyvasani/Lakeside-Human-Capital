@@ -107,7 +107,7 @@ body {
 .hero {
   display: flex;
   justify-content: center; /* ✅ aligns text to the center */
-  align-items: center;  
+  align-items: flex-start;  
   text-align: center;          
   padding: 3rem 1.5rem;
   background-image: 
@@ -119,6 +119,7 @@ body {
   position: relative;
   min-height: 450px;
   color: #fff;
+  padding-top: 6rem;
 }
 
 /* Dark overlay */
@@ -136,6 +137,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   animation: fadeIn 1.5s ease-in-out;
+  transform: translateY(-25px);
 }
 
 /* Heading */
