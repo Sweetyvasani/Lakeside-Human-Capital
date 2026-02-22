@@ -421,7 +421,8 @@ body {
 
 .page-header p {
   font-size: 1.1rem;
-  color: #555;
+  color: #4b5563;
+  font-weight: 600
 margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
