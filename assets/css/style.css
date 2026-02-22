@@ -873,8 +873,6 @@ background: linear-gradient(
   background: #ffffff;
   padding: 26px 28px;
   border-radius: 14px;
-  position: relative;
-  z-index: 1;
 
  border-top: 3px solid #2bb673; /* Default fallback */
   /* Elegant layered shadow */
@@ -910,38 +908,6 @@ background: linear-gradient(
     0 6px 12px rgba(0, 21, 64, 0.06);
 }
 
-.cap-card::after {
-  content: "";
-  position: absolute;
-  inset: -2px;                 /* slightly bigger than card */
-  border-radius: 16px;         /* 14px + 2px */
-  z-index: -1;                 /* behind card */
-}
-
-.cap-card:nth-child(1)::after {
-  background: linear-gradient(
-    to bottom,
-    transparent 80%,
-    #2bb673 100%
-  );
-}
-
-.cap-card:nth-child(2)::after {
-  background: linear-gradient(
-    to bottom,
-    transparent 80%,
-    #d4a73f 100%
-  );
-}
-
-.cap-card:nth-child(3)::after {
-  background: linear-gradient(
-    to bottom,
-    transparent 80%,
-    #2c7be5 100%
-  );
-}
-
 .cap-highlight {
   display: block;
   font-size: 1.35rem;
@@ -956,7 +922,6 @@ background: linear-gradient(
   color: #4b5563;
   line-height: 1.6;
 }
-
 /* =========== Industry Footprint – Compact Vertical Cards ========= */
 
 .industry-cards {
