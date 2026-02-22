@@ -734,6 +734,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   align-items: flex-start;   /* ADD THIS */
 }
 
+
 .lakeside-difference .section-title {
   font-size: 2.2rem;
   color: #001F54;
@@ -806,6 +807,7 @@ background: linear-gradient(
 
 .difference-right {
   flex: 0 0 58%;
+   margin-top: -2px;
 }
 
 
