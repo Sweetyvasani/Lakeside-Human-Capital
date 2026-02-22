@@ -1445,7 +1445,7 @@ font-size: 18px;
 }
 
 /* 3) Taller CTA button */
-.cta-btn {
+.cta-buttons {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1460,7 +1460,7 @@ font-size: 18px;
   transition: transform .18s ease, background-color .18s ease;
 }
 
-.cta-btn:hover { transform: translateY(-3px); background-color: #0fa192; }
+.cta-buttons:hover { transform: translateY(-3px); background-color: #0fa192; }
 
 /* responsive tweaks */
 @media (max-width: 768px) {
