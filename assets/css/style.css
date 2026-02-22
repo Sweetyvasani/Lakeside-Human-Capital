@@ -731,6 +731,7 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   display: flex;
   gap: 80px;
   margin-top: 70px;
+  align-items: flex-start;   /* ADD THIS */
 }
 
 .lakeside-difference .section-title {
@@ -763,13 +764,13 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
   position: absolute;
   top: 140px;
   bottom: 120px;
-  left: 42%; /* aligns with your left column width */
+  left: 45%; /* aligns with your left column width */
   width: 1px;
 background: linear-gradient(
   to bottom,
   transparent,
-  rgba(0, 31, 84, 0.10),
-  rgba(0, 31, 84, 0.10),
+  rgba(212, 167, 63, 0.25),
+  rgba(212, 167, 63, 0.25),
   transparent
 );
   }
@@ -807,7 +808,7 @@ background: linear-gradient(
 .difference-left {
   flex: 0 0 42%;
   max-width: 100%;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .difference-right {
