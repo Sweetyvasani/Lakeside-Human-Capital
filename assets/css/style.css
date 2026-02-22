@@ -874,13 +874,7 @@ background: linear-gradient(
   padding: 26px 28px;
   border-radius: 14px;
 
-  border-top: 3px solid transparent;
-  background-image: 
-    linear-gradient(#ffffff, #ffffff), 
-    linear-gradient(90deg, #2bb673, #d4a73f, #2c7be5);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-
+ border-top: 3px solid #2bb673; /* Default fallback */
   /* Elegant layered shadow */
   box-shadow: 
     0 6px 18px rgba(0, 21, 64, 0.08),
@@ -892,6 +886,18 @@ background: linear-gradient(
   line-height: 1.6;
 
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cap-card:nth-child(1) {
+  border-top-color: #2bb673;   /* Green */
+}
+
+.cap-card:nth-child(2) {
+  border-top-color: #d4a73f;   /* Gold */
+}
+
+.cap-card:nth-child(3) {
+  border-top-color: #2c7be5;   /* Blue */
 }
 
 .cap-card:hover {
