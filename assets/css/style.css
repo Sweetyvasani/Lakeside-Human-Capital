@@ -873,6 +873,8 @@ background: linear-gradient(
   background: #ffffff;
   padding: 26px 28px;
   border-radius: 14px;
+  position: relative;
+overflow: hidden;
 
  border-top: 3px solid #2bb673; /* Default fallback */
   /* Elegant layered shadow */
@@ -906,6 +908,30 @@ background: linear-gradient(
   box-shadow: 
     0 18px 35px rgba(0, 21, 64, 0.12),
     0 6px 12px rgba(0, 21, 64, 0.06);
+}
+
+.cap-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  pointer-events: none;
+}
+
+.cap-card:nth-child(1)::after {
+  background: #2bb673;   /* Green */
+}
+
+.cap-card:nth-child(2)::after {
+  background: #d4a73f;   /* Gold */
+}
+
+.cap-card:nth-child(3)::after {
+  background: #2c7be5;   /* Blue */
 }
 
 .cap-highlight {
