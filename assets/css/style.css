@@ -874,7 +874,7 @@ background: linear-gradient(
   padding: 26px 28px;
   border-radius: 14px;
   position: relative;
-overflow: hidden;
+  z-index: 1;
 
  border-top: 3px solid #2bb673; /* Default fallback */
   /* Elegant layered shadow */
@@ -913,30 +913,33 @@ overflow: hidden;
 .cap-card::after {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 14px;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-size: 14px 14px, 14px 14px;
-  background-position: bottom left, bottom right;
+  inset: -2px;                 /* slightly bigger than card */
+  border-radius: 16px;         /* 14px + 2px */
+  z-index: -1;                 /* behind card */
 }
 
 .cap-card:nth-child(1)::after {
-  background-image:
-    radial-gradient(circle at bottom left, #2bb673 70%, transparent 71%),
-    radial-gradient(circle at bottom right, #2bb673 70%, transparent 71%);
+  background: linear-gradient(
+    to bottom,
+    transparent 80%,
+    #2bb673 100%
+  );
 }
 
 .cap-card:nth-child(2)::after {
-  background-image:
-    radial-gradient(circle at bottom left, #d4a73f 70%, transparent 71%),
-    radial-gradient(circle at bottom right, #d4a73f 70%, transparent 71%);
+  background: linear-gradient(
+    to bottom,
+    transparent 80%,
+    #d4a73f 100%
+  );
 }
 
 .cap-card:nth-child(3)::after {
-  background-image:
-    radial-gradient(circle at bottom left, #2c7be5 70%, transparent 71%),
-    radial-gradient(circle at bottom right, #2c7be5 70%, transparent 71%);
+  background: linear-gradient(
+    to bottom,
+    transparent 80%,
+    #2c7be5 100%
+  );
 }
 
 .cap-highlight {
