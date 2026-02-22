@@ -1261,17 +1261,25 @@ font-size: 18px;
 
 /* Founder Name */
 .founders h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #0a2540;
   margin-bottom: 0.25rem;
 }
 
+.founder-additionalpara {
+  display: block;               /* makes it behave like paragraph */
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #9C7C4C;               /* Lakeside gold */
+  font-weight: 500;
+}
+
 /* Founder Role (teal) */
 .founders h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #14b8a6;
+  color: #9C7C4C;  /* Lakeside Gold */
   margin-bottom: 0.75rem;
 }
 
@@ -1290,9 +1298,13 @@ font-size: 18px;
   object-fit: cover;
   object-position: top center;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid rgba(156, 124, 76, 0.6);  /* thin subtle gold */
+  padding: 4px;  /* creates breathing space inside the ring */
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
+
 .founder:hover .founder-img {
   transform: scale(1.05);
 }
