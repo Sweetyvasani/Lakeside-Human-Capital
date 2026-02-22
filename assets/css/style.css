@@ -1074,10 +1074,10 @@ font-size: 18px;
 }
 
 /* Brand Colored Numbers */
-.step-1 span { color: #2bb673; font-weight: 700; }
-.step-2 span { color: #d4a73f; font-weight: 700; }
-.step-3 span { color: #2c7be5; font-weight: 700; }
-.step-4 span { color: #2bb673; font-weight: 700; }
+.step-1 span { color: #001F54; font-weight: 700; }
+.step-2 span { color: #2bb673; font-weight: 700; }
+.step-3 span { color: #d4a73f; font-weight: 700; }
+.step-4 span { color: #2c7be5; font-weight: 700; }
 
 /* Spacing Adjustments */
 .step-1 {
