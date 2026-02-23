@@ -1621,7 +1621,7 @@ font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
 }
 
 /* Trophy & Event Frame Style */
@@ -1648,11 +1648,6 @@ font-size: 18px;
   border-radius: 12px;
 }
 
-/* Center Text */
-.recognition-text {
-  flex: 1;
-  max-width: 520px;
-}
 
 /* Gold underline */
 .gold-line {
@@ -1660,6 +1655,19 @@ font-size: 18px;
   height: 3px;
   background: #c49b0b;
   margin: 18px 0 28px 0;
+}
+
+/* Column proportions */
+.recognition-image {
+  flex: 1;
+}
+
+.recognition-text {
+  flex: 1.6;   /* increased from 1.4 */
+}
+
+.recognition-event {
+  flex: 1;
 }
 
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
