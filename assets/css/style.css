@@ -1618,9 +1618,12 @@ font-size: 18px;
 
 .industry-recognition {
   position: relative;
-  padding: 110px 20px;
-  background: url("../Award-section-2-resized.png") center no-repeat;
-  background-size: cover;
+  padding: 90px 20px;
+  min-height: 600px;   /* controlled height */
+  background-image: url("../assets/Award-section-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 }
 
 .industry-recognition::before {
