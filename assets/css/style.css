@@ -1625,7 +1625,7 @@ font-size: 18px;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.65);
   z-index: 0;
 }
 
