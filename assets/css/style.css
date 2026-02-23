@@ -33,12 +33,14 @@ html, body {
 }  
 
 .section-subtitle {  
-  font-size: 1rem;  
-  color: #4b5563;  
-  line-height: 1.6;  
+  font-size: 16px;
+  font-weight: 700;
+  color: #5c6b82;  
+  line-height: 1.95;  
   max-width: 700px;  
   margin: 0 auto 50px;  
   text-align: center;  
+  letter-spacing: 0.3px;
 }
 
 /* ================== GLOBAL MOBILE HEADING FIX ================== */
