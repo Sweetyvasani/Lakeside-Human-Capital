@@ -1994,8 +1994,9 @@ header .brand {
 }
 
 header .brand-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 15px;   /* smaller so full name fits */
+  margin-left: 6px;
+  white-space: nowrap;
 }
 
 .menu-toggle {
