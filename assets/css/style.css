@@ -1211,7 +1211,7 @@ font-size: 18px;
 
 /* Founder Name */
 .founders h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #0a2540;
   margin-bottom: 0.25rem;
@@ -1235,7 +1235,7 @@ font-size: 18px;
 
 /* ✅ Paragraphs inside founder cards */
 .founder p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 20px; /* reduced from 60px */
 }
