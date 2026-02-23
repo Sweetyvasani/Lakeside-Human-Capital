@@ -1614,8 +1614,12 @@ font-size: 18px;
   /* ================= Industry Recognition Section ================= */
 
 .industry-recognition {
-  background: #f9fafc;
-  padding: 80px 20px;
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #f3f6f9 100%
+  );
+  padding: 100px 20px;
 }
 
 .recognition-container {
@@ -1627,15 +1631,25 @@ font-size: 18px;
   gap: 60px;
 }
 
+.recognition-image {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
 .recognition-image img {
-  width: 260px;
+  width: 280px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+    filter: contrast(1.05) saturate(1.08);
+
 }
 
 .recognition-text {
   flex: 1;
+  max-width: 540px;
 }
 
 .recognition-text h2 {
