@@ -182,13 +182,13 @@ body {
 /* Heading */
 .hero h1 {
   font-size: 3.2rem;
-  margin-bottom: 24px;  /* ✅ increase spacing below heading */
+  margin-bottom: 36px;  /* ✅ increase spacing below heading */
   font-weight: 700;
   color: #fff;
   white-space: normal; /* ✅ allow wrapping */
   text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
   animation: fadeInUp 1.2s ease-in-out;
-  line-height: 1;
+  line-height: 1.1;
   leading:tight; 
  }
 
@@ -198,8 +198,8 @@ body {
   opacity: 0.85;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.85);
-  margin-top: 10px;
-  margin-bottom: 18px;
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 /* Subtext */
@@ -260,7 +260,7 @@ body {
   .hero h1 {
     font-size: 2rem;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin-bottom: 28px;
   }
 
   .hero-subline {
