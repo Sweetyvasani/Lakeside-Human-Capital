@@ -1618,11 +1618,11 @@ font-size: 18px;
 
 .industry-recognition {
   position: relative;
-  padding: 100px 20px;
+  padding: 110px 20px;
   background-image: url("../Award-section-3.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 85%;   /* IMPORTANT */
+  background-position: center bottom;
+  background-size: cover;
 }
 
 
