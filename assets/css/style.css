@@ -1615,12 +1615,16 @@ font-size: 18px;
 
 /* ===== 3 Column Recognition Layout ===== */
 
+
 .industry-recognition {
   position: relative;
-  padding: 140px 20px;
-  min-height: 700px;   /* IMPORTANT */
-  background: url("../assets/Award-section-2-final.jpg") center/cover no-repeat;
-  }
+  padding: 100px 20px;
+  background-image: url("../assets/Award-section-2-final.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;   /* IMPORTANT */
+}
+
 
 .industry-recognition::before {
   content: "";
