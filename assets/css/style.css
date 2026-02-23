@@ -1615,6 +1615,25 @@ font-size: 18px;
 
 /* ===== 3 Column Recognition Layout ===== */
 
+.industry-recognition {
+  position: relative;
+  padding: 120px 20px;
+  background: url("assets/Award-section-2.jpg") center/cover no-repeat;
+}
+
+.industry-recognition::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.90);
+  z-index: 0;
+}
+
+.recognition-container {
+  position: relative;
+  z-index: 2;
+}
+
 .recognition-container {
   max-width: 1300px;
   margin: 0 auto;
