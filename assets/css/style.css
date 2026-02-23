@@ -1619,9 +1619,7 @@ font-size: 18px;
 .industry-recognition {
   position: relative;
   padding: 110px 20px;
-  background-image: url("../Award-section-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-image: url("../Award-section-2-resized.png")center no-repeat;
   background-size: cover;
 }
 
