@@ -2048,6 +2048,11 @@ font-size: 18px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
+  /* Increase space above first CTA only */
+.hero .btn-primary {
+  margin-top: 2rem !important;
+}
+
 /* Extra small screens (<= 480px) */
 @media (max-width: 480px) {
   header img { height: 42px; }
@@ -2055,8 +2060,8 @@ font-size: 18px;
   body { padding-top: 58px; }
   .mobile-nav.open { max-height: 420px; }
   .hero-content { margin-top: 6vh; }
-  
-.btn-primary, 
+
+  .btn-primary, 
 .btn-secondary {
   width: 95% !important;
   font-size: 0.95rem !important;
