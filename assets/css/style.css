@@ -1620,8 +1620,7 @@ font-size: 18px;
   padding: 140px 20px;
   min-height: 700px;   /* IMPORTANT */
   background: url("../assets/Award-section-2-final.jpg") center/cover no-repeat;
-  background-size: cover;
-}
+  }
 
 .industry-recognition::before {
   content: "";
