@@ -1239,6 +1239,7 @@ font-size: 18px;
   line-height: 1.7; 
   color: #5f6b7a;
   margin-bottom: 20px; /* reduced from 60px */
+  text-align: justify;
 }
 
 /* ✅ Standardize founder images */
