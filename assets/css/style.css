@@ -1235,8 +1235,9 @@ font-size: 18px;
 
 /* ✅ Paragraphs inside founder cards */
 .founder p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 15px;
+  line-height: 1.7; 
+  color: #5f6b7a;
   margin-bottom: 20px; /* reduced from 60px */
 }
 
