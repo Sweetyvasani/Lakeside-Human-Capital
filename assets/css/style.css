@@ -1622,7 +1622,7 @@ font-size: 18px;
   background-image: url("../Award-section-3.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto;   /* IMPORTANT */
+  background-size: 100% 85%;   /* IMPORTANT */
 }
 
 
