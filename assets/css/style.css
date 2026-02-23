@@ -1619,7 +1619,7 @@ font-size: 18px;
   position: relative;
   padding: 140px 20px;
   min-height: 700px;   /* IMPORTANT */
-  background: url("../Award-section-2-final.jpg") top center no-repeat;
+  background: url("../assets/Award-section-2-final.jpg") center/cover no-repeat;
   background-size: cover;
 }
 
