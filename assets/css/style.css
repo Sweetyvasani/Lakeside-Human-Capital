@@ -1989,7 +1989,8 @@ font-size: 18px;
   /* Hero fixes */
   .hero {
     padding: 2.25rem 1rem;
-    min-height: calc(100vh - 62px);
+    height: calc(100vh - 62px);
+    min-height: unset; 
     align-items: flex-start;
     background-position: center center !important;
     background-size: cover !important;
@@ -2010,23 +2011,25 @@ font-size: 18px;
     font-size: 1.9rem !important; 
     line-height: 1.2 !important;
     text-align: center !important;
-    margin: 0 0 1.8rem 0 !important;
-    padding: 0 10px !important;
-  }
-
-  .hero-subline {
-  margin: 0 0 1.6rem 0 !important;  /* space below subline */
-  line-height: 1.6 !important;
-}
-
-  .hero p {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    text-align: center !important;
     margin: 0 0 1.5rem 0 !important;
     padding: 0 10px !important;
-    max-width: 90% !important;
   }
+
+.hero-subline {
+  display: block;
+  margin-top: 1.2rem !important;     /* space above */
+  margin-bottom: 2rem !important;    /* space below */
+  line-height: 1.6 !important;
+}
+  
+.hero p:not(.hero-subline) {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+  margin: 0 0 1.5rem 0 !important;
+  padding: 0 10px !important;
+  max-width: 90% !important;
+}
 
   /* CTA Button fixes - MAIN CORRECTION */
 .btn-primary, 
