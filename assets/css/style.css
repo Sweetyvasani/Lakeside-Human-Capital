@@ -1986,6 +1986,22 @@ font-size: 18px;
   body { padding-top: 62px; }
   .mobile-nav { top: 62px; left: 10px; right: 10px; }
 
+
+  /* Fix brand overflow on mobile */
+header .brand {
+  flex-shrink: 1;   /* allow brand to shrink */
+  min-width: 0;     /* prevent overflow in flex */
+}
+
+header .brand-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-toggle {
+  flex-shrink: 0;   /* keep menu icon visible */
+}
+  
   /* Hero fixes */
   .hero {
     padding: 2.25rem 1rem;
