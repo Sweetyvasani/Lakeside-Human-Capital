@@ -375,22 +375,6 @@ margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
 
-.lakeside-difference .section-title {
-  font-size: 2.2rem;
-  color: #001F54;
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-.lakeside-difference .section-subtitle {
-  font-size: 1.05rem;
-  color: #4b5563;
-  line-height: 1.6;
-  text-align: center;
-  margin: 0 auto 60px;
-  max-width: 650px;
-  font-weight: 600;
-}
 
 
 /* Vertical separator */
@@ -804,23 +788,6 @@ a[href*="/services/"]::before,
     color: #333;
 }
 
-.section-title {
-    text-align: center;
-    color: #001F54;
-    font-size: 34px;
-  font-weight: 800;
-  letter-spacing: -0.3px;
-    margin-bottom: 25px;
-}
-
-.section-subtitle {
-  max-width: 900px;
-  margin: 0 auto 70px;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #5c6b82;
-  text-align: center;
-}
 
 .growth-cards {
   display: grid;
@@ -957,17 +924,6 @@ font-size: 18px;
   text-align: center;
 }
 
-.framework-blueprint .section-title {
-  font-size: 2rem;
-  color: #001F54;
-  margin-bottom: 15px;
-}
-
-.framework-blueprint .section-subtitle {
-  max-width: 720px;
-  margin: 0 auto 100px;
-  color: #6b7280;
-}
 
 /* Layout wrapper */
 .blueprint-wrapper {
@@ -1339,24 +1295,6 @@ font-size: 18px;
   margin-top: 2rem;
 }
 
-.section-title {
-  font-size: 2.8rem; /* ✅ fixed typo (was 2r.8em) */
-  font-weight: 700;
-  color: #0a2540;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #4b5563;
-  margin-bottom: 1.5rem; /* ✅ reduced from 2rem */
-  font-size: 1.05rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .lead-subtitle {
   color: #4b5563;
