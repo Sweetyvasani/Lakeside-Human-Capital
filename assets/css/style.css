@@ -1989,8 +1989,7 @@ font-size: 18px;
   /* Hero fixes */
   .hero {
     padding: 2.25rem 1rem;
-    height: calc(100vh - 62px);
-    min-height: unset; 
+    min-height: calc(100vh - 62px);
     align-items: flex-start;
     background-position: center center !important;
     background-size: cover !important;
@@ -2011,14 +2010,14 @@ font-size: 18px;
     font-size: 1.9rem !important; 
     line-height: 1.2 !important;
     text-align: center !important;
-    margin: 0 0 1.5rem 0 !important;
+    margin: 0 0 2rem 0 !important;
     padding: 0 10px !important;
   }
 
 .hero-subline {
   display: block;
   margin-top: 1.2rem !important;     /* space above */
-  margin-bottom: 2rem !important;    /* space below */
+  margin-bottom: 2.2rem !important;    /* space below */
   line-height: 1.6 !important;
 }
   
