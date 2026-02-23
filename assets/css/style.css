@@ -1607,9 +1607,84 @@ font-size: 18px;
     font-size: 0.8rem;
     padding: 14px 12px;
   }
-
 }
 
+
+
+  /* ================= Industry Recognition Section ================= */
+
+.industry-recognition {
+  background: #f9fafc;
+  padding: 80px 20px;
+}
+
+.recognition-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.recognition-image img {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.recognition-text {
+  flex: 1;
+}
+
+.recognition-text h2 {
+  font-size: 28px;
+  color: #001F54;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: #c49b0b;
+  margin-bottom: 24px;
+}
+
+.recognition-highlight {
+  font-size: 18px;
+  font-weight: 500;
+  color: #001F54;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.recognition-text p {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+  /* =========Industry Recognition Section - mobile view ========= */
+
+  @media (max-width: 768px) {
+
+  .recognition-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .recognition-image img {
+    width: 200px;
+  }
+
+  .gold-line {
+    margin: 0 auto 20px auto;
+  }
+
+}
 
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
 
@@ -2104,79 +2179,6 @@ header .brand-name {
 }
 
 
-  /* ================= Industry Recognition Section ================= */
 
-.industry-recognition {
-  background: #f9fafc;
-  padding: 80px 20px;
-}
-
-.recognition-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-
-.recognition-image img {
-  width: 260px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-.recognition-text {
-  flex: 1;
-}
-
-.recognition-text h2 {
-  font-size: 28px;
-  color: #001F54;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.gold-line {
-  width: 60px;
-  height: 3px;
-  background: #c49b0b;
-  margin-bottom: 24px;
-}
-
-.recognition-highlight {
-  font-size: 18px;
-  font-weight: 500;
-  color: #001F54;
-  line-height: 1.7;
-  margin-bottom: 18px;
-}
-
-.recognition-text p {
-  font-size: 16px;
-  color: #4b5563;
-  line-height: 1.8;
-}
-
-  /* =========Industry Recognition Section - mobile view ========= */
-
-  @media (max-width: 768px) {
-
-  .recognition-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .recognition-image img {
-    width: 200px;
-  }
-
-  .gold-line {
-    margin: 0 auto 20px auto;
-  }
-
-}
 
   
