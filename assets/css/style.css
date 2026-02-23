@@ -1694,6 +1694,90 @@ font-size: 18px;
   flex: 1;
 }
 
+
+ /* ================= Industry Recognition Section - New ================= */
+
+/* ===== 3 Column Recognition Layout ===== */
+
+
+.industry-recognition-new {
+  position: relative;
+  padding: 100px 20px;
+  background-image: url("../Award-section.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;   /* IMPORTANT */
+}
+
+
+.industry-recognition-new::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.50);
+  z-index: 0;
+}
+
+.recognition-container-new {
+  position: relative;
+  z-index: 2;
+}
+
+.recognition-container-new {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* Trophy & Event Frame Style */
+.gold-frame-new {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  border: 2px solid rgba(196, 155, 11, 0.35);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.08),
+    0 0 0 4px rgba(196, 155, 11, 0.05);
+}
+
+/* Trophy */
+.recognition-image img {
+  width: 300px;
+  height: auto;
+}
+
+/* Event Photo */
+.recognition-event img {
+  width: 380px;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+/* Gold underline */
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: #c49b0b;
+  margin: 18px 0 28px 0;
+}
+
+/* Column proportions */
+.recognition-image-new {
+  flex: 1;
+}
+
+.recognition-text-new {
+  flex: 1.6;   /* increased from 1.4 */
+}
+
+.recognition-event-new {
+  flex: 1;
+}
+
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
 
 .ecosystem-section {
