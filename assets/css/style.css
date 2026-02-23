@@ -299,17 +299,6 @@ body {
   }
 }
 
-/* On small screens */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1.5rem;
-  }
-}
-
-
 
 
 
@@ -343,7 +332,7 @@ body {
 .page-header p {
   font-size: 1.1rem;
   color: #4b5563;
-  font-weight: 600
+  font-weight: 600;
 margin-bottom: 16px !important; /* ✅ reduce gap below intro paragraph */
 }
 
@@ -923,6 +912,8 @@ font-size: 18px;
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 36px;
+  padding: 0 1.5rem;
+  max-width: 100%;
 }
   
   .growth-cards {
@@ -1677,16 +1668,34 @@ font-size: 18px;
 }
 
 /* --- Responsive --- */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+
   .footer-container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 30px;
+    padding: 0 20px;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-tagline {
+    max-width: 100%;
   }
 
   .footer-contact p {
     justify-content: center;
   }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding: 14px 12px;
+  }
+
 }
 
 
