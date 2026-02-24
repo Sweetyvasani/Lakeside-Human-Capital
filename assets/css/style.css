@@ -1698,6 +1698,10 @@ font-size: 18px;
 
 .recognition-text {
   flex: 2.6;   /* increased from 1.4 */
+  text-align: center;     /* center the text */
+    display: flex;
+  flex-direction: column;
+  align-items: center;    /* ensures proper centering */
 }
 
 .recognition-event {
