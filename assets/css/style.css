@@ -1645,15 +1645,8 @@ font-size: 18px;
   z-index: 3;       /* ensures it sits above overlay properly */
   margin-bottom: 35px;
   letter-spacing: 0.5px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease;
 }
 
-.industry-recognition .section-title.active {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .recognition-container {
   position: relative;
