@@ -1693,7 +1693,7 @@ font-size: 18px;
 /* Column proportions */
 .recognition-image {
   flex: 1;
-  margin-left: -120px;   /* pushes outward properly */
+  margin-left: -150px;   /* pushes outward properly */
 }
 
 .recognition-text {
@@ -1702,7 +1702,7 @@ font-size: 18px;
 
 .recognition-event {
   flex: 1;
-  margin-right: -120px;  /* pushes outward properly */
+  margin-right: -170px;  /* pushes outward properly */
 }
 
 
