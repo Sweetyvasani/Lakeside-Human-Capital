@@ -1695,7 +1695,7 @@ font-size: 18px;
 /* Column proportions */
 .recognition-image {
   flex: 1;
-  transform: translateX(-160px);
+  transform: translateX(-170px);
 }
 
 .recognition-text {
@@ -1704,7 +1704,7 @@ font-size: 18px;
 
 .recognition-event {
   flex: 1;
-  transform: translateX(160px);
+  transform: translateX(180px);
 }
 
 
