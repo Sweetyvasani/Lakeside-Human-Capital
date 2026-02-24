@@ -1666,6 +1666,8 @@ font-size: 18px;
 .recognition-event img {
   height: 320px;   /* adjust to 360px if needed */
   width: auto;
+    border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
 }
 
 .recognition-event img {
