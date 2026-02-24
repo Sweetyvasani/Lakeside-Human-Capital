@@ -1699,10 +1699,20 @@ font-size: 18px;
 .recognition-text {
   flex: 2.6;   /* increased from 1.4 */
   text-align: center;     /* center the text */
-    display: flex;
-  flex-direction: column;
+    flex-direction: column;
   align-items: center;    /* ensures proper centering */
 }
+
+.recognition-text p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+
+.recognition-text p:last-child {
+  color: #4b5563;
+}
+
 
 .recognition-event {
   flex: 1;
