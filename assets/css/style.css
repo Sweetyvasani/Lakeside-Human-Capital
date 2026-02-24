@@ -1695,7 +1695,7 @@ font-size: 18px;
   max-width: 600px;   /* controls reading width */
   margin: 0 auto;     /* keeps it centered */
   margin-top: 25px;
-  transform: translateX(-15px);
+  transform: translateX(-25px);
 }
 
 .recognition-text p {
