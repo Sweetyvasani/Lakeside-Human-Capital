@@ -1635,7 +1635,7 @@ font-size: 18px;
     to bottom,
     rgba(0, 0, 0, 0.10) 0%,
     rgba(255, 255, 255, 0.55) 20%,
-    rgba(255, 255, 255, 0.75) 100%
+    rgba(255, 255, 255, 0.80) 100%
   );
 }
 
@@ -1658,7 +1658,7 @@ font-size: 18px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 80px;
+  gap: 95px;
 }
 
 
@@ -1673,6 +1673,7 @@ font-size: 18px;
 
 .recognition-event img {
   border-radius: 12px;
+  filter: brightness(0.98) contrast(0.98);
 }
 
 
@@ -1700,7 +1701,7 @@ font-size: 18px;
 }
 
 .recognition-text p {
-  line-height: 1.8;
+  line-height: 1.7;
   margin-bottom: 0;
 }
 
