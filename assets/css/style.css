@@ -2279,32 +2279,21 @@ header .brand-name {
     margin: 18px auto 28px auto;
   }
 }
+}
+}  
 
-    /* ===== Award Recognition Section ===== */
+/* ================== GLOBAL SCROLL ANIMATION ================== */
 
-
-  /* ===== Scroll Animation Base ===== */
-
-/* ===== Scroll Animation Base ===== */
-
-.section-title.reveal,
-.recognition-image.reveal,
-.recognition-text.reveal,
-.recognition-event.reveal {
+.reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.section-title.reveal.active,
-.recognition-image.reveal.active,
-.recognition-text.reveal.active,
-.recognition-event.reveal.active {
+.reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ===== Scroll Animation Delays ===== */
 
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.25s; }
