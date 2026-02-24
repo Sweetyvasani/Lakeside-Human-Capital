@@ -1651,7 +1651,7 @@ font-size: 18px;
 }
 
 .recognition-container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1692,17 +1692,17 @@ font-size: 18px;
 
 /* Column proportions */
 .recognition-image {
-  flex: 0.8;
-  transform: translateX(-180px);
+  flex: 1;
+  margin-left: -120px;   /* pushes outward properly */
 }
 
 .recognition-text {
-  flex: 2.4;   /* increased from 1.4 */
+  flex: 2.6;   /* increased from 1.4 */
 }
 
 .recognition-event {
-  flex: 0.8;
-  transform: translateX(210px);
+  flex: 1;
+  margin-right: -120px;  /* pushes outward properly */
 }
 
 
