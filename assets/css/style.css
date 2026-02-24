@@ -1673,7 +1673,7 @@ font-size: 18px;
 /* Make both images same height */
 .recognition-image img,
 .recognition-event img {
-  height: 340px;   /* adjust to 360px if needed */
+  height: 320px;   /* adjust to 360px if needed */
   width: auto;
 }
 
@@ -1693,7 +1693,7 @@ font-size: 18px;
 /* Column proportions */
 .recognition-image {
   flex: 0.8;
-  transform: translateX(-170px);
+  transform: translateX(-180px);
 }
 
 .recognition-text {
@@ -1702,7 +1702,7 @@ font-size: 18px;
 
 .recognition-event {
   flex: 0.8;
-  transform: translateX(200px);
+  transform: translateX(210px);
 }
 
 
