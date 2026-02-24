@@ -1694,6 +1694,7 @@ font-size: 18px;
   text-align: center;     /* center the text */
   max-width: 600px;   /* controls reading width */
   margin: 0 auto;     /* keeps it centered */
+  margin-top: 25px;
 }
 
 .recognition-text p {
