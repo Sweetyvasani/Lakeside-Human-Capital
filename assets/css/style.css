@@ -1715,7 +1715,7 @@ font-size: 18px;
 .recognition-image,
 .recognition-event {
   position: relative;
-  top: -55px;
+  top: -40px;
   z-index: 3;
 }
 
