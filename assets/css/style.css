@@ -1630,7 +1630,7 @@ font-size: 18px;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.50);
+  background: rgba(255, 255, 255, 0.40);
   z-index: 0;
 }
 
