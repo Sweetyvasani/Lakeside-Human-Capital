@@ -1633,9 +1633,9 @@ font-size: 18px;
    z-index: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.14) 0%,
+    rgba(0, 0, 0, 0.10) 0%,
     rgba(255, 255, 255, 0.55) 20%,
-    rgba(255, 255, 255, 0.65) 100%
+    rgba(255, 255, 255, 0.75) 100%
   );
 }
 
@@ -1644,6 +1644,7 @@ font-size: 18px;
   position: relative;
   z-index: 3;       /* ensures it sits above overlay properly */
   margin-bottom: 35px;
+  letter-spacing: 0.5px;
 }
 
 .recognition-container {
@@ -1714,6 +1715,13 @@ font-size: 18px;
 
 .recognition-text p:last-child {
   color: #4b5563;
+  font-size: 16px;
+}
+
+.recognition-text p:first-child {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1f2937;
 }
 
 .recognition-image img,
@@ -1723,8 +1731,8 @@ font-size: 18px;
 
 .recognition-image:hover img,
 .recognition-event:hover img {
-  transform: translateY(-8px);
-  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.18);
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.14);
   filter: brightness(1.03);
 }
 
