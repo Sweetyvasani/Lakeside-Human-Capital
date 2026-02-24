@@ -453,12 +453,12 @@ A unique partnership combining enterprise systems thinking, clinical psychology,
   <div class="recognition-container">
 
     <!-- Left: Trophy -->
-    <div class="recognition-image">
+    <div class="recognition-image" reveal reveal-delay-1">
       <img src="assets/Trophy-Lakeside1.jpg" alt="Best Alumni Startup Award">
     </div>
 
     <!-- Center: Text -->
-    <div class="recognition-text">
+    <div class="recognition-text reveal reveal-delay-2">
         <p class="recognition-highlight">
         Recognized as <strong>Best Alumni Startup 2026</strong> at the
         <strong>HR & L&D Emerging Trends Conference (Mumbai)</strong>,
@@ -472,7 +472,7 @@ A unique partnership combining enterprise systems thinking, clinical psychology,
     </div>
 
     <!-- Right: Event Photo -->
-    <div class="recognition-event">
+    <div class="recognition-event reveal reveal-delay-3">
       <img src="assets/IMG_8491.JPG" alt="Lakeside receiving Best Alumni Startup Award">
     </div>
 
@@ -674,6 +674,24 @@ document.addEventListener('DOMContentLoaded', function() {
     toggle.setAttribute('aria-expanded', 'false');
   });
 });
+</script>
+
+      <script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  reveals.forEach(reveal => {
+    observer.observe(reveal);
+  });
 </script>
 
 
