@@ -1730,7 +1730,7 @@ font-size: 18px;
 
 .recognition-event {
   flex: 1;
-  margin-right: -220px;  /* pushes outward properly */
+  margin-right: -170px;  /* pushes outward properly */
 }
 
 .recognition-image,
