@@ -1618,7 +1618,7 @@ font-size: 18px;
 
 .industry-recognition {
   position: relative;
-  padding: 75px 20px;
+  padding: 60px 20px 75px;
   min-height: 500px;   /* controlled height */
   background-image: url("../Award-section-3.jpg");
   background-repeat: no-repeat;
@@ -1639,6 +1639,11 @@ font-size: 18px;
   );
 }
 
+.industry-recognition .section-title {
+  color: #001F54;   /* your global heading color */
+  position: relative;
+  z-index: 3;       /* ensures it sits above overlay properly */
+}
 
 .recognition-container {
   position: relative;
@@ -1690,6 +1695,7 @@ font-size: 18px;
 /* Column proportions */
 .recognition-image {
   flex: 1;
+  transform: translateX(-70px);
 }
 
 .recognition-text {
@@ -1698,6 +1704,7 @@ font-size: 18px;
 
 .recognition-event {
   flex: 1;
+  transform: translateX(70px);
 }
 
 
