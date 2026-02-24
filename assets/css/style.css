@@ -1655,7 +1655,7 @@ font-size: 18px;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 80px;
 }
