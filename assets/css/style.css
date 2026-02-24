@@ -2285,13 +2285,21 @@ header .brand-name {
 
   /* ===== Scroll Animation Base ===== */
 
-.reveal {
+/* ===== Scroll Animation Base ===== */
+
+.section-title.reveal,
+.recognition-image.reveal,
+.recognition-text.reveal,
+.recognition-event.reveal {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.reveal.active {
+.section-title.reveal.active,
+.recognition-image.reveal.active,
+.recognition-text.reveal.active,
+.recognition-event.reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
