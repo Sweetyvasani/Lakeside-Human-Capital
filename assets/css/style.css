@@ -1705,7 +1705,11 @@ font-size: 18px;
   margin-right: -220px;  /* pushes outward properly */
 }
 
-
+.recognition-image,
+.recognition-event {
+  position: relative;
+  top: -40px;
+}
 
 
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
