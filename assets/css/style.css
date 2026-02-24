@@ -1670,16 +1670,14 @@ font-size: 18px;
     0 0 0 4px rgba(196, 155, 11, 0.05);
 }
 
-/* Trophy */
-.recognition-image img {
-  width: 300px;
-  height: auto;
+/* Make both images same height */
+.recognition-image img,
+.recognition-event img {
+  height: 340px;   /* adjust to 360px if needed */
+  width: auto;
 }
 
-/* Event Photo */
 .recognition-event img {
-  width: 380px;
-  height: auto;
   border-radius: 12px;
 }
 
@@ -1694,16 +1692,16 @@ font-size: 18px;
 
 /* Column proportions */
 .recognition-image {
-  flex: 1;
+  flex: 0.8;
   transform: translateX(-170px);
 }
 
 .recognition-text {
-  flex: 1.6;   /* increased from 1.4 */
+  flex: 2.4;   /* increased from 1.4 */
 }
 
 .recognition-event {
-  flex: 1;
+  flex: 0.8;
   transform: translateX(200px);
 }
 
