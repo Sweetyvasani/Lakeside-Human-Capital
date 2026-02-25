@@ -677,27 +677,59 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-      <script>
+     <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  /* ===============================
+     SCROLL REVEAL ANIMATION
+  =============================== */
+
   const reveals = document.querySelectorAll(".reveal");
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-        observer.unobserve(entry.target);
-      }
+  if (reveals.length > 0) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    }, {
+      threshold: 0.2,
+      rootMargin: "0px 0px -120px 0px"
     });
-  }, {
-    threshold: 0.2,
-    rootMargin: "0px 0px -120px 0px"
-  });
 
-  reveals.forEach(reveal => {
-    observer.observe(reveal);
-  });
+    reveals.forEach(el => observer.observe(el));
+  }
+
+
+  /* ===============================
+     SUBTLE PARALLAX EFFECT
+  =============================== */
+
+  const section = document.querySelector(".industry-recognition");
+
+  if (section) {
+    window.addEventListener("scroll", function () {
+
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        const scrollProgress = rect.top / windowHeight;
+
+        // -20px is your base background position
+        // 15 controls movement intensity (keep subtle)
+        section.style.backgroundPosition = 
+          `center ${-20 + scrollProgress * 15}px`;
+      }
+
+    });
+  }
+
 });
 </script>
+      
 
 
   </body>
