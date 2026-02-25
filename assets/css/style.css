@@ -2166,7 +2166,7 @@ font-size: 18px;
   position: relative;
   background-color: #0B1F3A;
   color: #ffffff;
-  padding: 140px 20px 120px;
+  padding: 110px 20px 100px;
   overflow: hidden;
 }
 
@@ -2215,11 +2215,12 @@ font-size: 18px;
 
 .hero-eyebrow {
   display: inline-block;
-  font-size: 14px;
-  letter-spacing: 1.5px;
+  font-size: 16px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  opacity: 0.75;
+  opacity: 0.85;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .chro-hero h1 {
@@ -2273,6 +2274,7 @@ font-size: 18px;
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background-color: rgba(212, 167, 63, 0.85);
 }
 
 .chro-hero .btn-secondary:hover {
@@ -2282,7 +2284,7 @@ font-size: 18px;
 /* Background oversized word */
 .hero-bg-word {
   position: absolute;
-  bottom: 80px;
+  bottom: 120px;
   right: 80px;
   font-size: 120px;
   font-weight: 700;
