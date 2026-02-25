@@ -2183,14 +2183,14 @@ font-size: 18px;
 }
 
 /* Soft blueprint texture overlay */
-.hero-overlay {
+chro-hero .hero-overlay {
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.05), transparent 60%);
   pointer-events: none;
 }
 
-.hero-content {
+chro-hero .hero-content {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
@@ -2213,7 +2213,7 @@ font-size: 18px;
   min-height: 90vh;
 }
 
-.hero-eyebrow {
+chro-hero .hero-eyebrow {
   display: inline-block;
   font-size: 15px;
   letter-spacing: 2px;
@@ -2235,7 +2235,7 @@ font-size: 18px;
   display: block;
 }
 
-.hero-subtext {
+chro-hero .hero-subtext {
   font-size: 18px;
   line-height: 1.7;
   opacity: 0.9;
@@ -2243,14 +2243,14 @@ font-size: 18px;
   max-width: 680px;
 }
 
-.hero-audience {
+chro-hero .hero-audience {
   font-size: 15px;
   opacity: 0.7;
   margin-bottom: 42px;
 }
 
 /* Buttons */
-.hero-buttons {
+chro-hero .hero-buttons {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -2309,7 +2309,7 @@ font-size: 18px;
 }
 
 /* Gradient divider */
-.hero-divider {
+chro-hero .hero-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2324,7 +2324,7 @@ font-size: 18px;
     padding: 100px 20px 80px;
   }
 
-  .hero-bg-word {
+  chro-hero .hero-bg-word {
     font-size: 60px;
     right: 20px;
   }
