@@ -1801,7 +1801,7 @@ font-size: 18px;
 
   .recognition-image img,
   .recognition-event img {
-    height: 240px;
+    height: 220px;
   }
 
 }
@@ -1810,7 +1810,37 @@ font-size: 18px;
 
   .recognition-image img,
   .recognition-event img {
-    height: 210px;
+    height: 200px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .recognition-text p:first-child {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .recognition-text p:last-child {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .industry-recognition {
+    padding-bottom: 100px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .industry-recognition .section-title {
+    font-size: 1.8rem;
   }
 
 }
