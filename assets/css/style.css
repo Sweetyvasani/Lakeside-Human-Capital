@@ -1781,7 +1781,7 @@ font-size: 18px;
   .recognition-container {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
   }
 
   .recognition-image,
@@ -1808,6 +1808,7 @@ font-size: 18px;
 
   .industry-recognition {
     padding-bottom: 100px;
+    padding-top: 50px; 
   }
 
   .industry-recognition .section-title {
