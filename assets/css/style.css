@@ -1845,6 +1845,17 @@ font-size: 18px;
 
 }
 
+@media (max-width: 768px) {
+
+  .recognition-image {
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
 
 
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
