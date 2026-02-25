@@ -2215,11 +2215,11 @@ font-size: 18px;
 
 .hero-eyebrow {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  opacity: 0.85;
-  margin-bottom: 20px;
+  text-transform: none;
+  opacity: 0.9;
+  margin-bottom: 28px;
   font-weight: 600;
 }
 
