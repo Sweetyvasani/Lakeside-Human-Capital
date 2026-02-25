@@ -1774,6 +1774,48 @@ font-size: 18px;
   z-index: -1;
 }
 
+/* ================== Award Recognition - Mobile View ================== */
+
+@media (max-width: 768px) {
+
+  .recognition-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .recognition-image,
+  .recognition-event {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    top: 0;
+  }
+
+  .recognition-text {
+    transform: none;
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .recognition-image img,
+  .recognition-event img {
+    height: 240px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .recognition-image img,
+  .recognition-event img {
+    height: 210px;
+  }
+
+}
+
+
 
 /* ================== ECOSYSTEM SECTION – PREMIUM VERSION ================== */
 
@@ -2340,4 +2382,27 @@ header .brand-name {
 .reveal-delay-2 { transition-delay: 0.25s; }
 .reveal-delay-3 { transition-delay: 0.45s; }
 .reveal-delay-4 { transition-delay: 0.65s; }
-  
+
+
+
+/* ================== MOBILE ANIMATION REFINEMENT ================== */
+
+@media (max-width: 768px) {
+
+  .recognition-image.reveal,
+  .recognition-event.reveal {
+    transform: translateY(35px);   /* remove side slides */
+  }
+
+  .recognition-text.reveal,
+  .section-title.reveal {
+    transform: translateY(30px);
+  }
+
+  .reveal {
+    transition:
+      opacity 0.7s ease,
+      transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+}
