@@ -1671,11 +1671,18 @@ font-size: 18px;
   width: auto;
     border-radius: 18px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  transform: scale(0.98);
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .recognition-event img {
   border-radius: 12px;
   filter: brightness(0.98) contrast(0.98);
+}
+
+.reveal.active .recognition-image img,
+.reveal.active .recognition-event img {
+  transform: scale(1);
 }
 
 
