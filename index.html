@@ -709,8 +709,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const section = document.querySelector(".industry-recognition");
 
-  if (section) {
-    window.addEventListener("scroll", function () {
+if (section && window.innerWidth > 768) {
+  window.addEventListener("scroll", function () {
 
       const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
