@@ -2433,6 +2433,17 @@ chro-hero .hero-divider {
   margin-bottom: 18px;
 }
 
+.architecture-card h4,
+.architecture-card .card-desc {
+  text-align: center;
+}
+
+.architecture-card ul,
+.card-outcome-title,
+.card-link {
+  text-align: left;
+}
+
 .card-desc {
   font-size: 15px;
   color: #5a6b7b;
@@ -2443,13 +2454,24 @@ chro-hero .hero-divider {
 /* Bullet Points */
 .architecture-card ul {
   margin-bottom: 15px;
-  padding-left: 18px;
+    list-style: none;
+  padding-left: 0;
 }
 
 .architecture-card ul li {
+  position: relative;
   margin-bottom: 8px;
   font-size: 14px;
   color: #333;
+  padding-left: 18px;
+}
+
+.architecture-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d4a73f;
+  font-weight: bold;
 }
 
 /* Link */
@@ -2458,6 +2480,8 @@ chro-hero .hero-divider {
   color: #1f4ed8;   /* stronger blue */
   font-weight: 600;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .card-link:hover {
@@ -2465,7 +2489,9 @@ chro-hero .hero-divider {
 }
 
 .card-outcome-title {
-  font-weight: 600;
+  font-weight: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   margin-bottom: 10px;
   color: #0f2745;
 }
