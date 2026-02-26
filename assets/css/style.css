@@ -2413,22 +2413,30 @@ chro-hero .hero-divider {
 }
 
 /* Icon */
-.card-icon {
-  font-size: 28px;
+.services-architecture .card-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 167, 63, 0.1);
+  border-radius: 50%;
+  font-size: 24px;
   color: #d4a73f;
-  margin-bottom: 15px;
 }
+
 
 .architecture-card h4 {
   font-size: 20px;
   color: #0f2745;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .card-desc {
   font-size: 15px;
   color: #5a6b7b;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
   line-height: 1.6;
 }
 
@@ -2447,13 +2455,19 @@ chro-hero .hero-divider {
 /* Link */
 .card-link {
   font-size: 14px;
-  color: #0f2745;
-  font-weight: 500;
+  color: #1f4ed8;   /* stronger blue */
+  font-weight: 600;
   text-decoration: none;
 }
 
 .card-link:hover {
-  color: #d4a73f;
+  color: #0f2745;
+}
+
+.card-outcome-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f2745;
 }
 
 /* Responsive */
@@ -2465,6 +2479,7 @@ chro-hero .hero-divider {
 
   .architecture-card {
     flex: 1 1 100%;
+    text-align: left;
   }
 
   .architecture-intro h2 {
