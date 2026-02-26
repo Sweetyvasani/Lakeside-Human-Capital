@@ -2330,6 +2330,148 @@ chro-hero .hero-divider {
   }
 }
 
+
+/* ================= SERVICES ARCHITECTURE ================= */
+
+.services-architecture {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.services-architecture .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Intro */
+.architecture-intro {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.architecture-intro h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #0f2745;
+  margin-bottom: 20px;
+}
+
+.architecture-intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #5a6b7b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Division */
+.architecture-division {
+  margin-bottom: 100px;
+}
+
+/* Dark Heading Strip */
+.division-heading {
+  background: linear-gradient(90deg, #0f2745, #132f54);
+  padding: 22px 30px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.division-heading h3 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.division-heading p {
+  color: #d4a73f;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Cards Grid */
+.division-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.architecture-card {
+  background: #ffffff;
+  padding: 35px;
+  flex: 1 1 calc(50% - 15px);
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.architecture-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.card-icon {
+  font-size: 28px;
+  color: #d4a73f;
+  margin-bottom: 15px;
+}
+
+.architecture-card h4 {
+  font-size: 20px;
+  color: #0f2745;
+  margin-bottom: 12px;
+}
+
+.card-desc {
+  font-size: 15px;
+  color: #5a6b7b;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Bullet Points */
+.architecture-card ul {
+  margin-bottom: 15px;
+  padding-left: 18px;
+}
+
+.architecture-card ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Link */
+.card-link {
+  font-size: 14px;
+  color: #0f2745;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: #d4a73f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .division-cards {
+    flex-direction: column;
+  }
+
+  .architecture-card {
+    flex: 1 1 100%;
+  }
+
+  .architecture-intro h2 {
+    font-size: 28px;
+  }
+}
+
 /* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
 
 /* mobile hamburger button (hidden on desktop) */
