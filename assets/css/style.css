@@ -1,14 +1,14 @@
 /* ================== GLOBAL ================== */
-/* Force hide hamburger on desktop */
-.menu-toggle {
-  display: none !important;
-}
-
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.7;
+}
+
+/* Force hide hamburger on desktop */
+.menu-toggle {
+  display: none !important;
 }
 
 /* Headings & Brand Font */
