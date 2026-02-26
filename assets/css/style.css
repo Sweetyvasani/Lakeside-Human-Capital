@@ -2482,7 +2482,7 @@ chro-hero .hero-divider {
 .services-architecture .card-icon {
   width: 72px;
   height: 72px;
-  margin: 0 auto 24px auto;
+  margin: 0 auto 26px auto;
 
   display: flex;
   align-items: center;
@@ -2490,17 +2490,20 @@ chro-hero .hero-divider {
 
   border-radius: 50%;
 
-  background: #ffffff;
-  border: 1.5px solid rgba(15,39,69,0.12);
+  background: linear-gradient(
+    145deg,
+    #0f2745,
+    #123b78
+  );
 
-  color: #c89b2c;
+  color: #f0c46a;
 
   box-shadow:
-    0 8px 20px rgba(0,0,0,0.05);
+    0 10px 25px rgba(15,39,69,0.25),
+    inset 0 1px 3px rgba(255,255,255,0.15);
 
   transition: all 0.3s ease;
 }
-
 
 .architecture-card h4 {
   font-size: 20px;
@@ -2509,8 +2512,10 @@ chro-hero .hero-divider {
 }
 
 .architecture-card:hover .card-icon {
-  transform: translateY(-3px);
-  transition: 0.3s ease;
+  transform: translateY(-4px);
+  box-shadow:
+    0 16px 35px rgba(15,39,69,0.35),
+    inset 0 1px 3px rgba(255,255,255,0.15);
 }
 
 .architecture-card h4,
