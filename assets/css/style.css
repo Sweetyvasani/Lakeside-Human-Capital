@@ -2433,10 +2433,9 @@ chro-hero .hero-divider {
   height: 1.5px;
   background: linear-gradient(
     90deg,
-    rgba(212,167,63,0.15),
-    rgba(212,167,63,0.55),
-    rgba(212,167,63,0.15)
-    opacity: 0.85;
+    rgba(212,167,63,0.10),
+    rgba(212,167,63,0.40),
+    rgba(212,167,63,0.10)
   );
 }
 
