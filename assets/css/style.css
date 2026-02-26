@@ -2472,6 +2472,7 @@ chro-hero .hero-divider {
   left: 0;
   color: #d4a73f;
   font-weight: bold;
+  font-size: 14px;
 }
 
 /* Link */
@@ -2481,7 +2482,7 @@ chro-hero .hero-divider {
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .card-link:hover {
@@ -2489,11 +2490,14 @@ chro-hero .hero-divider {
 }
 
 .card-outcome-title {
-  font-weight: 14px;
+  font-weight: 13px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
   color: #0f2745;
+  border-top: 1px solid rgba(15, 39, 69, 0.08);
+  padding-top: 15px;  
 }
 
 /* Responsive */
