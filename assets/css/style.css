@@ -2378,19 +2378,19 @@ chro-hero .hero-divider {
 
   background:
     radial-gradient(
-      ellipse at 50% 40%,
-      rgba(255,255,255,0.15) 0%,
+      ellipse at 50% 35%,
+      rgba(255,255,255,0.18) 0%,
       rgba(255,255,255,0.08) 18%,
-      rgba(255,255,255,0.03) 35%,
-      transparent 60%
+      rgba(255,255,255,0.02) 40%,
+      transparent 65%
     ),
     linear-gradient(
       180deg,
-      #0b1f38 0%,
-      #0f2745 25%,
-      #143259 50%,
-      #0f2745 75%,
-      #0b1f38 100%
+      #071a35 0%,     /* deeper midnight */
+      #0a2348 30%,    /* cool navy */
+      #123b78 55%,    /* cobalt lift */
+      #0a2348 75%,
+      #06162d 100%
     );
 
   border-top: 1px solid rgba(212,167,63,0.35);
@@ -2423,7 +2423,7 @@ chro-hero .hero-divider {
 }
 
 .division-heading p {
-  color: #d4a73f;
+  color: #f0c46a;
   font-size: 15px;
   letter-spacing: 0.5px;
   text-align: center;
