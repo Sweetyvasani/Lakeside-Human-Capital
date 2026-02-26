@@ -2372,11 +2372,33 @@ chro-hero .hero-divider {
 
 /* Dark Heading Strip */
 .division-heading {
-  background: linear-gradient(90deg, #0f2745, #132f54);
-  padding: 22px 30px;
-  border-radius: 6px;
-  text-align: center;
-  margin-bottom: 40px;
+  background: linear-gradient(
+    135deg,
+    #0f2745 0%,
+    #142f54 40%,
+    #1a3a63 60%,
+    #0f2745 100%
+  );
+  position: relative;
+  overflow: hidden;
+    border-top: 1px solid rgba(212,167,63,0.3);
+  border-bottom: 1px solid rgba(212,167,63,0.15);
+}
+
+.division-heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.15),
+    rgba(255,255,255,0.05)
+  );
+  transform: skewX(-20deg);
 }
 
 .division-heading h3 {
