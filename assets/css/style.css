@@ -2426,16 +2426,18 @@ chro-hero .hero-divider {
 .division-heading + .division-cards::before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 2px;
+  top: -18px;              /* closer to the strip */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 82%;              /* not full width */
+  height: 1px;           /* thinner */
   background: linear-gradient(
     90deg,
     transparent,
     #d4a73f,
     transparent
   );
+  opacity: 0.75;
 }
 
 .division-heading h3 {
