@@ -2661,26 +2661,6 @@ chro-hero .hero-divider {
 }
 
 
-/* ---------- GENERAL SECTION SPACING ---------- */
-
-.governance-hero,
-.governance-risk,
-.governance-framework,
-.governance-implementation,
-.governance-impact,
-.governance-audience,
-.governance-cta {
-  padding: 120px 0;
-}
-
-.governance-risk,
-.governance-framework,
-.governance-implementation,
-.governance-impact,
-.governance-audience {
-  border-top: 1px solid #e6e9f0;
-}
-
 .governance-hero .container {
   width: 85%;
   max-width: 1200px;
@@ -2688,37 +2668,48 @@ chro-hero .hero-divider {
 }
 
 
-/* ---------- RISK SECTION ---------- */
+/* ===============================
+   GOVERNANCE – RISK SPLIT SECTION
+================================= */
 
-.governance-risk {
+.governance-risk-split {
+  padding: 120px 0;
   background: #f8f9fb;
 }
 
-.governance-risk h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 32px;
+.governance-risk-split .split-layout {
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
-.governance-risk .risk-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.governance-risk-split .split-left {
+  flex: 1;
 }
 
-.governance-risk ul {
-  margin-top: 30px;
+.governance-risk-split .split-left h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.governance-risk-split .split-left p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.governance-risk-split .split-left ul {
   list-style: none;
   padding: 0;
 }
 
-.governance-risk li {
+.governance-risk-split .split-left li {
   margin-bottom: 12px;
-  position: relative;
   padding-left: 20px;
+  position: relative;
 }
 
-.governance-risk li::before {
+.governance-risk-split .split-left li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -2726,143 +2717,159 @@ chro-hero .hero-divider {
   font-weight: bold;
 }
 
-
-/* ---------- GOVERNANCE FRAMEWORK GRID ---------- */
-
-.governance-framework h2 {
-  text-align: center;
-  margin-bottom: 60px;
-  font-size: 32px;
+.governance-risk-split .split-right {
+  flex: 1;
 }
 
-.governance-framework .framework-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.governance-framework .framework-card {
-  background: #ffffff;
-  padding: 30px;
+.governance-risk-split .split-right img {
+  width: 100%;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
-.governance-framework .framework-card:hover {
-  transform: translateY(-6px);
-}
+/* ===============================
+   GOVERNANCE – STRUCTURED PILLARS
+================================= */
 
-.governance-framework .framework-card h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.governance-framework .framework-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.governance-framework .framework-card li {
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-
-/* ---------- IMPLEMENTATION SECTION ---------- */
-
-.governance-implementation {
-  background: #f4f6fa;
-}
-
-.governance-implementation h2 {
+.governance-framework-structured {
+  padding: 120px 0;
+  background: #ffffff;
   text-align: center;
-  margin-bottom: 60px;
-  font-size: 32px;
 }
 
-.governance-implementation .implementation-steps {
+.governance-framework-structured h2 {
+  font-size: 34px;
+  margin-bottom: 70px;
+}
+
+.governance-framework-structured .pillar-row {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
+  margin-bottom: 40px;
+}
+
+.governance-framework-structured .pillar-row-bottom {
   justify-content: center;
 }
 
-.governance-implementation .step {
-  flex: 1 1 300px;
-  max-width: 320px;
+.governance-framework-structured .pillar-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+  border-top: 4px solid #d4a73f;
   text-align: left;
 }
 
-.governance-implementation .step h4 {
+.governance-framework-structured .pillar-card:hover {
+  transform: translateY(-8px);
+}
+
+.governance-framework-structured .pillar-card h3 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #0b1f3a;
 }
 
-.governance-implementation .step p {
-  font-size: 15px;
+.governance-framework-structured .pillar-card p {
+  font-size: 14px;
   line-height: 1.6;
   opacity: 0.8;
 }
 
 
-/* ---------- BUSINESS IMPACT ---------- */
+/* ===============================
+   GOVERNANCE – IMPLEMENTATION TIMELINE
+================================= */
 
-.governance-impact h2 {
+.governance-implementation-timeline {
+  padding: 120px 0;
+  background: #f4f6fa;
   text-align: center;
+}
+
+.governance-implementation-timeline h2 {
+  font-size: 34px;
   margin-bottom: 60px;
-  font-size: 32px;
 }
 
-.governance-impact .impact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+.governance-implementation-timeline .timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 30px;
 }
 
-.governance-impact .impact-card {
+.governance-implementation-timeline .timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background: #d4a73f;
+  z-index: 0;
+}
+
+.governance-implementation-timeline .timeline-step {
   background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 18%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.governance-implementation-timeline .step-number {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #d4a73f;
+  margin-bottom: 10px;
+}
+
+
+/* ===============================
+   GOVERNANCE – DARK IMPACT SECTION
+================================= */
+
+.governance-impact-dark {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #0b1f3a, #1a3b6b);
+  color: #ffffff;
+  text-align: center;
+}
+
+.governance-impact-dark h2 {
+  font-size: 34px;
+  margin-bottom: 60px;
+}
+
+.governance-impact-dark .impact-grid-dark {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.governance-impact-dark .impact-card-dark {
+  background: rgba(255,255,255,0.08);
   padding: 35px;
   border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  width: 250px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
 }
 
-.governance-impact .impact-card h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #0b1f3a;
+.governance-impact-dark .impact-card-dark:hover {
+  background: rgba(255,255,255,0.15);
 }
 
-.governance-impact .impact-card p {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-
-/* ---------- AUDIENCE SECTION ---------- */
-
-.governance-audience {
-  background: #f8f9fb;
-  text-align: center;
-}
-
-.governance-audience h2 {
-  margin-bottom: 40px;
-  font-size: 30px;
-}
-
-.governance-audience .audience-list {
-  list-style: none;
-  padding: 0;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.governance-audience .audience-list li {
-  margin-bottom: 14px;
+.governance-impact-dark .impact-card-dark h4 {
   font-size: 16px;
 }
 
@@ -2899,6 +2906,36 @@ chro-hero .hero-divider {
 
 .governance-cta .primary-btn:hover {
   background: #c09332;
+}
+
+
+/* ===============================
+   GOVERNANCE – MOBILE
+================================= */
+
+@media (max-width: 992px) {
+
+  .governance-risk-split .split-layout {
+    flex-direction: column;
+  }
+
+  .governance-framework-structured .pillar-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .governance-implementation-timeline .timeline {
+    flex-direction: column;
+  }
+
+  .governance-implementation-timeline .timeline::before {
+    display: none;
+  }
+
+  .governance-implementation-timeline .timeline-step {
+    width: 100%;
+  }
+
 }
 
 
