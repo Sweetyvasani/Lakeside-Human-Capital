@@ -2843,9 +2843,10 @@ chro-hero .hero-divider {
 
 .governance-implementation-timeline .timeline {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   position: relative;
+  gap: 35px;                 /* THIS creates real gaps */
 }
 
 /* MAIN CONNECTING LINE */
@@ -2853,16 +2854,16 @@ chro-hero .hero-divider {
   content: "";
   position: absolute;
   top: 95px;
-  left: 3%;
-  width: 94%;
+  left: 0;
+  right: 0;
   height: 3px;
-  background: #d4a73f;
+  background: linear-gradient(to right, #d4a73f, #c09332);
   z-index: 0;
 }
 
 /* STEP CARD */
 .governance-implementation-timeline .timeline-step {
-  width: 18%;
+  width: 220px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.05);
@@ -2908,14 +2909,13 @@ chro-hero .hero-divider {
 .governance-implementation-timeline .timeline-step:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -18px;
-  top: 92px;
+  right: -20px;   /* sits inside gap */
+  top: 93px;
   width: 0;
   height: 0;
   border-left: 8px solid #d4a73f;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  z-index: 2;
 }
 
 /* ===============================
