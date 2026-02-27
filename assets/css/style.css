@@ -2566,13 +2566,30 @@ chro-hero .hero-divider {
 
 /* Link */
 .card-link {
+  position: relative;
   font-size: 13.5px;
-  color: #0f2745;   /* your brand navy */
+  color: #1e3a8a; /* deep sapphire blue */
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
   margin-top: 12px;
   #0f2745;   /* your brand navy */
+  letter-spacing: 0.3px;
+}
+
+.card-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1.5px;
+  background: #d4a73f;
+  transition: width 0.25s ease;
+}
+
+.card-link:hover::after {
+  width: 100%;
 }
 
 .card-link:hover {
