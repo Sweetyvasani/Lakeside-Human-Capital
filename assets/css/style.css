@@ -2566,16 +2566,17 @@ chro-hero .hero-divider {
 
 /* Link */
 .card-link {
-  font-size: 14px;
-  color: #1f4ed8;   /* stronger blue */
+  font-size: 13.5px;
+  color: #0f2745;   /* your brand navy */
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
   margin-top: 12px;
+  #0f2745;   /* your brand navy */
 }
 
 .card-link:hover {
-  color: #0f2745;
+  color: #d4a73f;   /* gold on hover */
 }
 
 .card-outcome-title {
