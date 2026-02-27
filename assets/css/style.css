@@ -2826,57 +2826,122 @@ chro-hero .hero-divider {
   }
 }
 
-/* ===============================
-   GOVERNANCE – IMPLEMENTATION TIMELINE
-================================= */
+/* =========================================
+   GOVERNANCE – ENHANCED TIMELINE
+========================================= */
 
 .governance-implementation-timeline {
   padding: 120px 0;
-  background: #f4f6fa;
+  background: #f4f6fa; /* unchanged */
   text-align: center;
 }
 
 .governance-implementation-timeline h2 {
   font-size: 34px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
+
+/* Timeline Container */
 
 .governance-implementation-timeline .timeline {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   position: relative;
-  gap: 30px;
 }
+
+/* Center Line */
 
 .governance-implementation-timeline .timeline::before {
   content: "";
   position: absolute;
-  top: 30px;
-  left: 5%;
-  width: 90%;
+  top: 60px;
+  left: 3%;
+  width: 94%;
   height: 2px;
   background: #d4a73f;
   z-index: 0;
 }
 
+/* Individual Step */
+
 .governance-implementation-timeline .timeline-step {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
   width: 18%;
+  background: #ffffff;
+  padding: 35px 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
   position: relative;
   z-index: 1;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
 }
 
+.governance-implementation-timeline .timeline-step:hover {
+  transform: translateY(-6px);
+}
+
+/* Step Number */
+
 .governance-implementation-timeline .step-number {
-  display: inline-block;
   font-size: 22px;
   font-weight: 700;
   color: #d4a73f;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
+/* Dot that sits on line */
+
+.governance-implementation-timeline .step-dot {
+  width: 12px;
+  height: 12px;
+  background: #0b1f3a;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+  top: -8px;
+  z-index: 2;
+}
+
+/* Arrow connectors */
+
+.governance-implementation-timeline .timeline-step:not(:last-child)::after {
+  content: "➜";
+  position: absolute;
+  right: -20px;
+  top: 55px;
+  font-size: 18px;
+  color: #d4a73f;
+}
+
+/* Remove arrow on last */
+.governance-implementation-timeline .timeline-step:last-child::after {
+  display: none;
+}
+
+/* ===============================
+   GOVERNANCE – TIMELINE MOBILE VIEW
+================================= */
+
+@media (max-width: 992px) {
+
+  .governance-implementation-timeline .timeline {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .governance-implementation-timeline .timeline::before {
+    display: none;
+  }
+
+  .governance-implementation-timeline .timeline-step {
+    width: 100%;
+  }
+
+  .governance-implementation-timeline .timeline-step::after {
+    display: none;
+  }
+
+}
 
 /* ===============================
    GOVERNANCE – DARK IMPACT SECTION
