@@ -2827,114 +2827,108 @@ chro-hero .hero-divider {
 }
 
 /* =========================================
-   GOVERNANCE – CLEAN CONNECTED TIMELINE
+   GOVERNANCE – HORIZONTAL PROCESS BAND
 ========================================= */
 
-.governance-implementation-timeline {
+.governance-process-band {
   padding: 120px 0;
-  background: #f4f6fa;
+  background: #f4f6fa; /* keep existing background */
   text-align: center;
 }
 
-.governance-implementation-timeline h2 {
+.governance-process-band h2 {
   font-size: 34px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
-.governance-implementation-timeline .timeline {
+/* Container Row */
+
+.governance-process-band .process-band {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  gap: 0; /* IMPORTANT – no gap */
+}
+
+/* Each Step */
+
+.governance-process-band .process-step {
   position: relative;
-  gap: 35px;                 /* THIS creates real gaps */
-}
-
-/* INTERNAL CENTER LINE INSIDE EACH CARD */
-.governance-implementation-timeline .timeline-step {
-  position: relative;
-}
-
-.governance-implementation-timeline .timeline-step::before {
-  content: "";
-  position: absolute;
-  top: 90px;          /* adjust if needed */
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #e0e3e8;  /* subtle grey */
-}
-
-/* STEP CARD */
-.governance-implementation-timeline .timeline-step {
-  width: 220px;
+  padding: 35px 40px;
   background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-  padding: 30px 20px 40px;
-  position: relative;
-  z-index: 1;
+  border-right: 1px solid #e5e8ee;
+  min-width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.3s ease;
 }
 
-/* NUMBER */
-.governance-implementation-timeline .step-number {
+/* Remove border from last */
+.governance-process-band .process-step:last-child {
+  border-right: none;
+}
+
+/* Hover Elevation */
+.governance-process-band .process-step:hover {
+  background: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+/* Number Styling */
+
+.governance-process-band .step-number {
   font-size: 22px;
   font-weight: 700;
   color: #d4a73f;
+  margin-bottom: 12px;
 }
 
-/* MIDDLE DOT ZONE */
-.governance-implementation-timeline .step-middle {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Title Styling */
+
+.governance-process-band .step-title {
+  font-size: 15px;
+  color: #0b1f3a;
 }
 
-.governance-implementation-timeline .step-dot {
-  width: 16px;
-  height: 16px;
-  background: #0b1f3a;
-  border-radius: 50%;
-  position: relative;
+/* Arrow Connector Using Pseudo Element */
+
+.governance-process-band .process-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid #ffffff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
   z-index: 2;
 }
 
-/* TITLE */
-.governance-implementation-timeline .step-bottom h4 {
-  font-size: 15px;
-  margin-top: 10px;
+/* ===============================
+   GOVERNANCE – TIMELINE - MOBILE VIEW
+================================= */
+
+@media (max-width: 992px) {
+
+  .governance-process-band .process-band {
+    flex-direction: column;
+  }
+
+  .governance-process-band .process-step {
+    border-right: none;
+    border-bottom: 1px solid #e5e8ee;
+  }
+
+  .governance-process-band .process-step::after {
+    display: none;
+  }
+
 }
 
-/* ARROW CONNECTOR */
-/* CONNECTOR ARROW BETWEEN CARDS */
-.governance-implementation-timeline .timeline-step:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -30px;       /* sits inside gap */
-  top: 86px;          /* align with internal line */
-  width: 30px;
-  height: 2px;
-  background: #d4a73f;
-}
-
-.governance-implementation-timeline .timeline-step:not(:last-child)::before {
-  /* already used above for divider */
-}
-
-.governance-implementation-timeline .timeline-step:not(:last-child) .step-middle::after {
-  content: "";
-  position: absolute;
-  right: -34px;
-  top: 4px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid #d4a73f;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-}
 
 /* ===============================
    GOVERNANCE – DARK IMPACT SECTION
