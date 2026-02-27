@@ -2727,57 +2727,86 @@ chro-hero .hero-divider {
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
-/* ===============================
-   GOVERNANCE – STRUCTURED PILLARS
-================================= */
+/* =========================================
+   GOVERNANCE – COLORED 5 PILLAR SECTION
+========================================= */
 
-.governance-framework-structured {
+.governance-framework-colored {
   padding: 120px 0;
   background: #ffffff;
   text-align: center;
 }
 
-.governance-framework-structured h2 {
+.governance-framework-colored h2 {
   font-size: 34px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
-.governance-framework-structured .pillar-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 40px;
+/* 5 COLUMN STRUCTURE */
+
+.governance-framework-colored .pillar-row-five {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
 }
 
-.governance-framework-structured .pillar-row-bottom {
-  justify-content: center;
-}
+/* CARD BASE */
 
-.governance-framework-structured .pillar-card {
-  background: #ffffff;
-  padding: 35px;
+.governance-framework-colored .pillar-card {
   border-radius: 12px;
-  width: 320px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
   transition: 0.3s ease;
-  border-top: 4px solid #d4a73f;
-  text-align: left;
 }
 
-.governance-framework-structured .pillar-card:hover {
+.governance-framework-colored .pillar-card:hover {
   transform: translateY(-8px);
 }
 
-.governance-framework-structured .pillar-card h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #0b1f3a;
+/* HEADER AREA */
+
+.governance-framework-colored .pillar-header {
+  padding: 18px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
 }
 
-.governance-framework-structured .pillar-card p {
+/* BODY */
+
+.governance-framework-colored .pillar-body {
+  padding: 25px;
   font-size: 14px;
   line-height: 1.6;
-  opacity: 0.8;
+  color: #333;
+  text-align: left;
+  min-height: 110px;
+}
+
+/* COLOR VARIATIONS */
+
+.governance-framework-colored .pillar-gold .pillar-header {
+  background: #d4a73f;
+}
+
+.governance-framework-colored .pillar-navy .pillar-header {
+  background: #0b1f3a;
+}
+
+.governance-framework-colored .pillar-blue .pillar-header {
+  background: #1a3b6b;
+}
+
+.governance-framework-colored .pillar-green .pillar-header {
+  background: #2f5d50;
+}
+
+.governance-framework-colored .pillar-olive .pillar-header {
+  background: #556b2f;
 }
 
 
