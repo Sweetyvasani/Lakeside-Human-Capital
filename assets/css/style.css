@@ -2827,124 +2827,95 @@ chro-hero .hero-divider {
 }
 
 /* =========================================
-   GOVERNANCE – ENHANCED TIMELINE
+   GOVERNANCE – CLEAN CONNECTED TIMELINE
 ========================================= */
 
 .governance-implementation-timeline {
   padding: 120px 0;
-  background: #f4f6fa; /* unchanged */
+  background: #f4f6fa;
   text-align: center;
 }
 
 .governance-implementation-timeline h2 {
   font-size: 34px;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
-
-/* Timeline Container */
 
 .governance-implementation-timeline .timeline {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   position: relative;
 }
 
-/* Center Line */
-
+/* MAIN CONNECTING LINE */
 .governance-implementation-timeline .timeline::before {
   content: "";
   position: absolute;
-  top: 75px;
-  left: 2%;
-  width: 96%;
+  top: 95px;
+  left: 3%;
+  width: 94%;
   height: 3px;
   background: #d4a73f;
   z-index: 0;
-  background: linear-gradient(to right, #d4a73f, #c09332);
 }
 
-/* Individual Step */
-
+/* STEP CARD */
 .governance-implementation-timeline .timeline-step {
   width: 18%;
   background: #ffffff;
-  padding: 35px 20px 30px;
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  padding: 30px 20px 40px;
   position: relative;
   z-index: 1;
-  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.governance-implementation-timeline .timeline-step:hover {
-  transform: translateY(-6px);
-}
-
-/* Step Number */
-
+/* NUMBER */
 .governance-implementation-timeline .step-number {
   font-size: 22px;
   font-weight: 700;
   color: #d4a73f;
-  margin-bottom: 15px;
 }
 
-/* Dot that sits on line */
+/* MIDDLE DOT ZONE */
+.governance-implementation-timeline .step-middle {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .governance-implementation-timeline .step-dot {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   background: #0b1f3a;
   border-radius: 50%;
-  margin: 0 auto;
   position: relative;
-  top: -10px;
   z-index: 2;
 }
 
-/* Arrow connectors */
+/* TITLE */
+.governance-implementation-timeline .step-bottom h4 {
+  font-size: 15px;
+  margin-top: 10px;
+}
 
+/* ARROW CONNECTOR */
 .governance-implementation-timeline .timeline-step:not(:last-child)::after {
   content: "";
   position: absolute;
   right: -18px;
-  top: 73px;
+  top: 92px;
   width: 0;
   height: 0;
   border-left: 8px solid #d4a73f;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-}
-
-/* Remove arrow on last */
-.governance-implementation-timeline .timeline-step:last-child::after {
-  display: none;
-}
-
-/* ===============================
-   GOVERNANCE – TIMELINE MOBILE VIEW
-================================= */
-
-@media (max-width: 992px) {
-
-  .governance-implementation-timeline .timeline {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .governance-implementation-timeline .timeline::before {
-    display: none;
-  }
-
-  .governance-implementation-timeline .timeline-step {
-    width: 100%;
-  }
-
-  .governance-implementation-timeline .timeline-step::after {
-    display: none;
-  }
-
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  z-index: 2;
 }
 
 /* ===============================
