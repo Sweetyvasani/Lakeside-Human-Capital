@@ -2855,12 +2855,13 @@ chro-hero .hero-divider {
 .governance-implementation-timeline .timeline::before {
   content: "";
   position: absolute;
-  top: 60px;
-  left: 3%;
-  width: 94%;
-  height: 2px;
+  top: 75px;
+  left: 2%;
+  width: 96%;
+  height: 3px;
   background: #d4a73f;
   z-index: 0;
+  background: linear-gradient(to right, #d4a73f, #c09332);
 }
 
 /* Individual Step */
@@ -2892,25 +2893,28 @@ chro-hero .hero-divider {
 /* Dot that sits on line */
 
 .governance-implementation-timeline .step-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background: #0b1f3a;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   position: relative;
-  top: -8px;
+  top: -10px;
   z-index: 2;
 }
 
 /* Arrow connectors */
 
 .governance-implementation-timeline .timeline-step:not(:last-child)::after {
-  content: "➜";
+  content: "";
   position: absolute;
-  right: -20px;
-  top: 55px;
-  font-size: 18px;
-  color: #d4a73f;
+  right: -18px;
+  top: 73px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid #d4a73f;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 /* Remove arrow on last */
