@@ -2624,6 +2624,284 @@ chro-hero .hero-divider {
   }
 }
 
+
+
+/* ===============================
+   GOVERNANCE PAGE STYLES
+================================= */
+
+/* ---------- HERO SECTION ---------- */
+
+.governance-hero {
+  padding: 140px 0;
+  background: linear-gradient(135deg, #0b1f3a, #102b52);
+  color: #ffffff;
+  text-align: center;
+}
+
+.governance-hero h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.governance-hero .hero-subtext {
+  font-size: 18px;
+  color: #d4a73f;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.governance-hero .hero-description {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+
+/* ---------- GENERAL SECTION SPACING ---------- */
+
+.governance-hero,
+.governance-risk,
+.governance-framework,
+.governance-implementation,
+.governance-impact,
+.governance-audience,
+.governance-cta {
+  padding: 120px 0;
+}
+
+.governance-risk,
+.governance-framework,
+.governance-implementation,
+.governance-impact,
+.governance-audience {
+  border-top: 1px solid #e6e9f0;
+}
+
+.governance-hero .container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ---------- RISK SECTION ---------- */
+
+.governance-risk {
+  background: #f8f9fb;
+}
+
+.governance-risk h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.governance-risk .risk-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.governance-risk ul {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.governance-risk li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.governance-risk li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d4a73f;
+  font-weight: bold;
+}
+
+
+/* ---------- GOVERNANCE FRAMEWORK GRID ---------- */
+
+.governance-framework h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+
+.framework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.framework-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.framework-card:hover {
+  transform: translateY(-6px);
+}
+
+.framework-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.framework-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.framework-card li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* ---------- IMPLEMENTATION SECTION ---------- */
+
+.governance-implementation {
+  background: #f4f6fa;
+}
+
+.governance-implementation h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+
+.implementation-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.governance-implementation .step {
+  flex: 1 1 300px;
+  max-width: 320px;
+  text-align: left;
+}
+
+.governance-implementation .step h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0b1f3a;
+}
+
+.governance-implementation .step p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+
+/* ---------- BUSINESS IMPACT ---------- */
+
+.governance-impact h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+
+.governance-impact .impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.governance-impact .impact-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.governance-impact .impact-card h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #0b1f3a;
+}
+
+.governance-impact .impact-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+/* ---------- AUDIENCE SECTION ---------- */
+
+.governance-audience {
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.governance-audience h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.audience-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.audience-list li {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+
+/* ---------- CTA SECTION ---------- */
+
+.governance-cta {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #0b1f3a, #1a3b6b);
+  color: #ffffff;
+  text-align: center;
+}
+
+.governance-cta h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.governance-cta p {
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.governance-cta .primary-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #d4a73f;
+  color: #0b1f3a;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.governance-cta .primary-btn:hover {
+  background: #c09332;
+}
+
+
 /* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
 
 /* mobile hamburger button (hidden on desktop) */
