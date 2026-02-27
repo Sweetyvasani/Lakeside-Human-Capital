@@ -2809,6 +2809,22 @@ chro-hero .hero-divider {
   background: #556b2f;
 }
 
+/* ===============================
+   GOVERNANCE – FRAMEWORK - MOBILE VIEW
+================================= */
+
+
+@media (max-width: 1200px) {
+  .governance-framework-colored .pillar-row-five {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .governance-framework-colored .pillar-row-five {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ===============================
    GOVERNANCE – IMPLEMENTATION TIMELINE
