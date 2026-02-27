@@ -2735,13 +2735,13 @@ chro-hero .hero-divider {
   font-size: 32px;
 }
 
-.framework-grid {
+.governance-framework .framework-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.framework-card {
+.governance-framework .framework-card {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
@@ -2749,21 +2749,21 @@ chro-hero .hero-divider {
   transition: 0.3s ease;
 }
 
-.framework-card:hover {
+.governance-framework .framework-card:hover {
   transform: translateY(-6px);
 }
 
-.framework-card h3 {
+.governance-framework .framework-card h3 {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.framework-card ul {
+.governance-framework .framework-card ul {
   list-style: none;
   padding: 0;
 }
 
-.framework-card li {
+.governance-framework .framework-card li {
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 1.6;
@@ -2782,7 +2782,7 @@ chro-hero .hero-divider {
   font-size: 32px;
 }
 
-.implementation-steps {
+.governance-implementation .implementation-steps {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -2854,14 +2854,14 @@ chro-hero .hero-divider {
   font-size: 30px;
 }
 
-.audience-list {
+.governance-audience .audience-list {
   list-style: none;
   padding: 0;
   max-width: 700px;
   margin: 0 auto;
 }
 
-.audience-list li {
+.governance-audience .audience-list li {
   margin-bottom: 14px;
   font-size: 16px;
 }
