@@ -2732,7 +2732,7 @@ chro-hero .hero-divider {
 ========================================= */
 
 .governance-awareness .card-financial,
-.governance-awareness .card-operational-wrap,
+.governance-awareness .card-operational,
 .governance-awareness .card-legal,
 .governance-awareness .card-growth {
 
@@ -2762,7 +2762,7 @@ chro-hero .hero-divider {
   background: linear-gradient(180deg, #eef1f8 0%, #e3e7f2 100%);
 }
 
-.governance-awareness .card-operational-wrap {
+.governance-awareness .card-operational {
   background: linear-gradient(180deg, #f3f1f0 0%, #e9e6e4 100%);
 }
 
