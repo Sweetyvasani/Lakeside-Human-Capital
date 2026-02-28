@@ -2736,7 +2736,7 @@ chro-hero .hero-divider {
 .governance-awareness .card-legal,
 .governance-awareness .card-growth {
 
-  padding: 30px 30px 45px;
+  padding: 35px 40px 50px 40px;  /* equal padding all sides */
   min-height: 380px;
 
   display: flex;
@@ -2808,15 +2808,10 @@ chro-hero .hero-divider {
   list-style: none;
   padding: 0;
   width: 100%;
-  margin-top: 20px;
-  align-self: flex-start;   /* anchor left */
-}
+  margin-top: 25px;
+  }
 
 .governance-awareness .bullet-dot {
-  width: 4px;
-  height: 4px;
-  margin-top: 7px;
-  flex-shrink: 0;
   display: none;
 }
 
@@ -2831,7 +2826,7 @@ chro-hero .hero-divider {
   content: "";
   position: absolute;
   left: 0;
-  top: 9px;
+  top: 8px;
   width: 6px;
   height: 6px;
   background-color: #c89b3c; /* Gold */
@@ -2842,8 +2837,7 @@ chro-hero .hero-divider {
   font-size: 13px;
   line-height: 1.6;
   margin: 0;
-  text-align: left;
-  color: #0b1f3a;   /* Brand Navy */
+   color: #0b1f3a;   /* Brand Navy */
 }
 
 
