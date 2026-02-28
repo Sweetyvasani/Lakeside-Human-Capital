@@ -2669,127 +2669,121 @@ chro-hero .hero-divider {
 
 /* ---------- GOVERNANCE AWARENESS SECTION ---------- */
 
+/* =========================================
+   GOVERNANCE – EXACT REPLICA STAKE SECTION
+========================================= */
+
 .governance-awareness {
-  padding: 120px 0;
+  padding: 130px 0;
   background: #f4f6fa;
   text-align: center;
 }
 
 .governance-awareness h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 18px;
 }
 
 .governance-awareness .awareness-intro {
   max-width: 760px;
-  margin: 0 auto 50px;
+  margin: 0 auto 60px;
   font-size: 17px;
   line-height: 1.7;
   color: #555;
 }
 
-/* NEW SUBHEADING */
+/* Subheading with aligned lines */
 
-.governance-awareness .stake-subheading {
+.stake-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 25px;
+}
+
+.stake-header h3 {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 50px;
-  position: relative;
 }
 
-.governance-awareness .stake-subheading::before,
-.governance-awareness .stake-subheading::after {
-  content: "";
-  height: 1px;
-  width: 120px;
-  background: #d4a73f;
-  position: absolute;
-  top: 50%;
+.stake-line {
+  flex: 1;
+  max-width: 140px;
+  height: 2px;
+  background: #c89b3c;
 }
 
-.governance-awareness .stake-subheading::before {
-  left: -140px;
-}
+/* Risk Band Container */
 
-.governance-awareness .stake-subheading::after {
-  right: -140px;
-}
-
-/* Risk Grid */
-
-/* ---------- Risk Section Cards Redesigned ---------- */
-
-.governance-awareness .risk-grid {
+.risk-band {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  margin-top: 40px;
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.06);
 }
 
-.governance-awareness .risk-card {
-  padding: 40px 30px;
-  background: linear-gradient(to bottom, #ffffff 0%, #f1f3f8 100%);
+/* Cards */
+
+.risk-card {
+  padding: 45px 35px;
+  background: linear-gradient(to bottom, #ffffff 0%, #eef1f7 100%);
   text-align: left;
-  position: relative;
   border-right: 1px solid #e4e6ec;
 }
 
-.governance-awareness .risk-card:last-child {
+.risk-card:last-child {
   border-right: none;
 }
 
-/* Subtle highlight for last two cards */
+/* Slight warmer tint for last two */
 
-.governance-awareness .risk-card.highlight {
-  background: linear-gradient(to bottom, #ffffff 0%, #f7f3ea 100%);
+.risk-card.warm {
+  background: linear-gradient(to bottom, #ffffff 0%, #f5efe6 100%);
 }
 
-/* Icon styling */
+/* Icon */
 
-.governance-awareness .risk-icon {
-  margin-bottom: 18px;
+.risk-icon img {
+  width: 55px;
+  height: auto;
+  margin-bottom: 22px;
 }
 
-.governance-awareness .risk-icon svg {
-  width: 38px;
-  height: 38px;
-}
+/* Title */
 
-/* Card Title */
-
-.governance-awareness .risk-card h4 {
-  font-size: 17px;
-  margin-bottom: 18px;
+.risk-card h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
   font-weight: 600;
   color: #0b1f3a;
 }
 
 /* List */
 
-.governance-awareness .risk-card ul {
+.risk-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.governance-awareness .risk-card li {
+.risk-card li {
   font-size: 14px;
-  margin-bottom: 12px;
-  padding-left: 16px;
+  margin-bottom: 14px;
+  padding-left: 18px;
   position: relative;
 }
 
-.governance-awareness .risk-card li::before {
+.risk-card li::before {
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background: #c89b3c;
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 7px;
 }
 
 
