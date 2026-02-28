@@ -2751,7 +2751,7 @@ chro-hero .hero-divider {
   justify-content: flex-start;
 
   text-align: center;
-  border-right: 1px solid rgba(0,0,0,0.06);
+  border-right: 1px solid rgba(15, 25, 45, 0.05);
 }
 
 /* Remove right border from last card */
@@ -2765,35 +2765,55 @@ chro-hero .hero-divider {
 ========================================= */
 
 .governance-awareness .card-financial {
-  background: linear-gradient(
-    180deg,
-    #f8f9fc 0%,
-    #e8ecf5 100%
-  );
+  background:
+    radial-gradient(circle at top right,
+      rgba(200,155,60,0.06),
+      rgba(200,155,60,0) 50%
+    ),
+    linear-gradient(
+      180deg,
+      #f6f8fc 0%,
+      #e8edf5 100%
+    );
 }
 
 .governance-awareness .card-operational {
-  background: linear-gradient(
-    180deg,
-    #faf8f6 0%,
-    #ece9e6 100%
-  );
+  background:
+    radial-gradient(circle at top right,
+      rgba(200,155,60,0.10),
+      rgba(200,155,60,0) 55%
+    ),
+    linear-gradient(
+      180deg,
+      #f7f6f4 0%,
+      #ebe8e5 100%
+    );
 }
 
 .governance-awareness .card-legal {
-  background: linear-gradient(
-    180deg,
-    #fbf9f7 0%,
-    #efece9 100%
-  );
+  background:
+    radial-gradient(circle at top right,
+      rgba(200,155,60,0.14),
+      rgba(200,155,60,0) 60%
+    ),
+    linear-gradient(
+      180deg,
+      #f9f7f4 0%,
+      #efece8 100%
+    );
 }
 
 .governance-awareness .card-growth {
-  background: linear-gradient(
-    180deg,
-    #fbf5ec 0%,
-    #f0e5d7 100%
-  );
+  background:
+    radial-gradient(circle at top right,
+      rgba(200,155,60,0.18),
+      rgba(200,155,60,0) 65%
+    ),
+    linear-gradient(
+      180deg,
+      #faf6ef 0%,
+      #f1e7d8 100%
+    );
 }
 
 
