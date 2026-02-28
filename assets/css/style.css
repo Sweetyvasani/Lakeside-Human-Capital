@@ -2697,7 +2697,7 @@ chro-hero .hero-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   gap: 25px;
 }
 
@@ -2710,7 +2710,13 @@ chro-hero .hero-divider {
   flex: 1;
   max-width: 140px;
   height: 2px;
-  background: #c89b3c;
+  background: linear-gradient(
+    to right,
+    rgba(200,155,60,0) 0%,
+    rgba(200,155,60,1) 40%,
+    rgba(200,155,60,1) 60%,
+    rgba(200,155,60,0) 100%
+  );
 }
 
 
@@ -2759,19 +2765,35 @@ chro-hero .hero-divider {
 ========================================= */
 
 .governance-awareness .card-financial {
-  background: linear-gradient(180deg, #eef1f8 0%, #e3e7f2 100%);
+  background: linear-gradient(
+    180deg,
+    #f4f6fb 0%,
+    #e7ebf3 100%
+  );
 }
 
 .governance-awareness .card-operational {
-  background: linear-gradient(180deg, #f3f1f0 0%, #e9e6e4 100%);
+background: linear-gradient(
+    180deg,
+    #f7f5f3 0%,
+    #ece9e6 100%
+  );
 }
 
 .governance-awareness .card-legal {
-  background: linear-gradient(180deg, #f5f3f1 0%, #ebe8e6 100%);
+  background: linear-gradient(
+    180deg,
+    #f9f7f4 0%,
+    #efebe7 100%
+  );
 }
 
 .governance-awareness .card-growth {
-  background: linear-gradient(180deg, #f6efe6 0%, #ede3d6 100%);
+background: linear-gradient(
+    180deg,
+    #f9f3e9 0%,
+    #efe4d6 100%
+  );
 }
 
 
