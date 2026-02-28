@@ -2807,8 +2807,9 @@ chro-hero .hero-divider {
 .governance-awareness .bullet-list {
   list-style: none;
   padding: 0;
-  width: 85%;
+  width: 100%;
   margin-top: 20px;
+  align-self: flex-start;   /* anchor left */
 }
 
 .governance-awareness .bullet-dot {
@@ -2821,10 +2822,9 @@ chro-hero .hero-divider {
 
 .governance-awareness .bullet-item {
   position: relative;
-  padding-left: 18px;
+  padding-left: 20px;
   margin-top: 14px;
-  display: block;       /* remove flex */
-  text-align: left;
+    text-align: left;
 }
 
 .governance-awareness .bullet-item::before {
