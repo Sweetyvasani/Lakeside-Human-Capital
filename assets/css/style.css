@@ -2868,6 +2868,59 @@ chro-hero .hero-divider {
 .governance-awareness .bullet-text-growth-3 { color: #7A767A; }
 .governance-awareness .bullet-text-growth-4 { color: #69666A; }
 
+
+/* =========================================
+   UNIFORM CONTENT ALIGNMENT
+========================================= */
+
+/* Force consistent vertical rhythm */
+
+.governance-awareness .card-title {
+  margin-bottom: 22px;
+}
+
+.governance-awareness .card-icon {
+  margin-bottom: 30px;
+}
+
+/* Push bullet section to same depth in all cards */
+.governance-awareness .bullet-list {
+  margin-top: auto;
+  width: 75%;
+}
+
+/* Bullet items */
+.governance-awareness .bullet-item {
+  position: relative;
+  padding-left: 18px;
+  margin-top: 14px;
+  display: block;
+  text-align: left;
+}
+
+/* Golden bullet dot */
+.governance-awareness .bullet-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background-color: #c89b3c;
+  border-radius: 50%;
+}
+
+/* Bullet text in Navy */
+.governance-awareness .bullet-text {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  color: #0b1f3a;   /* Brand Navy */
+  text-align: left;
+}
+
+
+
 /* ---------- SELF ASSESSMENT ---------- */
 
 .governance-selfcheck {
