@@ -2809,15 +2809,8 @@ chro-hero .hero-divider {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
-}
-
-.governance-awareness .bullet-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 14px;
+  width: 80%;
+  margin-top: 10px;
 }
 
 .governance-awareness .bullet-dot {
@@ -2825,6 +2818,26 @@ chro-hero .hero-divider {
   height: 4px;
   margin-top: 7px;
   flex-shrink: 0;
+  display: none;
+}
+
+.governance-awareness .bullet-item {
+  position: relative;
+  padding-left: 18px;
+  margin-top: 14px;
+  display: block;       /* remove flex */
+  text-align: left;
+}
+
+.governance-awareness .bullet-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background-color: #c89b3c; /* Gold */
+  border-radius: 50%;
 }
 
 .governance-awareness .bullet-text {
