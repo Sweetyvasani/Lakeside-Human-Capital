@@ -2714,80 +2714,173 @@ chro-hero .hero-divider {
   background: #c89b3c;
 }
 
-/* Risk Band Container */
-
-.risk-band {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.06);
+/* Page wrapper */
+.governance-awareness .page-wrapper {
+  width: 100%;
+  max-width: 962px;
+  background-image: url('https://static.codia.ai/s/20260228170225-image_08402478-4f0d-4260-94db-2f3b30a8b330.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 14px 15px 18px 8px;
+  border-radius: 10px;
 }
 
-/* Cards */
+/* Row container for 4 cards */
+.governance-awareness .cards-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0;
+  padding: 5px 15px 0 26px;
+}
 
-.risk-card {
-  padding: 45px 35px;
-  background: linear-gradient(to bottom, #ffffff 0%, #eef1f7 100%);
+/* ── Card 1: Financial Exposure ── */
+.governance-awareness .card-financial {
+  width: 24%;
+  min-height: 327px;
+  background-image: url('https://static.codia.ai/s/20260228170225-image_c7275468-f87c-48b7-9e88-2d8edae30af6.png');
+  background-size: 100% 103.36%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 13px 9px 37px 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ── Card 2: Operational Disruption ── */
+.governance-awareness .card-operational-wrap {
+  width: 27%;
+  min-height: 327px;
+  background-image: url('https://static.codia.ai/s/20260228170225-image_5e73a8b7-1076-429a-85cd-0c01377a6bca.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 2px 1px 40px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.governance-awareness .card-operational {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Card 3: Legal & Regulatory Risk ── */
+.governance-awareness .card-legal {
+  width: 25%;
+  min-height: 327px;
+  background-image: url('https://static.codia.ai/s/20260228170225-image_087a936e-903b-4a5d-b8c4-bf1cdfddc967.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 15px 14px 66px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Card 4: Growth & Funding Impact ── */
+.governance-awareness .card-growth {
+  width: 20%;
+  min-height: 331px;
+  background-image: url('https://static.codia.ai/s/20260228170225-image_1d00a267-ac5b-4593-b4f1-36d592dc15bc.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding: 11px 14px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Shared: Card title ── */
+.governance-awareness .card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 0 0;
+  line-height: 1.3;
+}
+
+.governance-awareness .card-title-financial {
+  color: #515360;
   text-align: left;
-  border-right: 1px solid #e4e6ec;
+  align-self: flex-start;
 }
 
-.risk-card:last-child {
-  border-right: none;
+.governance-awareness .card-title-operational {
+  color: #5F5C5E;
+  text-align: center;
 }
 
-/* Slight warmer tint for last two */
-
-.risk-card.warm {
-  background: linear-gradient(to bottom, #ffffff 0%, #f5efe6 100%);
+.governance-awareness .card-title-legal {
+  color: #B48350;
+  text-align: center;
 }
 
-/* Icon */
-
-.risk-icon svg {
-  width: 60px;
-  height: auto;
-  margin-bottom: 22px;
-  filter: drop-shadow(0 2px 4px rgba(200,155,60,0.15));
+.governance-awareness .card-title-growth {
+  color: #B8844B;
+  text-align: center;
 }
 
-
-/* Title */
-
-.risk-card h4 {
-  font-size: 18px;
-  margin-bottom: 20px;
-  font-weight: 600;
-  color: #0b1f3a;
+/* Card main icon */
+.governance-awareness .card-icon {
+  display: block;
+  object-fit: contain;
+  margin: 16px auto 0;
 }
 
-/* List */
-
-.risk-card ul {
+/* Bullet list items */
+.governance-awareness .bullet-list {
   list-style: none;
+  margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.governance-awareness .bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.governance-awareness .bullet-dot {
+  width: 4px;
+  height: 4px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.governance-awareness .bullet-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.45;
   margin: 0;
 }
 
-.risk-card li {
-  font-size: 14px;
-  margin-bottom: 14px;
-  padding-left: 18px;
-  position: relative;
-}
-
-.risk-card li::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: #c89b3c;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 7px;
-}
-
+.governance-awareness .bullet-text-financial-1 { color: #6F6E7D; }
+.governance-awareness .bullet-text-financial-2 { color: #72717E; }
+.governance-awareness .bullet-text-financial-3 { color: #70707C; font-size: 10px; }
+.governance-awareness .bullet-text-operational-1 { color: #777682; }
+.governance-awareness .bullet-text-operational-2 { color: #82818D; }
+.governance-awareness .bullet-text-operational-3 { color: #7F7D89; }
+.governance-awareness .bullet-text-operational-4 { color: #7F7D89; }
+.governance-awareness .bullet-text-legal-1 { color: #7A7983; }
+.governance-awareness .bullet-text-legal-2 { color: #7E7D87; }
+.governance-awareness .bullet-text-legal-3 { color: #807E87; }
+.governance-awareness .bullet-text-legal-4 { color: #7F7D85; }
+.governance-awareness .bullet-text-growth-1 { color: #767378; }
+.governance-awareness .bullet-text-growth-2 { color: #6F6D72; }
+.governance-awareness .bullet-text-growth-3 { color: #7A767A; }
+.governance-awareness .bullet-text-growth-4 { color: #69666A; }
 
 /* ---------- SELF ASSESSMENT ---------- */
 
