@@ -2848,27 +2848,6 @@ chro-hero .hero-divider {
 }
 
 
-/* Keep your existing bullet text colors exactly as is */
-.governance-awareness .bullet-text-financial-1 { color: #6F6E7D; }
-.governance-awareness .bullet-text-financial-2 { color: #72717E; }
-.governance-awareness .bullet-text-financial-3 { color: #70707C; }
-
-.governance-awareness .bullet-text-operational-1 { color: #777682; }
-.governance-awareness .bullet-text-operational-2 { color: #82818D; }
-.governance-awareness .bullet-text-operational-3 { color: #7F7D89; }
-.governance-awareness .bullet-text-operational-4 { color: #7F7D89; }
-
-.governance-awareness .bullet-text-legal-1 { color: #7A7983; }
-.governance-awareness .bullet-text-legal-2 { color: #7E7D87; }
-.governance-awareness .bullet-text-legal-3 { color: #807E87; }
-.governance-awareness .bullet-text-legal-4 { color: #7F7D85; }
-
-.governance-awareness .bullet-text-growth-1 { color: #767378; }
-.governance-awareness .bullet-text-growth-2 { color: #6F6D72; }
-.governance-awareness .bullet-text-growth-3 { color: #7A767A; }
-.governance-awareness .bullet-text-growth-4 { color: #69666A; }
-
-
 /* =========================================
    UNIFORM CONTENT ALIGNMENT
 ========================================= */
