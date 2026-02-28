@@ -2667,10 +2667,8 @@ chro-hero .hero-divider {
   background: #c09332;
 }
 
-/* ---------- GOVERNANCE AWARENESS SECTION ---------- */
-
 /* =========================================
-   GOVERNANCE – EXACT REPLICA STAKE SECTION
+   GOVERNANCE AWARENESS – CLEAN STRUCTURED
 ========================================= */
 
 .governance-awareness {
@@ -2679,11 +2677,13 @@ chro-hero .hero-divider {
   text-align: center;
 }
 
+/* Main Heading */
 .governance-awareness h2 {
   font-size: 36px;
   margin-bottom: 18px;
 }
 
+/* Intro */
 .governance-awareness .awareness-intro {
   max-width: 760px;
   margin: 0 auto 60px;
@@ -2692,13 +2692,12 @@ chro-hero .hero-divider {
   color: #555;
 }
 
-/* Subheading with aligned lines */
-
+/* Subheading with side lines */
 .stake-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   gap: 25px;
 }
 
@@ -2714,170 +2713,143 @@ chro-hero .hero-divider {
   background: #c89b3c;
 }
 
-/* Row container for 4 cards */
+
+/* =========================================
+   CARDS GRID
+========================================= */
+
 .governance-awareness .cards-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  padding: 5px 15px 0 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
-/* ── Card 1: Financial Exposure ── */
-.governance-awareness .card-financial {
-  width: 24%;
-  min-height: 327px;
-  background-image: none;
-  background-size: 100% 103.36%;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  padding: 13px 9px 37px 33px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    justify-content: flex-start;
-  text-align: center;
-}
 
-/* ── Card 2: Operational Disruption ── */
-.governance-awareness .card-operational-wrap {
-  width: 27%;
-  min-height: 327px;
-  background-image: none;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  padding: 2px 1px 40px 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* =========================================
+   INDIVIDUAL CARDS
+========================================= */
 
-.governance-awareness .card-operational {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    justify-content: flex-start;
-  text-align: center;
-}
-
-/* ── Card 3: Legal & Regulatory Risk ── */
-.governance-awareness .card-legal {
-  width: 25%;
-  min-height: 327px;
-  background-image: none;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  padding: 15px 14px 66px 23px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-    justify-content: flex-start;
-  text-align: center;
-}
-
-/* ── Card 4: Growth & Funding Impact ── */
+.governance-awareness .card-financial,
+.governance-awareness .card-operational-wrap,
+.governance-awareness .card-legal,
 .governance-awareness .card-growth {
-  width: 20%;
-  min-height: 331px;
-  background-image: none;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  padding: 11px 14px 15px 20px;
+
+  padding: 45px 30px;
+  min-height: 380px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-    justify-content: flex-start;
+  justify-content: flex-start;
+
   text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.06);
 }
 
-/* ── Shared: Card title ── */
+/* Remove right border from last card */
+.governance-awareness .card-growth {
+  border-right: none;
+}
+
+
+/* =========================================
+   GRADIENT BACKGROUNDS (SUBTLE – LIKE REF)
+========================================= */
+
+.governance-awareness .card-financial {
+  background: linear-gradient(180deg, #eef1f8 0%, #e3e7f2 100%);
+}
+
+.governance-awareness .card-operational-wrap {
+  background: linear-gradient(180deg, #f3f1f0 0%, #e9e6e4 100%);
+}
+
+.governance-awareness .card-legal {
+  background: linear-gradient(180deg, #f5f3f1 0%, #ebe8e6 100%);
+}
+
+.governance-awareness .card-growth {
+  background: linear-gradient(180deg, #f6efe6 0%, #ede3d6 100%);
+}
+
+
+/* =========================================
+   CARD TITLES
+========================================= */
+
 .governance-awareness .card-title {
-  color: #0b1f3a; /* Navy */
-  margin-top: 0;
-  margin-bottom: 18px;
+  color: #0b1f3a; /* Brand Navy */
   font-weight: 700;
-  font-size: 14px;
-  margin: 0;
+  font-size: 16px;
+  margin-bottom: 25px;
   line-height: 1.3;
   text-align: center;
+  align-self: center;
 }
 
-.governance-awareness .card-title-financial {
-    text-align: center;
-  align-self: flex-start;
-}
 
-.governance-awareness .card-title-operational {
-    text-align: center;
-  align-self: flex-start;
-}
+/* =========================================
+   ICON ALIGNMENT
+========================================= */
 
-.governance-awareness .card-title-legal {
-    text-align: center;
-  align-self: flex-start;
-}
-
-.governance-awareness .card-title-growth {
-    text-align: center;
-  align-self: flex-start;
-}
-
-/* Card main icon */
 .governance-awareness .card-icon {
   display: block;
+  margin-bottom: 28px;
   object-fit: contain;
-  margin: 0 0 22px 0 !important;
 }
 
-/* Bullet list items */
+
+/* =========================================
+   BULLET LIST
+========================================= */
+
 .governance-awareness .bullet-list {
-  margin-top: 10px !important;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   width: 100%;
-  text-align: center;
 }
 
 .governance-awareness .bullet-item {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  text-align: center;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .governance-awareness .bullet-dot {
   width: 4px;
   height: 4px;
-  object-fit: contain;
+  margin-top: 7px;
   flex-shrink: 0;
-  margin-top: 6px;
 }
 
 .governance-awareness .bullet-text {
-   font-size: 12px;
-  line-height: 1.45;
+  font-size: 13px;
+  line-height: 1.6;
   margin: 0;
+  text-align: left;
 }
 
+
+/* Keep your existing bullet text colors exactly as is */
 .governance-awareness .bullet-text-financial-1 { color: #6F6E7D; }
 .governance-awareness .bullet-text-financial-2 { color: #72717E; }
-.governance-awareness .bullet-text-financial-3 { color: #70707C; font-size: 10px; }
+.governance-awareness .bullet-text-financial-3 { color: #70707C; }
+
 .governance-awareness .bullet-text-operational-1 { color: #777682; }
 .governance-awareness .bullet-text-operational-2 { color: #82818D; }
 .governance-awareness .bullet-text-operational-3 { color: #7F7D89; }
 .governance-awareness .bullet-text-operational-4 { color: #7F7D89; }
+
 .governance-awareness .bullet-text-legal-1 { color: #7A7983; }
 .governance-awareness .bullet-text-legal-2 { color: #7E7D87; }
 .governance-awareness .bullet-text-legal-3 { color: #807E87; }
 .governance-awareness .bullet-text-legal-4 { color: #7F7D85; }
+
 .governance-awareness .bullet-text-growth-1 { color: #767378; }
 .governance-awareness .bullet-text-growth-2 { color: #6F6D72; }
 .governance-awareness .bullet-text-growth-3 { color: #7A767A; }
