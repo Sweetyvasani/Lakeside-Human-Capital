@@ -2745,11 +2745,13 @@ chro-hero .hero-divider {
 
 /* Icon */
 
-.risk-icon img {
-  width: 55px;
+.risk-icon svg {
+  width: 60px;
   height: auto;
   margin-bottom: 22px;
+  filter: drop-shadow(0 2px 4px rgba(200,155,60,0.15));
 }
+
 
 /* Title */
 
