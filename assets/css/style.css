@@ -2795,8 +2795,10 @@ chro-hero .hero-divider {
 
 .governance-awareness .card-icon {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   object-fit: contain;
+    height: 60px;      /* force same height */
+  width: auto;
 }
 
 
@@ -2845,10 +2847,6 @@ chro-hero .hero-divider {
 
 .governance-awareness .card-title {
   margin-bottom: 22px;
-}
-
-.governance-awareness .card-icon {
-  margin-bottom: 30px;
 }
 
 
