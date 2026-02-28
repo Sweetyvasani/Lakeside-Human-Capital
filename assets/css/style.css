@@ -2843,6 +2843,7 @@ chro-hero .hero-divider {
   line-height: 1.6;
   margin: 0;
   text-align: left;
+  color: #0b1f3a;   /* Brand Navy */
 }
 
 
@@ -2885,15 +2886,6 @@ chro-hero .hero-divider {
   background-color: #c89b3c;
   border-radius: 50%;
 }
-
-/* Bullet text in Navy */
-.governance-awareness .bullet-text {
-  font-size: 13px;
-  line-height: 1.6;
-  margin: 0;
-  color: #0b1f3a;   /* Brand Navy */
-}
-
 
 
 /* ---------- SELF ASSESSMENT ---------- */
