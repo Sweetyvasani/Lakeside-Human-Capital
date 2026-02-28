@@ -2855,31 +2855,6 @@ chro-hero .hero-divider {
   margin-bottom: 30px;
 }
 
-/* Push bullet section to same depth in all cards */
-.governance-awareness .bullet-list {
-  margin-top: auto;
-  width: 75%;
-}
-
-/* Bullet items */
-.governance-awareness .bullet-item {
-  position: relative;
-  padding-left: 18px;
-  margin-top: 14px;
-  text-align: left;
-}
-
-/* Golden bullet dot */
-.governance-awareness .bullet-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  background-color: #c89b3c;
-  border-radius: 50%;
-}
 
 
 /* ---------- SELF ASSESSMENT ---------- */
