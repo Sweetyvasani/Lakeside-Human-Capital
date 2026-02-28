@@ -2714,18 +2714,6 @@ chro-hero .hero-divider {
   background: #c89b3c;
 }
 
-/* Page wrapper */
-.governance-awareness .page-wrapper {
-  width: 100%;
-  max-width: 962px;
-  background-image: url('https://static.codia.ai/s/20260228170225-image_08402478-4f0d-4260-94db-2f3b30a8b330.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
-  padding: 14px 15px 18px 8px;
-  border-radius: 10px;
-}
-
 /* Row container for 4 cards */
 .governance-awareness .cards-row {
   display: flex;
