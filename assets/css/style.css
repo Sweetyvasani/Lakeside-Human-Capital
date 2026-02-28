@@ -2727,7 +2727,7 @@ chro-hero .hero-divider {
 .governance-awareness .card-financial {
   width: 24%;
   min-height: 327px;
-  background-image: none
+  background-image: none;
   background-size: 100% 103.36%;
   background-repeat: no-repeat;
   background-position: 0% 0%;
@@ -2743,7 +2743,7 @@ chro-hero .hero-divider {
 .governance-awareness .card-operational-wrap {
   width: 27%;
   min-height: 327px;
-  background-image: url('https://static.codia.ai/s/20260228170225-image_5e73a8b7-1076-429a-85cd-0c01377a6bca.png');
+  background-image: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 0% 0%;
@@ -2767,7 +2767,7 @@ chro-hero .hero-divider {
 .governance-awareness .card-legal {
   width: 25%;
   min-height: 327px;
-  background-image: url('https://static.codia.ai/s/20260228170225-image_087a936e-903b-4a5d-b8c4-bf1cdfddc967.png');
+  background-image: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 0% 0%;
@@ -2783,7 +2783,7 @@ chro-hero .hero-divider {
 .governance-awareness .card-growth {
   width: 20%;
   min-height: 331px;
-  background-image: url('https://static.codia.ai/s/20260228170225-image_1d00a267-ac5b-4593-b4f1-36d592dc15bc.png');
+  background-image: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 0% 0%;
