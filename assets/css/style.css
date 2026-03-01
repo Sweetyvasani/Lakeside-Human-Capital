@@ -3173,8 +3173,12 @@ border-radius: 18px;
 ========================================= */
 
 .governance-snapshot {
-  padding: 110px 0;
-  background: #ffffff;
+  padding: 130px 0;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f8fafc
+  );
 }
 
 .governance-snapshot .snapshot-header {
@@ -3183,8 +3187,10 @@ border-radius: 18px;
 }
 
 .governance-snapshot h2 {
-  font-size: 32px;
+  font-size: 34px;
   color: #001F54;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   margin-bottom: 18px;
   position: relative;
 }
@@ -3205,8 +3211,8 @@ border-radius: 18px;
 }
 
 .governance-snapshot .snapshot-subtext {
-  font-size: 16px;
-  color: #555;
+  font-size: 17px;
+  color: #666;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -3249,9 +3255,47 @@ border-radius: 18px;
   color: #444;
 }
 
+.snapshot-table td:nth-child(2) {
+  color: #777;
+  position: relative;
+  padding-right: 40px;
+}
+
+.snapshot-table td:nth-child(2)::after {
+  content: "→";
+  position: absolute;
+  right: 15px;
+  color: rgba(200,155,60,0.6);
+  font-weight: 600;
+}
+
+.snapshot-table th:nth-child(1),
+.snapshot-table td:nth-child(1) {
+  width: 25%;
+  font-weight: 600;
+  color: #001F54;
+}
+
+.snapshot-table th:nth-child(2),
+.snapshot-table td:nth-child(2) {
+  width: 30%;
+}
+
+.snapshot-table th:nth-child(3),
+.snapshot-table td:nth-child(3) {
+  width: 45%;
+}
+
 /* Row divider */
 .snapshot-table tbody tr {
   border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.snapshot-table tbody tr:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
 }
 
 .snapshot-table tbody tr:last-child {
@@ -3260,12 +3304,13 @@ border-radius: 18px;
 
 /* Institutional Column Highlight */
 .snapshot-table .institutional-col {
-  background: linear-gradient(
+background: linear-gradient(
     135deg,
-    rgba(200,155,60,0.10),
-    rgba(255,255,255,0.95)
+    rgba(200,155,60,0.12),
+    rgba(255,255,255,1)
   );
-  font-weight: 500;
+  border-left: 3px solid rgba(200,155,60,0.6);
+  font-weight: 600;
   color: #001F54;
 }
 
