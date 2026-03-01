@@ -2708,13 +2708,14 @@ chro-hero .hero-divider {
 
 .stake-line {
   flex: 1;
-  max-width: 140px;
+  max-width: 220px; /* longer */
   height: 2px;
   background: linear-gradient(
     to right,
     rgba(200,155,60,0) 0%,
-    rgba(200,155,60,1) 40%,
-    rgba(200,155,60,1) 60%,
+    rgba(200,155,60,0.4) 20%,
+    rgba(200,155,60,1) 50%,
+    rgba(200,155,60,0.4) 80%,
     rgba(200,155,60,0) 100%
   );
 }
@@ -2752,6 +2753,17 @@ chro-hero .hero-divider {
 
   text-align: center;
   border-right: 1px solid rgba(15, 25, 45, 0.05);
+
+  transition: all 0.35s ease;
+}
+
+.governance-awareness .card-financial:hover,
+.governance-awareness .card-operational:hover,
+.governance-awareness .card-legal:hover,
+.governance-awareness .card-growth:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  z-index: 2;
 }
 
 /* Remove right border from last card */
@@ -2766,53 +2778,53 @@ chro-hero .hero-divider {
 
 .governance-awareness .card-financial {
   background:
-    radial-gradient(circle at top right,
+    radial-gradient(circle at 90% 10%,
       rgba(200,155,60,0.06),
-      rgba(200,155,60,0) 50%
+      rgba(200,155,60,0) 60%
     ),
     linear-gradient(
-      180deg,
+      135deg,
       #f6f8fc 0%,
-      #e8edf5 100%
+      #e9edf5 100%
     );
 }
 
 .governance-awareness .card-operational {
   background:
-    radial-gradient(circle at top right,
+    radial-gradient(circle at 90% 10%,
       rgba(200,155,60,0.10),
-      rgba(200,155,60,0) 55%
+      rgba(200,155,60,0) 65%
     ),
     linear-gradient(
-      180deg,
+      135deg,
       #f7f6f4 0%,
-      #ebe8e5 100%
+      #ece8e4 100%
     );
 }
 
 .governance-awareness .card-legal {
   background:
-    radial-gradient(circle at top right,
+    radial-gradient(circle at 90% 10%,
       rgba(200,155,60,0.14),
-      rgba(200,155,60,0) 60%
+      rgba(200,155,60,0) 70%
     ),
     linear-gradient(
-      180deg,
+      135deg,
       #f9f7f4 0%,
-      #efece8 100%
+      #efece7 100%
     );
 }
 
 .governance-awareness .card-growth {
   background:
-    radial-gradient(circle at top right,
+    radial-gradient(circle at 90% 10%,
       rgba(200,155,60,0.18),
-      rgba(200,155,60,0) 65%
+      rgba(200,155,60,0) 75%
     ),
     linear-gradient(
-      180deg,
+      135deg,
       #faf6ef 0%,
-      #f1e7d8 100%
+      #f2e7d9 100%
     );
 }
 
