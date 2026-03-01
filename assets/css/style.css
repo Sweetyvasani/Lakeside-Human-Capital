@@ -2776,35 +2776,42 @@ border-radius: 12px;
    GRADIENT BACKGROUNDS (SUBTLE – LIKE REF)
 ========================================= */
 
+/* Card 1: Financial Exposure (Cool Blue) */
 .governance-awareness .card-financial {
   background: 
+    /* The subtle top-right glow */
     radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.04), transparent 40%),
-    linear-gradient(to bottom, #ffffff 0%, #f4f7fa 100%);
+    /* Vertical Fade: White -> White -> Soft Blue-Grey */
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #f1f4f9 100%);
   border: 1px solid #e2e8f0;
 }
 
-/* Card 2: Operational (Neutral/Grey tint) */
+/* Card 2: Operational Disruption (Neutral Grey) */
 .governance-awareness .card-operational {
   background: 
-    radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.06), transparent 40%),
-    linear-gradient(to bottom, #ffffff 0%, #f8f7f5 100%);
+    radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.05), transparent 40%),
+    /* Vertical Fade: White -> White -> Soft Neutral Grey */
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #f6f6f4 100%);
   border: 1px solid #e5e7eb;
 }
 
-/* Card 3: Legal (Warm/Peach tint) */
+
+/* Card 3: Legal & Regulatory (Soft Peach/Tan) */
 .governance-awareness .card-legal {
   background: 
-    radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.08), transparent 45%),
-    linear-gradient(to bottom, #ffffff 0%, #faf6f1 100%);
-  border: 1px solid #f3e8d6;
+    radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.07), transparent 45%),
+    /* Vertical Fade: White -> White -> Soft Peach */
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #faf5ef 100%);
+  border: 1px solid #f2e9dc;
 }
 
-/* Card 4: Growth (Warmest/Ivory tint) */
+/* Card 4: Growth & Funding (Warm Ivory) */
 .governance-awareness .card-growth {
   background: 
-    radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.12), transparent 50%),
-    linear-gradient(to bottom, #ffffff 0%, #fdf8ef 100%);
-  border: 1px solid #f9ebce;
+    radial-gradient(circle at 85% 15%, rgba(200, 155, 60, 0.10), transparent 50%),
+    /* Vertical Fade: White -> White -> Warm Ivory */
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #fdf7eb 100%);
+  border: 1px solid #f8ead2;
 }
 
 
