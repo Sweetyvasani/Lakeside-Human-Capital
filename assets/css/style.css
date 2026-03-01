@@ -2913,8 +2913,8 @@ border-radius: 18px;
 
 .governance-selfcheck .selfcheck-header {
   display: flex;
-  align-items: center;
-  margin-bottom: 25px;
+  align-items: flex-start;
+  margin-bottom: 30px;
 }
 
 .governance-selfcheck .selfcheck-icon {
@@ -2926,9 +2926,9 @@ border-radius: 18px;
   font-weight: 700;
   font-size: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 22px;
 }
 
 .governance-selfcheck h3 {
@@ -2939,7 +2939,7 @@ border-radius: 18px;
 .governance-selfcheck .selfcheck-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 64px;
 }
 
 .governance-selfcheck .selfcheck-list li {
