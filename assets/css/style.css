@@ -2980,9 +2980,11 @@ border-radius: 18px;
 }
 
 .governance-selfcheck .selfcheck-note {
-  margin-top: 25px;
-  font-size: 14px;
+  margin-top: 35px;
+  font-size: 16px;
   color: #555;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 
