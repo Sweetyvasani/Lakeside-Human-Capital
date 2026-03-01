@@ -3135,7 +3135,7 @@ border-radius: 18px;
   content: "";
   position: absolute;
   left: 90px;   /* start after circle */
-  right: 0;
+  right: 120px; /* <-- pull it inward from right */
   bottom: 0;
   height: 1px;
   background: linear-gradient(
