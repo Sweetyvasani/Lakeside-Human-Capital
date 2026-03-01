@@ -3130,22 +3130,8 @@ border-radius: 18px;
   position: relative;
 }
 
-.governance-framework .framework-step::after {
-  content: "";
-  position: absolute;
-  left: 90px;    /* starts after circle */
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,0.04),
-    rgba(0,0,0,0.08),
-    rgba(0,0,0,0)
-  );
-}
-
-.framework-step:not(:last-child)::after {
+/* Divider between steps — clean and controlled */
+.governance-framework .framework-step:not(:last-child)::after {
   content: "";
   position: absolute;
   left: 90px;   /* start after circle */
@@ -3154,7 +3140,7 @@ border-radius: 18px;
   height: 1px;
   background: linear-gradient(
     to right,
-    rgba(0,0,0,0.05),
+    rgba(0,0,0,0.04),
     rgba(0,0,0,0.08),
     rgba(0,0,0,0)
   );
