@@ -2752,9 +2752,9 @@ chro-hero .hero-divider {
   justify-content: flex-start;
 
   text-align: center;
-  border-right: 1px solid rgba(15, 25, 45, 0.05);
-
-  transition: all 0.35s ease;
+border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Very faint border like the ref */
+  transition: transform 0.3s ease;
 }
 
 .governance-awareness .card-financial:hover,
