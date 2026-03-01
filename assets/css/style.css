@@ -3079,18 +3079,16 @@ border-radius: 18px;
 ========================================= */
 
 .governance-framework {
-  background: #ffffff;
+  background: #fafbfc;
   padding: 60px 0 110px 0;  /* reduced top */
 }
 
 .governance-framework .framework-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 70px 80px;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.06);
-}
+  padding: 0 20px;  /* light horizontal breathing */
+  background: transparent;
+  }
 
 .governance-framework .framework-heading {
   text-align: center;
@@ -3200,7 +3198,7 @@ border-radius: 18px;
 .governance-framework .framework-heading::after {
   content: "";
   display: block;
-  width: 60%;
+  width: 70%;
   height: 2px;
   margin: 28px auto 0;
   background: linear-gradient(
