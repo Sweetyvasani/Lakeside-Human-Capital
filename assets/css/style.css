@@ -3080,7 +3080,7 @@ border-radius: 18px;
 
 .governance-framework {
   background: #ffffff;
-  padding: 130px 0;
+  padding: 90px 0 110px 0;  /* reduced top */
 }
 
 .governance-framework .framework-container {
@@ -3110,14 +3110,14 @@ border-radius: 18px;
   content: "";
   position: absolute;
   left: 34px;
-  top: 0;
-  bottom: 0;
+  top: 20px;
+  bottom: 20px;
   width: 2px;
-  background: linear-gradient(
+   background: linear-gradient(
     to bottom,
-    rgba(200,155,60,0.2),
+    rgba(200,155,60,0),
     rgba(200,155,60,0.8),
-    rgba(200,155,60,0.2)
+    rgba(200,155,60,0)
   );
 }
 
@@ -3126,7 +3126,7 @@ border-radius: 18px;
 .governance-framework .framework-step {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   position: relative;
 }
 
@@ -3140,27 +3140,28 @@ border-radius: 18px;
 
 /* Gold Circle */
 .governance-framework .step-circle {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   background: #c89b3c;
   color: #ffffff;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* Right Column */
 .governance-framework .step-right {
   flex: 1;
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 .governance-framework .step-right h3 {
   font-size: 20px;
+  margin-top: 6px;     /* key alignment fix */
   margin-bottom: 12px;
   color: #0b1f3a;
 }
@@ -3175,6 +3176,29 @@ border-radius: 18px;
 /* Remove last margin */
 .governance-framework .framework-step:last-child {
   margin-bottom: 0;
+}
+
+.governance-framework .framework-heading {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #0b1f3a;
+  position: relative;
+}
+
+/* Gold fading line */
+.governance-framework .framework-heading::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 2px;
+  margin: 22px auto 0;
+  background: linear-gradient(
+    to right,
+    rgba(200,155,60,0),
+    rgba(200,155,60,0.8),
+    rgba(200,155,60,0)
+  );
 }
 
 /* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
