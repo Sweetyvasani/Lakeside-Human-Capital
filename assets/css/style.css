@@ -3160,7 +3160,7 @@ border-radius: 18px;
   background: #c89b3c;
   color: #ffffff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3178,7 +3178,7 @@ border-radius: 18px;
   font-size: 20px;
   margin-top: 6px;     /* key alignment fix */
   margin-bottom: 12px;
-  color: #0b1f3a;
+  color: #001F54;
 }
 
 .governance-framework .step-right p {
