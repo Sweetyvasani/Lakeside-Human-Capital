@@ -2919,8 +2919,9 @@ border-radius: 18px;
 
 .governance-selfcheck .selfcheck-header {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
+  align-items: center;   /* THIS fixes vertical alignment */
+  gap: 18px;             /* controls spacing between icon & text */
+  margin-bottom: 35px;
 }
 
 .governance-selfcheck .selfcheck-icon {
@@ -2930,7 +2931,7 @@ border-radius: 18px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 30px;
+  margin-right: 0;
   margin-top: 4px;
 }
 
@@ -2944,6 +2945,8 @@ border-radius: 18px;
   color: #001F54;
   font-size: 22px;
   margin: 0;
+    line-height: 1.2;
+
 }
 
 .governance-selfcheck .selfcheck-list {
@@ -2973,10 +2976,10 @@ border-radius: 18px;
 .governance-selfcheck .custom-check::after {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 1px;
+  left: 5px;
+  top: 2px;
   width: 6px;
-  height: 10px;
+  height: 11px;
   border: solid #2bb673;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
