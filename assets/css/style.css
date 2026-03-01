@@ -2902,6 +2902,17 @@ border-radius: 18px;
   background: #f4f6fa;
 }
 
+.governance-selfcheck .container {
+  padding: 65px 75px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(200,155,60,0.10),
+    rgba(255,255,255,0.96)
+  );
+  box-shadow: 0 18px 40px rgba(0,0,0,0.05);
+}
+
 .governance-selfcheck .selfcheck-card {
   max-width: 850px;
   margin: 0 auto;
@@ -2926,7 +2937,7 @@ border-radius: 18px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 26px;
 }
 
 
@@ -2945,7 +2956,7 @@ border-radius: 18px;
 .governance-selfcheck .selfcheck-list li {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   font-size: 16px;
   line-height: 1.6;
 }
