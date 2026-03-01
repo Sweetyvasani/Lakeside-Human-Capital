@@ -3080,7 +3080,7 @@ border-radius: 18px;
 
 .governance-framework {
   background: #ffffff;
-  padding: 90px 0 110px 0;  /* reduced top */
+  padding: 60px 0 110px 0;  /* reduced top */
 }
 
 .governance-framework .framework-container {
@@ -3095,8 +3095,9 @@ border-radius: 18px;
 .governance-framework .framework-heading {
   text-align: center;
   font-size: 34px;
-  margin-bottom: 70px;
-  color: #0b1f3a; /* Brand Navy */
+  margin-bottom: 50px;
+  color: #001F54; /* Brand Navy */
+  position: relative;
 }
 
 
@@ -3126,8 +3127,24 @@ border-radius: 18px;
 .governance-framework .framework-step {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 70px;
+  margin-bottom: 55px;
+  padding-bottom: 40px;
   position: relative;
+}
+
+.framework-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 90px;   /* start after circle */
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.05),
+    rgba(0,0,0,0.08),
+    rgba(0,0,0,0)
+  );
 }
 
 /* Left Column */
@@ -3178,25 +3195,18 @@ border-radius: 18px;
   margin-bottom: 0;
 }
 
-.governance-framework .framework-heading {
-  text-align: center;
-  font-size: 34px;
-  margin-bottom: 40px;
-  color: #0b1f3a;
-  position: relative;
-}
 
 /* Gold fading line */
 .governance-framework .framework-heading::after {
   content: "";
   display: block;
-  width: 280px;
+  width: 60%;
   height: 2px;
-  margin: 22px auto 0;
+  margin: 28px auto 0;
   background: linear-gradient(
     to right,
     rgba(200,155,60,0),
-    rgba(200,155,60,0.8),
+    rgba(200,155,60,0.9),
     rgba(200,155,60,0)
   );
 }
