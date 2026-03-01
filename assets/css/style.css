@@ -3093,7 +3093,7 @@ border-radius: 18px;
 .governance-framework .framework-heading {
   text-align: center;
   font-size: 34px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   color: #001F54; /* Brand Navy */
   position: relative;
 }
@@ -3125,9 +3125,24 @@ border-radius: 18px;
 .governance-framework .framework-step {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 55px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
   position: relative;
+}
+
+.governance-framework .framework-step::after {
+  content: "";
+  position: absolute;
+  left: 90px;    /* starts after circle */
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.04),
+    rgba(0,0,0,0.08),
+    rgba(0,0,0,0)
+  );
 }
 
 .framework-step:not(:last-child)::after {
