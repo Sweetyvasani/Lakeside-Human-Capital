@@ -3326,7 +3326,7 @@ background: linear-gradient(
 
 
 /* =========================================
-   GOVERNANCE GRID CARD STYLE
+   GOVERNANCE GRID CARD STYLE - NEW
 ========================================= */
 
 .governance-grid-section {
@@ -3444,6 +3444,34 @@ background: linear-gradient(
   .after {
     background: rgba(200,155,60,0.12);
   }
+}
+
+/* After Column Layout Enhancement */
+.after {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(200,155,60,0.08);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.after div {
+  display: flex;
+  flex-direction: column;
+}
+
+.after strong {
+  font-weight: 600;
+  color: #001F54;
+  font-size: 15px;
+}
+
+.after-sub {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
 
