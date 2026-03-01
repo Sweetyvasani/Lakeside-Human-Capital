@@ -2711,7 +2711,7 @@ chro-hero .hero-divider {
 
 .stake-line {
   flex: 1;
-  max-width: 220px; /* longer */
+  max-width: 260px; /* longer */
   height: 2px;
   background: linear-gradient(
     to right,
@@ -2755,8 +2755,8 @@ chro-hero .hero-divider {
   justify-content: flex-start;
 
   text-align: center;
-border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.05); /* Very faint border like the ref */
+border-radius: 18px;
+    border-right: 1px solid rgba(15, 25, 45, 0.04);
   transition: transform 0.3s ease;
 }
 
@@ -2841,7 +2841,7 @@ border-radius: 12px;
   display: block;
   margin-bottom: 30px;
   object-fit: contain;
-    height: 65px;      /* force same height */
+    height: 68px;      /* force same height */
   width: auto;
 }
 
