@@ -3371,23 +3371,33 @@ background: linear-gradient(
 
 /* Vertical Dividers */
 .governance-grid-section .grid-row > div:nth-child(1),
-.governance-grid-section .grid-row > div:nth-child(2) {
-  border-right: 1px solid rgba(0,0,0,0.05);
-  padding-right: 20px;
+.governance-grid-section .grid-row > div:nth-child(2),
+.governance-grid-section .grid-head > div:nth-child(1),
+.governance-grid-section .grid-head > div:nth-child(2) {
+  border-right: 1px solid rgba(200,155,60,0.45);
+  padding-right: 24px;
 }
 
-.governance-grid-section .grid-row > div:nth-child(2) {
-  padding-left: 20px;
-}
-
-.governance-grid-section .grid-row > div:nth-child(3) {
+.governance-grid-section .grid-row > div:nth-child(2),
+.governance-grid-section .grid-head > div:nth-child(2) {
   padding-left: 24px;
 }
+
+.governance-grid-section .grid-row > div:nth-child(3),
+.governance-grid-section .grid-head > div:nth-child(3) {
+  padding-left: 26px;
+}
+
+
+.governance-grid-section .grid-row > div:nth-child(3) {
+  background: rgba(200,155,60,0.10);
+  padding: 18px 20px;
+  }
 
 .governance-grid-section .grid-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1.2fr;
-  padding: 22px 18px;
+  padding: 26px 20px;
   align-items: center;
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
@@ -3414,30 +3424,24 @@ background: linear-gradient(
   color: #6b7280;
 }
 
-.governance-grid-section .after {
-  background: rgba(200,155,60,0.08);
-  color: #001F54;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-weight: 500;
-}
 
 /* Check Icon Base */
 .governance-grid-section .check-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 12px;
   flex-shrink: 0;
 }
 
 /* Before (Grey Check) */
 .governance-grid-section .check-before {
-  background: #d1d5db;
+  background: #e5e7eb;
   color: #6b7280;
 }
 
@@ -3472,10 +3476,9 @@ background: linear-gradient(
 .governance-grid-section .after {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  background: rgba(200,155,60,0.10);
-  padding: 12px 14px;
-  border-radius: 10px;
+  gap: 14px;
+  padding: 0; /* remove internal beige box padding */
+  background: transparent; /* important */
 }
 
 .governance-grid-section .after div {
