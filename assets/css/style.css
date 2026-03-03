@@ -3687,9 +3687,8 @@ background: linear-gradient(
     grid-template-columns: 1fr;
     gap: 50px;
   }
-}
 
-.governance-story-section .story-arrow {
+  .governance-story-section .story-arrow {
     display: none;
   }
 }
