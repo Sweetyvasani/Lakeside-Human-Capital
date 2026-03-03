@@ -3649,12 +3649,13 @@ background: linear-gradient(
 .governance-story-section .story-container-after {
   position: relative;
   z-index: 1;
-  background: linear-gradient(
-    90deg,
-    #eef3f9 0%,              /* continuation of blue tone */
-    #f5efe3 40%,             /* transition neutral */
-    rgba(200,155,60,0.18) 100%   /* soft gold */
-  );
+background: linear-gradient(
+  90deg,
+  #eef3f9 0%,
+  #f2f4f7 30%,
+  #efe6d3 65%,
+  rgba(200,155,60,0.18) 100%
+);
 
   border: 1px solid rgba(200,155,60,0.35);
   box-shadow: 0 35px 80px rgba(0,0,0,0.08);
@@ -3687,6 +3688,7 @@ background: linear-gradient(
   margin-bottom: 0;
 }
 
+
 /* TEXT */
 .governance-story-section .story-text strong {
   font-size: 17px;
@@ -3694,9 +3696,16 @@ background: linear-gradient(
   display: block;
 }
 
+
 /* BEFORE container text in black */
 .governance-story-section .story-container-before .story-text strong {
   color: #111827;
+}
+
+.governance-story-section 
+.story-container-before 
+.story-text strong {
+  font-weight: 500;   /* medium instead of bold */
 }
 
 .governance-story-section .story-text .sub {
