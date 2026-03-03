@@ -3672,6 +3672,7 @@ background: linear-gradient(
 /* BEFORE – only the second part */
 .story-container-before h3 .before-highlight {
   color: #111827;
+    font-weight: 500;   /* softer */
 }
 
 /* AFTER – only the second part */
