@@ -613,39 +613,63 @@
 
        <!-- ARROW CONTAINER -->
 
-      <div class="arrow-container">
-  <svg class="arrow" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+     <div class="arrow-container">
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <!-- Gold gradient -->
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fff5cc"/>
-      <stop offset="30%" stop-color="#ffd700"/>
-      <stop offset="60%" stop-color="#f0b400"/>
-      <stop offset="100%" stop-color="#b8860b"/>
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6cc"/>
+      <stop offset="20%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#f0b400"/>
+      <stop offset="75%" stop-color="#d89c00"/>
+      <stop offset="100%" stop-color="#a87400"/>
     </linearGradient>
 
-    <!-- Subtle shadow -->
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="4" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    <!-- Top highlight -->
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.8)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+
+    <!-- Soft glow -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <!-- Curved Arrow -->
-  <path 
-    d="M40 160 Q250 20 420 90"
-    stroke="url(#goldGradient)"
-    stroke-width="22"
-    fill="none"
-    stroke-linecap="round"
-    filter="url(#shadow)"
+  <!-- Arrow Body -->
+  <path
+    d="
+      M 80 220
+      C 250 200, 450 120, 620 130
+      L 620 105
+      L 740 150
+      L 620 195
+      L 620 170
+      C 450 160, 250 240, 80 260
+      Z
+    "
+    fill="url(#goldMain)"
+    filter="url(#softGlow)"
   />
 
-  <!-- Arrow Head -->
-  <polygon 
-    points="410,65 480,90 410,115"
-    fill="url(#goldGradient)"
-    filter="url(#shadow)"
+  <!-- Gloss highlight overlay -->
+  <path
+    d="
+      M 100 220
+      C 260 205, 450 130, 610 135
+      L 610 150
+      C 450 145, 260 215, 100 235
+      Z
+    "
+    fill="url(#goldHighlight)"
   />
+
 </svg>
 </div>
 
