@@ -3579,15 +3579,16 @@ background: linear-gradient(
 
 .governance-story-section .story-arrow {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
   pointer-events: none;
+  margin-left: -20px;
 }
 
 .governance-story-section .story-arrow svg {
-  width: 160px;
+  width: 220px;
   height: auto;
 }
 
