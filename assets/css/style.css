@@ -3564,7 +3564,7 @@ background: linear-gradient(
 .governance-story-section .story-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 10px;
+  gap: 0;
   align-items: start;
   position: relative;
   }
@@ -3595,23 +3595,29 @@ width: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Example: Make it 'pulse' or move on hover for a premium feel */
+.governance-story-section .story-arrow {
+  width: 100%;
+  height: auto;
+  /* Slight rotation to match the 'upward' trajectory of the reference */
+  transform: rotate(-2deg);
+  transition: transform 0.5s ease;
+}
+
 .governance-story-section .story-arrow:hover {
-  transform: translateX(10px);
+  transform: rotate(-2deg) scale(1.05);
 }
 
 .governance-story-section .arrow-container {
  position: absolute;
   /* This makes the container span across the gap between the two boxes */
-  top: 15%; 
-  bottom: 15%;
-  left: 40%; 
-  right: 45%;
-  z-index: 5;
+top: 10%; 
+  left: 35%; 
+  width: 30%; 
+  height: 80%;
+  z-index: 10;
   pointer-events: none;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 /* BEFORE CONTAINER (muted) */
