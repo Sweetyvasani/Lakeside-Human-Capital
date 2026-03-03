@@ -3611,7 +3611,7 @@ background: linear-gradient(
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  min-height: 80px;
+  min-height: 70px;
   padding: 10px 0;
 }
 
