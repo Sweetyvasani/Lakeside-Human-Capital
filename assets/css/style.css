@@ -3585,22 +3585,22 @@ background: linear-gradient(
 .governance-story-section .story-flow {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
   display: flex;
-  gap: 10px;
+  gap: 4px;
   z-index: 5;
   pointer-events: none;
 }
 
 .governance-story-section .story-flow span {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 900;
   line-height: 1;
   background: linear-gradient(90deg, #C89B3C, #E5C87A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .governance-story-section .story-flow span {
