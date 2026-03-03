@@ -3564,13 +3564,13 @@ background: linear-gradient(
 .governance-story-section .story-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 90px;
+  gap: 30px;
   align-items: stretch;
 }
 
 /* BASE CONTAINER */
 .governance-story-section .story-container {
-  padding: 55px 55px;
+  padding: 50px 50px;
   border-radius: 24px;
   position: relative;
   height: 100%;
@@ -3602,6 +3602,10 @@ background: linear-gradient(
 
 /* LIST */
 .governance-story-section .story-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -3610,8 +3614,8 @@ background: linear-gradient(
 .governance-story-section .story-list li {
   display: flex;
   gap: 18px;
-  margin-bottom: 34px;
   align-items: flex-start;
+  min-height: 72px;
 }
 
 .governance-story-section .story-list li:last-child {
