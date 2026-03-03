@@ -3597,7 +3597,7 @@ background: linear-gradient(
   font-size: 24px;
   font-weight: 700;
   color: #001F54;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* LIST */
@@ -3612,7 +3612,7 @@ background: linear-gradient(
   gap: 18px;
   align-items: flex-start;
   min-height: 70px;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .governance-story-section .story-list li:last-child {
