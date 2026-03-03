@@ -669,26 +669,44 @@
         </ul>
       </div>
 
-       <div class="story-arrow">
-  <svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+      <div class="story-arrow">
+  <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
 
     <defs>
-      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="#C89B3C"/>
-        <stop offset="100%" stop-color="#E5C87A"/>
+        <stop offset="100%" stop-color="#F1D48A"/>
+      </linearGradient>
+
+      <linearGradient id="goldGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#9E7425"/>
+        <stop offset="100%" stop-color="#C89B3C"/>
       </linearGradient>
     </defs>
 
-    <!-- Gentle Long Curve -->
-    <path d="M20,100 C140,70 260,70 360,80"
+    <!-- Main Body -->
+    <path d="M40,140 
+             C180,90 280,90 390,105"
           fill="none"
-          stroke="url(#goldGradient)"
-          stroke-width="8"
+          stroke="url(#goldGrad)"
+          stroke-width="18"
           stroke-linecap="round"/>
 
-    <!-- Sleek Arrow Head -->
-    <path d="M350,60 L390,80 L350,100"
-          fill="url(#goldGradient)"/>
+    <!-- Subtle Lower Shadow Layer -->
+    <path d="M40,148 
+             C180,98 280,98 390,113"
+          fill="none"
+          stroke="url(#goldGradDark)"
+          stroke-width="8"
+          stroke-linecap="round"
+          opacity="0.4"/>
+
+    <!-- Premium Arrow Head -->
+    <path d="M370,80 
+             L470,105 
+             L370,130 
+             Q395,105 370,80 Z"
+          fill="url(#goldGrad)"/>
   </svg>
 </div>
       
