@@ -3562,86 +3562,49 @@ background: linear-gradient(
 /* Layout */
 .governance-story-section .story-wrapper {
   display: flex;
-  align-items: stretch;
-  gap: 50px;
+  flex-direction: column;
+  gap: 45px;
 }
 
-/* BEFORE */
-.governance-story-section .story-before {
-  flex: 1;
+.governance-story-section .story-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: start;
+  gap: 80px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
-.governance-story-section .story-before h3 {
-  font-size: 22px;
-  margin-bottom: 30px;
-  color: #001F54;
+.governance-story-section .story-row:last-child {
+  border-bottom: none;
 }
 
-.governance-story-section .story-before ul {
-  list-style: none;
-  padding: 0;
-}
-
-.governance-story-section .story-before li {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 22px;
-  font-size: 16px;
-  color: #6b7280;
-}
-
-/* ARROW */
-.governance-story-section .story-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: #C89B3C;
-  font-weight: 600;
-}
-
-/* AFTER PANEL */
-.governance-story-section .story-after {
-  flex: 1.2;
-  background: linear-gradient(
-    135deg,
-    rgba(200,155,60,0.12),
-    rgba(200,155,60,0.06)
-  );
-  border-radius: 18px;
-  padding: 40px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.05);
-}
-
-.governance-story-section .story-after h3 {
-  font-size: 22px;
-  margin-bottom: 30px;
-  color: #001F54;
-}
-
-.governance-story-section .story-after ul {
-  list-style: none;
-  padding: 0;
-}
-
-.governance-story-section .story-after li {
+/* Row Items */
+.governance-story-section .story-before-item,
+.governance-story-section .story-after-item {
   display: flex;
   gap: 16px;
-  margin-bottom: 28px;
 }
 
-.governance-story-section .story-after strong {
+.governance-story-section .story-before-item strong,
+.governance-story-section .story-after-item strong {
   font-size: 16px;
   color: #001F54;
   display: block;
 }
 
-.governance-story-section .story-after .sub {
+/* After Subtext */
+.governance-story-section .story-after-item .sub {
   font-size: 14px;
   color: #6b7280;
-  margin-top: 5px;
+  margin-top: 6px;
   display: block;
+}
+
+/* Placeholder for Before side to match height */
+.governance-story-section .sub-placeholder {
+  display: block;
+  height: 18px;
 }
 
 /* Check Icons */
