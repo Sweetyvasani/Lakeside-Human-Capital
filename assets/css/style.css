@@ -3564,7 +3564,7 @@ background: linear-gradient(
 .governance-story-section .story-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 30px;
+  gap: 20px;
   align-items: stretch;
 }
 
@@ -3602,10 +3602,6 @@ background: linear-gradient(
 
 /* LIST */
 .governance-story-section .story-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -3615,7 +3611,8 @@ background: linear-gradient(
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  min-height: 72px;
+  min-height: 80px;
+  padding: 10px 0;
 }
 
 .governance-story-section .story-list li:last-child {
