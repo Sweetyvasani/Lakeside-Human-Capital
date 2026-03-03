@@ -3571,7 +3571,7 @@ background: linear-gradient(
 
 /* BASE CONTAINER */
 .governance-story-section .story-container {
-  padding: 45px 50px 28px;
+  padding: 30px 50px 24px;
   border-radius: 24px;
   position: relative;
   height: 100%;
@@ -3600,7 +3600,7 @@ background: linear-gradient(
   background: linear-gradient(90deg, #C89B3C, #E5C87A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.95;
+  opacity: 0.85;
 }
 
 .governance-story-section .story-flow span {
@@ -3663,7 +3663,7 @@ background: linear-gradient(
   font-size: 24px;
   font-weight: 700;
   color: #001F54;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 /* LIST */
@@ -3677,8 +3677,8 @@ background: linear-gradient(
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  min-height: 60px;
-  padding: 14px 0;
+  min-height: auto;
+  padding: 12px 0;
 }
 
 .governance-story-section .story-list li:last-child {
