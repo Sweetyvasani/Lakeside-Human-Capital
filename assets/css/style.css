@@ -3669,6 +3669,17 @@ background: linear-gradient(
   margin-bottom: 38px;
 }
 
+/* BEFORE – only the second part */
+.story-container-before h3 .before-highlight {
+  color: #111827;
+}
+
+/* AFTER – only the second part */
+.story-container-after h3 .after-highlight {
+  color: #C89B3C;
+  letter-spacing: 0.3px;
+}
+
 /* LIST */
 .governance-story-section .story-list {
   list-style: none;
