@@ -3565,12 +3565,12 @@ background: linear-gradient(
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 20px;
-  align-items: stretch;
+  align-items: start;
 }
 
 /* BASE CONTAINER */
 .governance-story-section .story-container {
-  padding: 45px 50px;
+  padding: 45px 50px 35px;
   border-radius: 24px;
   position: relative;
   height: 100%;
