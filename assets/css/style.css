@@ -3571,7 +3571,7 @@ background: linear-gradient(
 
 /* BASE CONTAINER */
 .governance-story-section .story-container {
-  padding: 30px 50px 24px;
+  padding: 30px 50px 18px;
   border-radius: 24px;
   position: relative;
   height: 100%;
@@ -3677,7 +3677,7 @@ background: linear-gradient(
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  min-height: auto;
+  min-height: 60px;
   padding: 12px 0;
 }
 
@@ -3690,6 +3690,11 @@ background: linear-gradient(
   font-size: 17px;
   color: #001F54;
   display: block;
+}
+
+/* BEFORE container text in black */
+.governance-story-section .story-container-before .story-text strong {
+  color: #000000;
 }
 
 .governance-story-section .story-text .sub {
