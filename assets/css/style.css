@@ -3564,13 +3564,13 @@ background: linear-gradient(
 .governance-story-section .story-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 20px;
+  gap: 4px;
   align-items: start;
 }
 
 /* BASE CONTAINER */
 .governance-story-section .story-container {
-  padding: 45px 50px 35px;
+  padding: 45px 50px 28px;
   border-radius: 24px;
   position: relative;
   height: 100%;
@@ -3583,6 +3583,8 @@ background: linear-gradient(
 
 /* AFTER CONTAINER (elevated) */
 .governance-story-section .story-container-after {
+  position: relative;
+  z-index: 2;
   background: linear-gradient(
     135deg,
     rgba(200,155,60,0.15),
@@ -3611,8 +3613,8 @@ background: linear-gradient(
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  min-height: 70px;
-  padding: 8px 0;
+  min-height: 60px;
+  padding: 14px 0;
 }
 
 .governance-story-section .story-list li:last-child {
