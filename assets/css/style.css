@@ -3588,10 +3588,10 @@ background: linear-gradient(
 
 .governance-story-section .story-progress {
   position: absolute;
-  top: 50%;
+  top: 32%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 420px;
+  transform: translate(-50%);
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
