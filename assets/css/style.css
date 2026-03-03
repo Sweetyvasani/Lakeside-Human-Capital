@@ -3577,34 +3577,66 @@ background: linear-gradient(
   height: 100%;
 }
 
-.governance-story-section .story-arrow img {
-  max-width: none;
-  width: 460px;
-  opacity: 0.85;
-  transform: rotate(-8deg);   /* tilt upward */
-  display: block;
+
+/* =============================
+   PROGRESS BRIDGE STYLE
+============================= */
+
+.governance-story-section .story-wrapper {
+  position: relative;
 }
 
-.governance-story-section .story-arrow {
-  width: 100%;
-  height: auto;
-  /* Slight rotation to match the 'upward' trajectory of the reference */
-  }
-
-.governance-story-section .story-arrow:hover {
-  transform: rotate(-2deg) scale(1.05);
-}
-
-.governance-story-section .arrow-container {
- position: absolute;
-  /* This makes the container span across the gap between the two boxes */
-top: 50%; 
-  left: 30%; 
-  width: 45%; 
-  height: auto;
+.governance-story-section .story-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 5;
   pointer-events: none;
-  }
+}
+
+/* Labels */
+.governance-story-section .progress-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.governance-story-section .progress-label.right {
+  color: #C89B3C;
+  font-weight: 600;
+}
+
+/* Line */
+.governance-story-section .progress-line {
+  flex: 1;
+  height: 2px;
+  margin: 0 14px;
+  background: linear-gradient(to right, #d1d5db, #C89B3C);
+  position: relative;
+}
+
+/* Moving Dot */
+.governance-story-section .progress-dot {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #C89B3C;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(200,155,60,0.5);
+}
+
+
+
+
 
 /* BEFORE CONTAINER (muted) */
 .governance-story-section .story-container-before {
