@@ -3579,9 +3579,9 @@ background: linear-gradient(
 
 .governance-story-section .story-arrow img {
   max-width: none;
-  width: 420px;
+  width: 460px;
   opacity: 0.85;
-  filter: none;
+  transform: rotate(-8deg);   /* tilt upward */
   display: block;
 }
 
@@ -3598,7 +3598,7 @@ background: linear-gradient(
 .governance-story-section .arrow-container {
  position: absolute;
   /* This makes the container span across the gap between the two boxes */
-top: 45%; 
+top: 50%; 
   left: 30%; 
   width: 45%; 
   height: auto;
