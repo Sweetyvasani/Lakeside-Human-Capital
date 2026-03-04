@@ -3174,11 +3174,7 @@ border-radius: 18px;
 
 .governance-story-section {
   padding: 130px 0;
-    background: linear-gradient(
-    to bottom,
-    #f3f6fb,
-    #ffffff
-  );
+  background: #f8fafc;
 }
 
 /* HEADER */
