@@ -3234,16 +3234,14 @@ border-radius: 18px;
 }
 
 .governance-story-section .story-flow span {
-  font-size: 88px;
-  font-weight: 700;
+  font-size: 80px;
+  font-weight: 900;
   line-height: 1;
-  color: #C89B3C;
-  letter-spacing: -6px;   /* tightens arrows together */
+   background: linear-gradient(90deg, #C89B3C, #E5C87A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.85;
-  text-shadow: 0 0 8px rgba(200,155,60,0.25);
-}
+  }
 
 .governance-story-section .story-flow span {
   animation: flowPulse 2s infinite ease-in-out;
