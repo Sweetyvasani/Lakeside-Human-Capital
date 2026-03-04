@@ -2926,6 +2926,29 @@ min-height:auto;
 padding:28px 26px;
 }
 
+  .governance-awareness .bullet-list{
+max-width:260px;
+margin:25px auto 0;
+}
+
+.governance-awareness .bullet-item{
+text-align:left;
+}
+
+  .governance-awareness{
+padding:80px 20px;
+}
+
+.governance-awareness h2{
+font-size:30px;
+line-height:1.3;
+}
+
+.governance-awareness .awareness-intro{
+font-size:16px;
+margin-bottom:40px;
+}
+
 }
 
 
