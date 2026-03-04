@@ -2667,6 +2667,23 @@ chro-hero .hero-divider {
   background: #c09332;
 }
 
+@media (max-width: 768px) {
+
+.governance-hero h1{
+font-size: 34px;
+line-height: 1.25;
+}
+
+.governance-hero .hero-subtext {
+font-size: 16px;
+}
+
+.governance-hero{
+padding:100px 20px;
+}
+
+}
+
 /* =========================================
    GOVERNANCE AWARENESS – CLEAN STRUCTURED
 ========================================= */
@@ -2894,6 +2911,23 @@ border-radius: 18px;
 }
 
 
+@media (max-width:768px){
+
+.governance-awareness .cards-row{
+grid-template-columns:1fr;
+gap:22px;
+}
+
+.governance-awareness .card-financial,
+.governance-awareness .card-operational,
+.governance-awareness .card-legal,
+.governance-awareness .card-growth{
+min-height:auto;
+padding:28px 26px;
+}
+
+}
+
 
 /* ---------- SELF ASSESSMENT ---------- */
 
@@ -2993,6 +3027,18 @@ border-radius: 18px;
   letter-spacing: 0.3px;
 }
 
+@media (max-width:768px){
+
+.governance-selfcheck .selfcheck-card{
+padding:40px 28px;
+}
+
+.governance-selfcheck .selfcheck-list{
+margin-left:0;
+}
+
+}
+
 
 /* ---------- CTA SECTION ---------- */
 
@@ -3026,6 +3072,23 @@ border-radius: 18px;
 
 .governance-cta .primary-btn:hover {
   background: #c09332;
+}
+
+@media (max-width:768px){
+
+  .governance-cta{
+padding:90px 20px;
+}
+
+.governance-cta h2{
+font-size:32px;
+line-height:1.3;
+}
+
+.governance-cta .cta-text{
+font-size:16px;
+}
+
 }
 
 
@@ -3165,6 +3228,27 @@ border-radius: 18px;
   );
 }
 
+
+@media (max-width:768px){
+
+.governance-framework{
+padding:50px 0 80px;
+}
+
+.governance-framework .framework-step{
+margin-bottom:30px;
+padding-bottom:18px;
+}
+
+.governance-framework .step-right h3{
+font-size:18px;
+}
+
+.governance-framework .step-right p{
+font-size:14px;
+}
+
+}
 
 
 
@@ -3409,6 +3493,16 @@ background: linear-gradient(
 }
 
 
+@media (max-width:768px){
+
+.governance-story-section .story-container{
+margin-bottom:22px;
+padding:28px;
+}
+
+}
+
+
 /* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
 
 /* mobile hamburger button (hidden on desktop) */
@@ -3599,6 +3693,19 @@ header .brand-name {
   .gold-line {
     margin: 18px auto 28px auto;
   }
+}
+
+  @media (max-width:768px){
+
+.governance-story-section .story-wrapper{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.governance-story-section .story-flow{
+display:none;
+}
+
 }
  
 
