@@ -3174,7 +3174,7 @@ border-radius: 18px;
 
 .governance-story-section {
   padding: 130px 0;
-  background: #f5f7fb;
+  background: #ffffff;
   border-top: 1px solid #eef2f7;
 }
 
@@ -3234,13 +3234,15 @@ border-radius: 18px;
 }
 
 .governance-story-section .story-flow span {
-  font-size: 80px;
-  font-weight: 900;
+  font-size: 88px;
+  font-weight: 700;
   line-height: 1;
-  background: linear-gradient(90deg, #C89B3C, #E5C87A);
+  color: #C89B3C;
+  letter-spacing: -6px;   /* tightens arrows together */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.85;
+  text-shadow: 0 0 8px rgba(200,155,60,0.25);
 }
 
 .governance-story-section .story-flow span {
@@ -3298,7 +3300,7 @@ background: linear-gradient(
 );
 
   border: 1px solid rgba(200,155,60,0.35);
-  box-shadow: 0 35px 80px rgba(0,0,0,0.08);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
 }
 
 /* HEADINGS */
