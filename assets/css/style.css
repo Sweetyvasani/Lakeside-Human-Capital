@@ -3639,7 +3639,7 @@ padding:80px 0;
 .engagement-models .engagement-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 60px;
 }
 
 .engagement-models .engagement-card {
