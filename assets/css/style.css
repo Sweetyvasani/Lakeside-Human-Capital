@@ -3530,6 +3530,69 @@ padding:80px 0;
 }
 
 
+/* ================== TALENT MODEL STYLING ================== */
+
+
+/* Talent Hero Model */
+
+.talent-hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.talent-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.talent-hero h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 30px;
+}
+
+.talent-hero p {
+  max-width: 750px;
+  margin: 0 auto 18px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.talent-highlights {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.talent-highlights span {
+  display: inline-block;
+  margin: 6px 10px;
+  padding: 8px 16px;
+  background: #e2e8f0;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #1e40af;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background: #1d4ed8;
+}
+
+
 /* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
 
 /* mobile hamburger button (hidden on desktop) */
