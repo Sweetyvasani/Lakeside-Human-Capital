@@ -3536,22 +3536,28 @@ padding:80px 0;
 /* Talent Hero Model */
 
 .talent-hero {
-  padding: 100px 20px;
+  padding: 110px 20px;
   text-align: center;
-  background: #f8fafc;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(59,130,246,0.25) 0%,
+      rgba(15,42,68,0.95) 40%,
+      #0f2a44 100%
+    );
+  color: white;
 }
 
 .talent-hero h1 {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .talent-hero h2 {
   font-size: 24px;
   font-weight: 500;
-  color: #334155;
+  color: #dbeafe;
   margin-bottom: 30px;
 }
 
@@ -3560,7 +3566,7 @@ padding:80px 0;
   margin: 0 auto 18px;
   font-size: 16px;
   line-height: 1.7;
-  color: #475569;
+  color: #cbd5e1;
 }
 
 .talent-hero .talent-highlights {
@@ -3572,17 +3578,17 @@ padding:80px 0;
   display: inline-block;
   margin: 6px 10px;
   padding: 8px 16px;
-  background: #eef2f7;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
   border-radius: 20px;
   font-size: 14px;
-  color: #1e293b;
-  border: 1px solid #e2e8f0;
-}
+  color: #ffffff;
+  }
 
 .talent-hero .cta-button {
   display: inline-block;
   padding: 14px 28px;
-  background: #1e40af;
+  background: #3b82f6;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -3590,7 +3596,7 @@ padding:80px 0;
 }
 
 .talent-hero .cta-button:hover {
-  background: #1d4ed8;
+  background: #2563eb;
 }
 
 
