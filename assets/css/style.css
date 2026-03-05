@@ -3608,6 +3608,87 @@ padding:80px 0;
 }
 
 
+/* ================== TALENT ENGAGEMENT MODEL ================== */
+
+
+.engagement-models {
+  padding: 100px 20px;
+  background: #f8fafc;
+}
+
+.engagement-models .section-header {
+  text-align: center;
+  max-width: 780px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.engagement-models .section-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.engagement-models .section-header p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.engagement-models .engagement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.engagement-models .engagement-card {
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.engagement-models .engagement-card:hover {
+  transform: translateY(-6px);
+}
+
+.engagement-models .engagement-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.engagement-models .engagement-card h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.engagement-models .engagement-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.engagement-models .engagement-card ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.engagement-models .engagement-card ul li {
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.engagement-models .engagement-tag {
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+
 /* ================== MOBILE NAV + HERO TWEAKS (append only) ================== */
 
 /* mobile hamburger button (hidden on desktop) */
