@@ -2642,7 +2642,7 @@ chro-hero .hero-divider {
 .governance-hero h1 {
   font-size: 44px;
   font-weight: 600;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
   line-height: 1.25;
 }
 
@@ -2650,7 +2650,7 @@ chro-hero .hero-divider {
   font-size: 18px;
   opacity: 0.9;
   max-width: 720px;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   line-height: 1.7;  
 }
 
