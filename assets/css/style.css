@@ -2633,7 +2633,7 @@ chro-hero .hero-divider {
 /* ---------- HERO SECTION ---------- */
 
 .governance-hero {
-  padding: 140px 0;
+  padding: 110px 0 140px;
   background: linear-gradient(135deg, #0b1f3a, #102b52);
   color: #ffffff;
   text-align: center;
@@ -2642,14 +2642,25 @@ chro-hero .hero-divider {
 .governance-hero h1 {
   font-size: 44px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  line-height: 1.25;
 }
 
 .governance-hero .hero-subtext {
   font-size: 18px;
   opacity: 0.9;
   max-width: 720px;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
+  line-height: 1.7;  
+}
+
+.governance-hero .hero-clarifier {
+  font-size: 18px;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  font-style: italic;     /* italic as requested */
+  opacity: 0.85;
+  line-height: 1.7;
 }
 
 .governance-hero .primary-btn {
