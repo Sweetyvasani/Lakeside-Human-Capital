@@ -1853,7 +1853,7 @@ font-size: 18px;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1883,8 +1883,8 @@ font-size: 18px;
 /* Grid */
 .ecosystem-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 32px;
+  grid-template-columns:repeat(5,1fr);
+    gap:24px;
 }
 
 .pillar-outcome {
@@ -1951,7 +1951,7 @@ font-size: 18px;
 /* Cards */
 .ecosystem-card {
   background: #ffffff;
-  padding: 36px 28px;
+  padding: 32px 24px;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(11, 31, 59, 0.05);
   transition: all 0.3s ease;
@@ -1991,14 +1991,19 @@ font-size: 18px;
 
 /* Accent colors for others */
 .ecosystem-card:nth-child(2)::before {
+  background: #8b5cf6; /* Recruit 
+}
+
+/* Accent colors for others */
+.ecosystem-card:nth-child(3)::before {
   background: #2bb673; /* Health – soft green */
 }
 
-.ecosystem-card:nth-child(3)::before {
+.ecosystem-card:nth-child(4)::before {
   background: #d4a73f; /* Happiness – soft gold */
 }
 
-.ecosystem-card:nth-child(4)::before {
+.ecosystem-card:nth-child(5)::before {
   background: #2c7be5; /* BreathEasier – soft blue */
 }
 
@@ -2019,15 +2024,19 @@ font-size: 18px;
   background: rgba(11, 61, 145, 0.08);
 }
 
-.ecosystem-card:nth-child(2) .icon-wrapper {
-  background: rgba(43, 182, 115, 0.08);
+  .ecosystem-card:nth-child(2) .icon-wrapper {
+  background:rgba(139,92,246,.08);
 }
 
 .ecosystem-card:nth-child(3) .icon-wrapper {
-  background: rgba(212, 167, 63, 0.10);
+  background: rgba(43, 182, 115, 0.08);
 }
 
 .ecosystem-card:nth-child(4) .icon-wrapper {
+  background: rgba(212, 167, 63, 0.10);
+}
+
+.ecosystem-card:nth-child(5) .icon-wrapper {
   background: rgba(44, 123, 229, 0.08);
 }
 
